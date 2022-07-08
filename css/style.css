@@ -141,10 +141,11 @@ img {
 ---------------------------------*/
 .mv {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   height: 85vh;
   text-align: center;
+  background-color: #ddd;
 }
 
 .mv-container {
@@ -155,7 +156,8 @@ img {
   font-size: 60px;
   font-weight: bold;
   line-height: 1.2;
-  margin-bottom: 5px;
+  margin-top: 150px;
+  margin-bottom: 10px;
   letter-spacing: .1em;
 }
 .mv-subtitle {
