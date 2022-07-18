@@ -8,13 +8,13 @@
    id="_x32_"
    x="0px"
    y="0px"
-   viewBox="0 0 352 282"
+   viewBox="0 0 260 208"
    style="opacity:1"
    xml:space="preserve"
-   sodipodi:docname="table.svg"
+   sodipodi:docname="table_sc.svg"
    inkscape:version="1.1.2 (b8e25be8, 2022-02-05)"
-   width="352"
-   height="282"
+   width="260"
+   height="208"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -45,7 +45,7 @@
 </style>
 <g
    id="g828"
-   transform="matrix(0.68821502,0,0,0.57066953,0,35.43702)">
+   transform="matrix(0.5078125,0,0,0.42107933,0,26.147877)">
 	<path
    class="st0"
    d="M 405.369,78.427 H 106.631 L 0,171.016 v 3.764 52.337 1.163 205.293 H 66.066 V 228.28 h 23.402 v 133.79 h 57.807 V 228.28 h 217.442 v 133.79 h 57.814 V 228.28 h 23.395 V 433.573 H 512 V 228.28 227.117 171.007 Z M 112.792,94.946 H 399.2 l 84.808,73.634 H 27.984 Z M 49.548,417.055 H 16.519 V 228.28 h 33.029 z m 81.209,-71.505 h -24.77 V 228.28 h 24.77 z m 275.257,0 H 381.236 V 228.28 h 24.778 z m 89.468,71.505 H 462.445 V 228.28 h 33.037 z m 0,-205.293 H 16.519 v -30.79 h 478.963 z"
@@ -59,7 +59,7 @@
 </style><g
    style="opacity:1"
    id="g929"
-   transform="matrix(0.3242596,0,0,0.35072658,94.636948,-25.424521)"><g
+   transform="matrix(0.23926109,0,0,0.25879026,69.829666,-18.759965)"><g
      id="g919">
 	<path
    class="st0"
