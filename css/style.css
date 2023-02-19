@@ -220,11 +220,44 @@ img {
   margin-bottom: 25px;
 }
 
+.inworks-item {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+
 .inworks-mainimg{
   width:100%;
-  height:auto;
-  vertical-align: bottom;/*画像の下にできる余白を削除*/
+  margin-bottom: 25px;
+  /* height:auto;
+  vertical-align: bottom;画像の下にできる余白を削除 */
 }
+
+.inworks-mainimg img{
+  border-radius: 20px;
+}
+
+.inworks-subimg{
+  width:  30%;
+  height: 30%;
+  margin-right: 3.2%;
+  
+}
+
+.inworks-subimg img{
+  border-radius: 20px;
+}
+
+.youtube {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
+.youtube iframe {
+  width: 70%;
+  height: 70%;
+}
+
+
 
 /*==================================================
 ギャラリーのためのcss
