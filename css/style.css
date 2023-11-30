@@ -202,6 +202,26 @@ section {
   font-size: 150%;
 }
 
+.profile-name2{
+  margin-top: 0%;
+  margin-bottom: 50px;
+  font-size: 150%;
+  text-align: center;
+}
+
+.profile-profile{
+  width: 100%;
+  font-size: 110%;
+  padding-bottom: 4%;
+}
+.profile-text{
+  width: 100%;
+  font-size: 110%;
+  padding-bottom: 4%;
+  padding-left: 25%;
+}
+
+
 /* ----------------------------- */
 
 
