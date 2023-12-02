@@ -216,7 +216,7 @@ section {
 }
 .profile-text{
   width: 100%;
-  font-size: 110%;
+  font-size:small;
   padding-bottom: 4%;
   padding-left: 25%;
 }
