@@ -69,9 +69,6 @@ section {
   width: auto;
   height: 100%-80px;
   background-color: #ddd;
-  
-  
-  margin-bottom: 20vh;
 }
 
 /* ----------------------------- */
@@ -80,7 +77,7 @@ section {
 /* -----------ARCHIVE--------- */
 
 .archive {
-  margin-top: 80px;
+  margin-top: 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
@@ -88,7 +85,7 @@ section {
 
 .archive-title{
   width: 100vw;
-  font-size: 35px;
+  font-size: 40px;
   font-weight: bold;
   line-height: 1;
   margin-top: 40px;
