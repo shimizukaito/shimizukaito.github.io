@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
+  overflow-x: hidden;
 }
 
 .container {
@@ -188,7 +189,7 @@ section {
 
 .profile-info{
   width: 65%;
-  font-size: 110%;
+  font-size: 100%;
   padding-left: 5%;
   background-color: #ddd;
   padding-top: 4%;
@@ -216,7 +217,7 @@ section {
 }
 .profile-text{
   width: 100%;
-  font-size:small;
+  font-size:  110%;
   padding-bottom: 4%;
   padding-left: 25%;
 }
@@ -307,4 +308,78 @@ footer {
   position: flexd;
   bottom: 0;
   width: 100%;
+}
+
+
+@media only screen and (max-width: 767px) {
+  /* スマートフォン用のスタイルをここに追加 */
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 0;
+  }
+
+  .logo {
+    margin: 0;
+  }
+
+  .logo img {
+    height: 80px; /* ロゴの高さを調整してください */
+    margin-bottom: 10px; /* ロゴの下に余白を追加 */
+  }
+
+  nav {
+    margin: 0;
+  }
+
+  nav ul {
+    margin-top: 10px; /* 必要に応じて調整してください */
+    justify-content: center;
+  }
+
+  nav li {
+    margin: 0 15px; /* 必要に応じて調整してください */
+  }
+  header {
+    flex-direction: row; /* これを追加 */
+  }
+
+
+  .mv {
+    margin-top: 0;
+  }
+
+  .archive-item {
+    width: 40%;
+  }
+
+  .profile-symbol,
+  .profile-info {
+    width: 40%;
+  }
+
+  .profile {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile-symbol img {
+    width: 80%;
+  }
+
+  .profile-info {
+    width: 80%;
+    margin-top: 20px;
+  }
+
+  .profile-name,
+  .profile-name2,
+  .profile-profile,
+  .contact {
+    width: 100%;
+  }
+
+  .contact-info {
+    margin-bottom: 20px;
+  }
 }
