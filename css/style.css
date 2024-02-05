@@ -331,9 +331,13 @@ footer {
   nav {
     margin: 0;
   }
+  
+  nav a {
+    font-size: 15px;
+  }
 
   nav ul {
-    margin-top: 10px; /* 必要に応じて調整してください */
+    margin-top: 0px; /* 必要に応じて調整してください */
     justify-content: center;
   }
 
@@ -367,6 +371,96 @@ footer {
     width: 80%;
   }
 
+  .profile-info {
+    width: 80%;
+    margin-top: 20px;
+  }
+
+  .profile-name,
+  .profile-name2,
+  .profile-profile,
+  .contact {
+    width: 100%;
+  }
+
+  .contact-info {
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background-color: #a0a0a0;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+  }
+  
+  .logo img {
+    height: 40px;
+    margin-left: 3%;
+  }
+  
+  /* --------------------------- */
+  
+  
+  
+  
+  nav ul {
+    list-style: none;
+    margin-right: 90px;
+    margin-top: 20px;
+    display: flex;
+  }
+  
+  nav li {
+    margin: 0 5px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+
+  .mv {
+    .mv {
+      display: none;
+    }
+  }
+
+  .archive-item {
+    width: 40%;
+  }
+
+  .profile-symbol,
+  .profile-info {
+    width: 40%;
+  }
+
+  .profile {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile-symbol img {
+    width: 80%;
+  }
+
+  .profile-text{
+    width: 100%;
+    font-size:  18px;
+    padding-bottom: 4%;
+    padding-left: 5%;
+  }
   .profile-info {
     width: 80%;
     margin-top: 20px;
