@@ -321,6 +321,19 @@ footer {
   width: 100%;
 }
 
+/*ショート動画を縦型に*/
+.youtube iframe {
+  position: relative;
+  aspect-ratio:9 /16; /
+}
+
+.youtube .video {
+  height: 100%;
+  margin: 0 auto;
+  overflow: visible;
+  padding-bottom: 0;
+  width: 300px;   /* ビデオ横幅 */
+}
 
 @media only screen and (max-width: 767px) {
   /* スマートフォン用のスタイルをここに追加 */
@@ -397,6 +410,8 @@ footer {
   .contact-info {
     margin-bottom: 20px;
   }
+
+  
 }
 
 @media only screen and (max-width: 480px) {
@@ -488,3 +503,4 @@ footer {
     margin-bottom: 20px;
   }
 }
+
