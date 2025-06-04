@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Shimizu Kaito</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="shortcut icon" href="../images/favicon.ico">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+</head>
+
+
+<body>
+
+  <header>
+    <div class="logo">
+      <a href="../index.html">Shimizu Kaito</a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="../index.html">HOME</a></li>
+        <li><a href="../index.html#works">WORKS</a></li>
+        <li><a href="../about.html">ABOUT</a></li>
+        <!-- <li><a href="../contact.html">Contact</a></li> -->
+      </ul>
+    </nav>
+  </header>
+
+  <div class="works-containner">
+    <div class="works-name">Melody Plate</div>
+
+    <div class="works-img">
+      <img src="img/MelodyPlate/Device&PC.png" alt="" />
+      <img src="img/MelodyPlate/gaikan.png" alt="" />
+      <img src="img/MelodyPlate/nakami.png" alt="" />
+        <img src="img/MelodyPlate/systemKousei.png" alt="" />
+    </div>
+
+    <div class="youtube">
+      <iframe width="560" height="315"
+  src="https://www.youtube.com/embed/ww6FJnAGZ5Q"
+  title="YouTube video player"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+  allowfullscreen>
+</iframe>
+
+  
+    </div>
+
+    <div class="works-technology">
+      <div class="tag">- M5stack Basic</div>
+      <div class="tag">- カラーセンサー</div>
+      <div class="tag">- ESP-BOW</div>
+      <div class="tag">- Pure Data</div>
+    </div>
+
+    <hr width = "80%">
+
+    <div class="works-info">
+        本作品は、「食事と音楽を結びつけたら面白いのではないか」という発想から生まれた、食事を通じて音楽を生成するインタラクティブデバイスです.鑑賞者は料理を楽しみながら、同時にその料理から生まれる音楽を体験し、最終的に「音を食べる」という新しい感覚を味わうことができると考えています.
+        <br>
+        <br>
+        本作品のデバイスには4つのカラーセンサーが搭載されており、それぞれが料理の皿に反応します.各センサーはRGBの色情報を取得し、4台のM5Stackデバイスがそれを受信専用のM5Stackデバイスに送信します.この情報をProcessingを介してPureDataに伝えられ、音の生成に活用されます.
+
+        <br>
+        <br>
+        各カラーセンサーには異なる音色が割り当てられており、例えば金属的な音やハイハット的な音が再生されます.さらに、4つのセンサーから取得した色情報を周波数に変換し、和音として出力する仕組みも備えています.これにより、複数の皿を配置することで、より完成度の高い音楽が奏でられる設計になっています.（音楽はpatchstageに公開されているargarak氏の作品を参考にパッチを組みました）
+        <br>
+        <br>
+        鑑賞者が料理を食べると、その皿に対応する音が消え、徐々に音楽が減少していきます.4つの皿をすべて配置した状態が「完成された音楽」として提示され、食べる行為を通じて音楽が消費されていくという体験を提供します.
+        <br>
+        <br>
+        料理ごとに異なる色情報を取得するため、生成される音楽は毎回異なります.このため、鑑賞者は「その場限りの音楽」を楽しむことができ、さらに料理を食べることで音楽を消費するという新しい音楽体験が生まれると考えられます.
+
+
+
+    </div>
+
+    <!-- <div class="works-url">
+      
+      <p><a href="https://ieeexplore.ieee.org/document/10196767" target="_blank" rel="noopener">IEEE Xplore</a></p>
+    </div> -->
+
+  </div>
+
+
+
+
+
+  </div>
+
+
+
+
+
+  <footer>
+    <p>&copy; 2024 Shimizu Kaito.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
