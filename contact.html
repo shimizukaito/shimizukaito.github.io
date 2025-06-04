@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name - Contact</title>
+  <link rel="stylesheet" href="css/style.css">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+</head>
+<body>
+  <!-- ヘッダー / ナビゲーション -->
+      <header>
+      <div class="logo">
+        <a href="index.html">Shimizu Kaito</a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="#works">WORKS</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <!-- <li><a href="contact.html">CONTACT</a></li> -->
+        </ul>
+      </nav>
+    </header>
+
+  <!-- メインコンテンツ -->
+  <main>
+    <section class="contact">
+      <h2>CONTACT</h2>
+      <form id="contact-form" action="#" method="POST">
+        <label for="name">お名前：</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">メールアドレス：</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">メッセージ：</label>
+        <textarea id="message" name="message" rows="6" required></textarea>
+
+        <button type="submit">送信</button>
+      </form>
+      <div id="thank-you" class="hidden">
+        <p>送信ありがとうございました。</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- フッター -->
+  <footer>
+    <nav>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="index.html#works">WORKS</a></li>
+        <li><a href="about.html">CV</a></li>
+        <!-- <li><a href="contact.html">CONTACT</a></li> -->
+      </ul>
+    </nav>
+    <p>© 2025 Shimizu Kaito</p>
+  </footer>
+
+  <!-- JavaScript の読み込み -->
+  <script src="js/script.js"></script>
+</body>
+</html>
