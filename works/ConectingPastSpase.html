@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Shimizu Kaito</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="shortcut icon" href="../images/favicon.ico">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">
+      <a href="../index.html">Shimizu Kaito</a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="../index.html">HOME</a></li>
+        <li><a href="../index.html#works">WORKS</a></li>
+        <li><a href="../about.html">ABOUT</a></li>
+        <!-- <li><a href="../contact.html">Contact</a></li> -->
+      </ul>
+    </nav>
+  </header>
+
+
+  <div class="works-containner">
+    <div class="works-name">Conecting Past Spase</div>
+
+    <div class="works-img"><img src="img/変化する空間の層/main.png" alt="" /></div>
+    <div class="works-img">
+      <img src="img/変化する空間の層/暗い.png" alt="" />
+      <img src="img/変化する空間の層/引き.png" alt="" />
+      <img src="img/変化する空間の層/IMG_2556.png" alt="" />
+      <div class="youtube">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/4xow0ErRb1o" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      <div class="youtube">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/1NZxuDJghHw" title="Conecting Past Spase1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div class="works-technology">
+      <div class="tag">- esp32</div>
+      <div class="tag">- M5Stack </div>
+      <div class="tag">- M5stackC </div>
+      <div class="tag">- BLE通信 </div>
+      <div class="tag">- タッチセンサー </div>
+      <div class="tag">- ソレノイド </div>
+    </div>
+
+    <hr width = "80%">
+
+    <div class="works-info">
+      ”アップサイクル”をテーマに解体で出た廃材を次のイベントの建材にしているギャラリー：FILTER gallery で展示した作品<br>
+      Filter Galleryで過去に行われたイベントの平面図を層にして重ね，使われた廃材の位置をステンレスワイヤーによって立体的に繋いでいる．
+      繋がれているワイヤーに触れると，空間内に配置されたソレノイドが現在の「形を変えた廃材だったもの」を叩き音により廃材の位置を鑑賞者に知らせる．<br>
+      <br>
+      ステンレスワイヤーにはesp32のタッチセンサーを接続し，触れたかを検出している．
+      ワイヤーに触れると通信により配置されたソレノイドが対象物を叩く．ソレノイドの制御にはM5stickCで行っている．<br>
+      <br>
+      本作品は明星大学で行われたハッカソンにより制作し展示した．
+      
+    </div>
+
+    <div class="works-url">
+      <p><a href="https://www.meisei-u.ac.jp/2023/2023082202.html" target="_blank" rel="noopener">ハッカソンイベントの詳細</a></p>　　
+      <p><a href="https://www.instagram.com/designlab_shuhare/" target="_blank" rel="noopener">建築デザインユニット「ShuHaRe:」（Instagram）</a></p>　
+    </div>
+
+
+    <!-- <div class="youtube">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/cIKnbaYKSzI" title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+    </div> -->
+
+  </div>
+
+  </div>
+
+  <footer>
+    <p>&copy; 2023 Shimizu Kaito.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
