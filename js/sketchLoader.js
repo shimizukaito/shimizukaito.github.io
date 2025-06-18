@@ -8,21 +8,21 @@ const sketches = [];
 // --- スケッチ A（3次元のランダムウォーク） ---
 function sketchA(p) {
   let walkers = [];
-  const numWalkers = 30;
+  const numWalkers = 20;
   const stepSize = 20;
   const zOffset = 500;
 
-  p.setup = function() {
-    // 修正済み：windowWidth のスペルミスを直し、幅をウィンドウ幅の1/3、高さを1/2に
+  p.setup = function () {
+    p.pixelDensity(1); // Retina対策
+    p.frameRate(30);   // 安定化
     p.createCanvas(p.windowWidth, p.windowHeight, p.WEBGL)
      .parent('hero-canvas-container');
-    p.background(255);
     for (let i = 0; i < numWalkers; i++) {
       walkers.push(new Walker(0, 0, 0, p));
     }
   };
 
-  p.draw = function() {
+  p.draw = function () {
     p.background(255);
     let target = walkers[0];
     let camZ = target.z + zOffset;
@@ -35,8 +35,8 @@ function sketchA(p) {
     }
   };
 
-  p.windowResized = function() {
-    p.resizeCanvas(p.windowWidth/3, p.windowHeight/2);
+  p.windowResized = function () {
+    p.resizeCanvas(p.windowWidth / 3, p.windowHeight / 2);
   };
 
   class Walker {
@@ -93,6 +93,7 @@ function sketchA(p) {
       else if (dir === 'front') this.tz += stepSize;
 
       this.prevDir = dir;
+
       this.history.push({
         x1: this.prevX,
         y1: this.prevY,
@@ -102,12 +103,17 @@ function sketchA(p) {
         z2: this.tz,
         alpha: 255
       });
+
+      // 履歴制限
+      if (this.history.length > 100) {
+        this.history.shift();
+      }
     }
 
     update() {
-      this.x = this.p.lerp(this.x, this.tx, 0.5);
-      this.y = this.p.lerp(this.y, this.ty, 0.5);
-      this.z = this.p.lerp(this.z, this.tz, 0.5);
+      this.x = this.p.lerp(this.x, this.tx, 0.8);
+      this.y = this.p.lerp(this.y, this.ty, 0.8);
+      this.z = this.p.lerp(this.z, this.tz, 0.8);
     }
 
     display() {
@@ -115,7 +121,7 @@ function sketchA(p) {
       this.p.noFill();
       for (let i = this.history.length - 1; i >= 0; i--) {
         let lineData = this.history[i];
-        lineData.alpha -= 1;
+        lineData.alpha -= 5;
         if (lineData.alpha <= 0) {
           this.history.splice(i, 1);
           continue;
@@ -126,6 +132,7 @@ function sketchA(p) {
         this.p.vertex(lineData.x2, lineData.y2, lineData.z2);
         this.p.endShape();
       }
+
       this.p.push();
       this.p.stroke(0);
       this.p.fill(0);
@@ -135,6 +142,7 @@ function sketchA(p) {
     }
   }
 }
+
 sketches.push(sketchA);
 
 // --- スケッチ B（QRコード） ---
@@ -546,138 +554,73 @@ function sketchD(p) {
 sketches.push(sketchD);
 
 /* --- スケッチ E: カラフルなボールのランダムウォーク --- */
-function sketchE(p) {
-  let balls = [];
-
-  p.setup = function() {
-    p.createCanvas(p.windowWidth, p.windowHeight).parent('hero-canvas-container');
-    let numBalls = p.windowWidth / 10;
-    for (let i = 0; i < numBalls; i++) {
-      balls.push(new Ball(p.width / 2, p.height / 2, 20, p));
-    }
-  };
-
-  p.draw = function() {
-    p.fill(0, 0, 0, 10);
-    p.rect(0, 0, p.width, p.height);
-    for (let ball of balls) {
-      ball.update();
-      ball.display();
-    }
-  };
-
-  p.windowResized = function() {
-    p.resizeCanvas(p.windowWidth, p.windowHeight);
-  };
-
-  class Ball {
-    constructor(x, y, rad, p5ref) {
-      this.p = p5ref;
-      this.x = x;
-      this.y = y;
-      this.rad = rad;
-      this.step = 10;
-      this.col = this.p.color(
-        this.p.random(255),
-        this.p.random(255),
-        this.p.random(255)
-      );
-      this.chooseNewDirection();
-    }
-
-    update() {
-      if (this.step > 0) {
-        this.step -= 1;
-      } else {
-        this.step = 30;
-        this.chooseNewDirection();
-      }
-      this.x += this.speedx;
-      this.y += this.speedy;
-      if (this.x < 0 || this.x > this.p.width) {
-        this.speedx *= -1;
-      }
-      if (this.y < 0 || this.y > this.p.height) {
-        this.speedy *= -1;
-      }
-    }
-
-    display() {
-      this.p.fill(this.col);
-      this.p.noStroke();
-      this.p.ellipse(this.x, this.y, this.rad, this.rad);
-    }
-
-    chooseNewDirection() {
-      let direction = this.p.int(this.p.random(0, 4));
-      if (direction === 0) {
-        this.speedy = (-1) * (this.p.height / 250);
-        this.speedx = 0;
-      } else if (direction === 1) {
-        this.speedx = this.p.width / 250;
-        this.speedy = 0;
-      } else if (direction === 2) {
-        this.speedy = this.p.height / 250;
-        this.speedx = 0;
-      } else if (direction === 3) {
-        this.speedx = (-1) * (this.p.width / 250);
-        this.speedy = 0;
-      }
-    }
-  }
-}
-sketches.push(sketchE);
-
-/* --- スケッチ F: ブロックとボールの拡張プログラム --- */
 function sketchF(p) {
-  let blocks;
-  let ball1;
-  let ball2;
+  let blocks = [];
+  let ball1, ball2;
   let col1, col2;
   let blockSize;
+  let cols, rows;
 
-  p.setup = function() {
+  p.setup = function () {
     p.createCanvas(p.windowWidth, p.windowHeight / 1.3).parent('hero-canvas-container');
-    col1 = p.color(135, 206, 250);
-    col2 = p.color(50, 50, 50);
-
+    col1 = p.color(135, 206, 250); // 青
+    col2 = p.color(50, 50, 50);    // 黒
     blockSize = Math.floor(p.width / 25);
+    cols = Math.ceil(p.width / blockSize);
+    rows = Math.ceil(p.height / blockSize);
+
     ball1 = new Ball(blockSize * 5, p.height / 2, blockSize, col2, p);
     ball2 = new Ball(blockSize * 20, p.height / 2, blockSize, col1, p);
     setBlock();
   };
 
-  p.draw = function() {
+  p.draw = function () {
     p.background(0);
     blockDisplay();
     ballDisplay();
   };
+
+  function setBlock() {
+    for (let i = 0; i < cols; i++) {
+      blocks[i] = [];
+      for (let j = 0; j < rows; j++) {
+        let x = i * blockSize;
+        let y = j * blockSize;
+        let mode = x < p.width / 2 ? 0 : 1;
+        blocks[i][j] = new Block(x, y, blockSize, mode, p);
+      }
+    }
+  }
+
+  function blockDisplay() {
+    // ① 画面全体のブロックを表示
+    for (let i = 0; i < cols; i++) {
+      for (let j = 0; j < rows; j++) {
+        blocks[i][j].display();
+      }
+    }
+
+    // ② 衝突判定は各ボールの周辺ブロックのみに限定
+    [ball1, ball2].forEach((ball) => {
+      let cx = Math.floor(ball.x / blockSize);
+      let cy = Math.floor(ball.y / blockSize);
+      for (let dx = -1; dx <= 1; dx++) {
+        for (let dy = -1; dy <= 1; dy++) {
+          let i = cx + dx;
+          let j = cy + dy;
+          if (i >= 0 && i < cols && j >= 0 && j < rows) {
+            blocks[i][j].checkCollision(ball);
+          }
+        }
+      }
+    });
+  }
 
   function ballDisplay() {
     ball1.display();
     ball1.update();
     ball2.display();
     ball2.update();
-  }
-
-  function blockDisplay() {
-    for (let i = 0; i < blocks.length; i++) {
-      let myBlock = blocks[i];
-      myBlock.display();
-      myBlock.checkCollision(ball1);
-      myBlock.checkCollision(ball2);
-    }
-  }
-
-  function setBlock() {
-    blocks = [];
-    for (let i = 0; i < p.width; i += blockSize) {
-      for (let j = 0; j < p.height; j += blockSize) {
-        let mode = i < p.width / 2 ? 0 : 1;
-        let myBlock = new Block(i, j, blockSize, mode, p);
-        blocks.push(myBlock);
-      }
-    }
   }
 
   class Ball {
@@ -687,36 +630,36 @@ function sketchF(p) {
       this.y = y;
       this.size = size;
       this.col = col;
-      this.xspeed = p.random(10, 15);
-      this.yspeed = p.random(10, 15);
+      this.xspeed = p.random(8, 12);
+      this.yspeed = p.random(8, 12);
     }
 
     display() {
-      this.p.push();
       this.p.noStroke();
       this.p.fill(this.col);
-      this.p.translate(this.x, this.y);
-      this.p.ellipse(0, 0, this.size, this.size);
-      this.p.pop();
+      this.p.ellipse(this.x, this.y, this.size, this.size);
     }
 
     update() {
       this.x += this.xspeed;
       this.y += this.yspeed;
-      if (this.x > p.width - this.size / 2 || this.x < this.size / 2) {
-        this.boundx();
-      }
-      if (this.y > p.height - this.size / 2 || this.y < this.size / 2) {
-        this.boundy();
-      }
-    }
 
-    boundx() { this.xspeed = -this.xspeed; }
-    boundy() { this.yspeed = -this.yspeed; }
-    getx() { return this.x; }
-    gety() { return this.y; }
-    getcol() { return this.col; }
-    getsize() { return this.size; }
+      // 微小ランダム性追加
+      this.xspeed += this.p.random(-0.1, 0.1);
+      this.yspeed += this.p.random(-0.1, 0.1);
+
+      // 速度制限
+      let maxSpeed = 15;
+      let minSpeed = 5;
+      this.xspeed = this.p.constrain(this.xspeed, -maxSpeed, maxSpeed);
+      this.yspeed = this.p.constrain(this.yspeed, -maxSpeed, maxSpeed);
+      if (Math.abs(this.xspeed) < minSpeed) this.xspeed = this.xspeed > 0 ? minSpeed : -minSpeed;
+      if (Math.abs(this.yspeed) < minSpeed) this.yspeed = this.yspeed > 0 ? minSpeed : -minSpeed;
+
+      // 画面端でバウンド
+      if (this.x < this.size / 2 || this.x > p.width - this.size / 2) this.xspeed *= -1;
+      if (this.y < this.size / 2 || this.y > p.height - this.size / 2) this.yspeed *= -1;
+    }
   }
 
   class Block {
@@ -725,41 +668,42 @@ function sketchF(p) {
       this.x = x;
       this.y = y;
       this.size = size;
-      this.colorMode = colorMode;
-      this.col = null;
+      this.colorMode = colorMode; // 0: col1, 1: col2
     }
 
     display() {
-      if (this.colorMode === 0) {
-        this.col = col1;
-        this.p.fill(col1);
-      } else {
-        this.col = col2;
-        this.p.fill(col2);
-      }
       this.p.noStroke();
+      this.p.fill(this.colorMode === 0 ? col1 : col2);
       this.p.rect(this.x, this.y, this.size, this.size);
     }
 
     checkCollision(ball) {
-      if (ball.getcol().toString() === this.col.toString()) {
-        if (
-          ball.getx() + ball.getsize() / 2 > this.x &&
-          ball.getx() - ball.getsize() / 2 < this.x + this.size &&
-          ball.gety() + ball.getsize() / 2 > this.y &&
-          ball.gety() - ball.getsize() / 2 < this.y + this.size
-        ) {
-          if (ball.getx() > this.x && ball.getx() < this.x + this.size) {
-            ball.boundy();
-          } else {
-            ball.boundx();
-          }
-          this.colorMode = 1 - this.colorMode;
+      let ballMode = ball.col.toString() === col1.toString() ? 0 : 1;
+      if (ballMode !== this.colorMode) return;
+
+      let bx = ball.x;
+      let by = ball.y;
+      let r = ball.size / 2;
+
+      if (
+        bx + r > this.x &&
+        bx - r < this.x + this.size &&
+        by + r > this.y &&
+        by - r < this.y + this.size
+      ) {
+        // 衝突方向の推定と反転
+        if (bx > this.x && bx < this.x + this.size) {
+          ball.yspeed *= -1;
+        } else {
+          ball.xspeed *= -1;
         }
+        this.colorMode = 1 - this.colorMode; // 色を切り替え
       }
     }
   }
 }
+
+
 sketches.push(sketchF);
 
 
