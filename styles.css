@@ -270,7 +270,7 @@ h3 {
 
 .works-section {
   padding-top: clamp(30px, 6vw, 72px);
-  max-width: 960px;
+  max-width: 1440px;
 }
 
 .work-grid {
