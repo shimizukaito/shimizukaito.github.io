@@ -1,250 +1,242 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shimizu Kaito Portfolio</title>
-  <!-- ファビコン設定 -->
-  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="css/style.css">
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-XXXXXXXXXX');
-  </script>
-
-  <!-- p5.js ライブラリを読み込む -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js"></script>
-
-</head>
-<body>
-  <main>
-    <!-- ファーストビュー（Hero セクション） -->
-    <section class="hero">
-      <!-- ここに p5.js のキャンバスが挿入される -->
-      <div id="hero-canvas-container"></div>
-      <!-- 文字情報はキャンバスの手前に表示 -->
-      <div class="hero-text">
-        <h1>Welcome To My Portfolio</h1>
-        <p>Shimizu Kaito</p>
-      </div>
-    </section>
-
-    <!-- ヘッダー / ナビゲーション（Heroの下に配置） -->
-    <header>
-      <div class="logo">
-        <a href="index.html">Shimizu Kaito</a>
-      </div>
-      <nav>
-        <ul>
-          <li><a href="index.html">HOME</a></li>
-          <li><a href="#works">WORKS</a></li>
-          <li><a href="about.html">ABOUT</a></li>
-          <!-- <li><a href="contact.html">CONTACT</a></li> -->
-        </ul>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Shimizu Kaito | Portfolio</title>
+    <meta
+      name="description"
+      content="清水海人のポートフォリオ。研究、制作、インタラクション、メディア作品をまとめています。"
+    />
+    <link rel="stylesheet" href="styles.css?v=p5-editor-2" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html#top" aria-label="ページの先頭へ">
+        <span class="brand-mark"><img src="assets/astronaut.ico" alt="" /></span>
+        <span>Shimizu Kaito</span>
+      </a>
+      <nav class="nav" aria-label="主要ナビゲーション">
+        <a href="#works">Works</a>
+        <a href="about.html#about">About</a>
+        <a href="about.html#achievements">Achievements</a>
+        <a href="#contact">Contact</a>
       </nav>
     </header>
 
-    <!-- ギャラリー（WORKS セクション） -->
-    <section id="works" class="gallery">
-      <h2>WORKS</h2>
-      <div class="gallery-grid">
+    <main id="top">
+      <section class="sketch-hero" aria-label="ランダムに描画されるp5.jsスケッチ">
+        <div class="sketch-panel">
+          <div id="sketch-root" class="sketch-root" aria-label="ランダムに描画されるp5.jsスケッチ"></div>
+          <div class="sketch-title" aria-hidden="true">Welcome To my Website</div>
+        </div>
+      </section>
 
-        <div class="item">
-          <a href="works/MealodyPlate.html">
-            <figure>
-              <img src="images/works13.jpg" alt="MelodyPlate">
-              <figcaption>
-                <h3>Mealody Plate</h3>
-                <span class="year">2025</span>
-              </figcaption>
-            </figure>
-          </a>
+      <section class="section works-section" id="works" aria-labelledby="works-title">
+        <div class="section-heading">
+          <h2 id="works-title">WORKS</h2>
         </div>
 
-        <div class="item">
-          <a href="works/M5ARCADE.html">
+        <div class="work-grid">
+          <a class="work-card" href="works/mealody-plate.html" aria-label="Mealody Plateの詳細へ">
             <figure>
-              <img src="images/works14.jpg" alt="MelodyPlate">
-              <figcaption>
-                <h3>M5ARCADE</h3>
-                <span class="year">2025</span>
-              </figcaption>
+              <img src="assets/imported/mealody-plate-cover.jpg" alt="Mealody Plateのサムネイル" />
             </figure>
+            <div class="work-meta">
+              <h3>Mealody Plate</h3>
+              <time datetime="2025.05">2025.05</time>
+            </div>
           </a>
-        </div>
 
-        <div class="item">
-          <a href="works/MEISEI%20Clossing.html">
+          <a class="work-card" href="works/m5arcade.html" aria-label="M5Arcadeの詳細へ">
             <figure>
-              <img src="images/works12.jpg" alt="MEISEI Clossing">
-              <figcaption>
-                <h3>MEISEI Clossing</h3>
-                <span class="year">2024</span>
-              </figcaption>
+              <img src="assets/imported/m5arcade-cover.jpg" alt="M5Arcadeのサムネイル" />
             </figure>
+            <div class="work-meta">
+              <h3>M5Arcade</h3>
+              <time datetime="2025.04">2025.04</time>
+            </div>
           </a>
-        </div>
-        <div class="item">
-          <a href="works/HeighlyExplosive.html">
-            <figure>
-              <img src="images/works11.jpg" alt="Highly Explosion">
-              <figcaption>
-                <h3>Highly Explosion</h3>
-                <span class="year">2024</span>
-              </figcaption>
-            </figure>
-          </a>
-        </div>
-        <div class="item">
-          <a href="works/RoboticDrumMachine.html">
-            <figure>
-              <img src="images/works10.jpg" alt="Robotic Drum Machine">
-              <figcaption>
-                <h3>Robotic Drum Machine</h3>
-                <span class="year">2024</span>
-              </figcaption>
-            </figure>
-          </a>
-        </div>
 
-        <div class="item">
-          <a href="works/TwistedBandDisplay.html">
+          <a class="work-card" href="works/meisei-clossing.html" aria-label="MEISEI Clossingの詳細へ">
             <figure>
-              <img src="images/works10.5.jpg" alt="Twisted Band Display">
-              <figcaption>
-                <h3>Twisted Band Display</h3>
-                <span class="year">2024</span>
-              </figcaption>
+              <img src="assets/imported/meisei-clossing-cover.jpg" alt="MEISEI Clossingのサムネイル" />
             </figure>
+            <div class="work-meta">
+              <h3>MEISEI Clossing</h3>
+              <time datetime="2024.07">2024.07</time>
+            </div>
           </a>
-        </div>
 
-        <div class="item">
-          <a href="works/stoolWS.html">
+          <a class="work-card" href="works/highly-explosive.html" aria-label="Highly Explosiveの詳細へ">
             <figure>
-              <img src="images/works9.jpg" alt="スツール">
-              <figcaption>
-                <h3>スツール</h3>
-                <span class="year">2023</span>
-              </figcaption>
+              <img src="assets/imported/highly-explosive-cover.jpg" alt="Highly Explosiveのサムネイル" />
             </figure>
+            <div class="work-meta">
+              <h3>Highly Explosive</h3>
+              <time datetime="2024.07">2024.07</time>
+            </div>
+          </a>
+
+          <a class="work-card" href="works/robotic-drum-machine.html" aria-label="Robotic Drum Machineの詳細へ">
+            <figure>
+              <img src="assets/imported/robotic-drum-machine-cover.jpg" alt="Robotic Drum Machineのサムネイル" />
+            </figure>
+            <div class="work-meta">
+              <h3>Robotic Drum Machine</h3>
+              <time datetime="2024.06">2024.06</time>
+            </div>
+          </a>
+
+          <a class="work-card" href="works/twisted-band-display.html" aria-label="Twisted Band Displayの詳細へ">
+            <figure>
+              <img src="assets/imported/twisted-band-display-cover.jpg" alt="Twisted Band Displayのサムネイル" />
+            </figure>
+            <div class="work-meta">
+              <h3>Twisted Band Display</h3>
+              <time datetime="2024.03">2024.03</time>
+            </div>
+          </a>
+
+          <a class="work-card" href="works/stoolws.html" aria-label="スツール制作の詳細へ">
+            <figure>
+              <img src="assets/imported/stoolws-cover.jpg" alt="スツール制作のサムネイル" />
+            </figure>
+            <div class="work-meta">
+              <h3>スツール制作</h3>
+              <time datetime="2023.12">2023.12</time>
+            </div>
+          </a>
+
+          <a class="work-card" href="works/snowflake.html" aria-label="SnowFlakeの詳細へ">
+            <figure>
+              <img src="assets/imported/snowflake-cover.jpg" alt="SnowFlakeのサムネイル" />
+            </figure>
+            <div class="work-meta">
+              <h3>SnowFlake</h3>
+              <time datetime="2023.08">2023.08</time>
+            </div>
+          </a>
+
+          <a class="work-card" href="works/conecting-past-spase.html" aria-label="Conecting Past Spaseの詳細へ">
+            <figure>
+              <img src="assets/imported/conecting-past-spase-cover.jpg" alt="Conecting Past Spaseのサムネイル" />
+            </figure>
+            <div class="work-meta">
+              <h3>Conecting Past Spase</h3>
+              <time datetime="2023.08">2023.08</time>
+            </div>
+          </a>
+
+          <a class="work-card" href="works/sounds-drop.html" aria-label="Sounds Dropの詳細へ">
+            <figure>
+              <img src="assets/imported/sounds-drop-cover.jpg" alt="Sounds Dropのサムネイル" />
+            </figure>
+            <div class="work-meta">
+              <h3>Sounds Drop</h3>
+              <time datetime="2023.07">2023.07</time>
+            </div>
+          </a>
+
+          <a class="work-card" href="works/voice-flower.html" aria-label="Voice Flowerの詳細へ">
+            <figure>
+              <img src="assets/imported/voice-flower-cover.jpg" alt="Voice Flowerのサムネイル" />
+            </figure>
+            <div class="work-meta">
+              <h3>Voice Flower</h3>
+              <time datetime="2023.06">2023.06</time>
+            </div>
+          </a>
+
+          <a class="work-card" href="works/korekuraidecice.html" aria-label="これくらいデバイスの詳細へ">
+            <figure>
+              <img src="assets/imported/korekuraidecice-cover.jpg" alt="これくらいデバイスのサムネイル" />
+            </figure>
+            <div class="work-meta">
+              <h3>これくらいデバイス</h3>
+              <time datetime="2022.12">2022.12</time>
+            </div>
+          </a>
+
+          <a class="work-card" href="works/ywine.html" aria-label="Ywineの詳細へ">
+            <figure>
+              <img src="assets/imported/ywine-cover.jpg" alt="Ywineのサムネイル" />
+            </figure>
+            <div class="work-meta">
+              <h3>Ywine</h3>
+              <time datetime="2021.12">2021.12</time>
+            </div>
+          </a>
+
+          <a class="work-card" href="works/maze-generator.html" aria-label="Maze Generatorの詳細へ">
+            <figure>
+              <img src="assets/imported/maze-generator-cover.jpg" alt="Maze Generatorのサムネイル" />
+            </figure>
+            <div class="work-meta">
+              <h3>Maze Generator</h3>
+              <time datetime="2021.07">2021.07</time>
+            </div>
+          </a>
+
+          <a class="work-card" href="works/works-furtoblue.html" aria-label="富戸ブルー PR提案の詳細へ">
+            <figure>
+              <img src="assets/imported/works-furtoblue-cover.jpg" alt="富戸ブルー PR提案のサムネイル" />
+            </figure>
+            <div class="work-meta">
+              <h3>富戸ブルー PR提案</h3>
+              <time datetime="2020.12">2020.12</time>
+            </div>
           </a>
         </div>
-        <div class="item">
-          <a href="works/SnowFlask.html">
-            <figure>
-              <img src="images/works8.jpg" alt="SnowFlake">
-              <figcaption>
-                <h3>SnowFlake</h3>
-                <span class="year">2023</span>
-              </figcaption>
-            </figure>
-          </a>
+      </section>
+
+      <section class="contact" id="contact" aria-labelledby="contact-title">
+        <div>
+          <h2 id="contact-title">CONTACT</h2>
+          <p>何かありましたら，お気軽にご連絡ください。</p>
         </div>
-        <div class="item">
-          <a href="works/ConectingPastSpase.html">
-            <figure>
-              <img src="images/works7.jpg" alt="Conecting Past Spase">
-              <figcaption>
-                <h3>Conecting Past Spase</h3>
-                <span class="year">2023</span>
-              </figcaption>
-            </figure>
-          </a>
+        <div class="contact-actions">
+          <a class="mail-link" href="mailto:kait.mij@gmail.com">kait.mij@gmail.com</a>
+          <div class="social-links" aria-label="SNSリンク">
+            <a href="https://www.instagram.com/s_kaito_410/" target="_blank" rel="noreferrer" aria-label="Instagramを開く">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="3" y="3" width="18" height="18" rx="5" />
+                <circle cx="12" cy="12" r="4" />
+                <circle cx="17.5" cy="6.5" r="1" />
+              </svg>
+            </a>
+            <a href="https://x.com/S_Kaito410" target="_blank" rel="noreferrer" aria-label="Xを開く">
+              <svg class="x-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817-5.966 6.817H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231 5.45-6.231Zm-1.16 17.52h1.833L7.084 4.126H5.117L17.083 19.77Z" />
+              </svg>
+            </a>
+          </div>
         </div>
-        <div class="item">
-          <a href="works/SoundDrop.html">
-            <figure>
-              <img src="images/works6.jpg" alt="Sounds Drop">
-              <figcaption>
-                <h3>Sounds Drop</h3>
-                <span class="year">2023</span>
-              </figcaption>
-            </figure>
-          </a>
-        </div>
-        <div class="item">
-          <a href="works/VoiceFlower.html">
-            <figure>
-              <img src="images/works5.jpg" alt="Voice Flower">
-              <figcaption>
-                <h3>Voice Flower</h3>
-                <span class="year">2023</span>
-              </figcaption>
-            </figure>
-          </a>
-        </div>
-        <div class="item">
-          <a href="works/KorekuraiDecice.html">
-            <figure>
-              <img src="images/works4.jpg" alt="これくらいデバイス">
-              <figcaption>
-                <h3>これくらいデバイス</h3>
-                <span class="year">2022</span>
-              </figcaption>
-            </figure>
-          </a>
-        </div>
-        <div class="item">
-          <a href="works/works-Ywine.html">
-            <figure>
-              <img src="images/works3.jpg" alt="Ywine">
-              <figcaption>
-                <h3>Ywine</h3>
-                <span class="year">2021</span>
-              </figcaption>
-            </figure>
-          </a>
-        </div>
-        <div class="item">
-          <a href="works/works-Maze%20Generator.html">
-            <figure>
-              <img src="images/works2.jpg" alt="Maze Generator">
-              <figcaption>
-                <h3>Maze Generator</h3>
-                <span class="year">2021</span>
-              </figcaption>
-            </figure>
-          </a>
-        </div>
-        <div class="item">
-          <a href="works/works-FurtoBlue.html">
-            <figure>
-              <img src="images/works1.jpg" alt="富戸ブルー">
-              <figcaption>
-                <h3>富戸ブルー</h3>
-                <span class="year">2020</span>
-              </figcaption>
-            </figure>
-          </a>
-        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>© 2026 Shimizu Kaito</span>
+      <div class="social-links" aria-label="SNSリンク">
+        <a href="https://www.instagram.com/s_kaito_410/" target="_blank" rel="noreferrer" aria-label="Instagramを開く">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <rect x="3" y="3" width="18" height="18" rx="5" />
+            <circle cx="12" cy="12" r="4" />
+            <circle cx="17.5" cy="6.5" r="1" />
+          </svg>
+        </a>
+        <a href="https://x.com/S_Kaito410" target="_blank" rel="noreferrer" aria-label="Xを開く">
+          <svg class="x-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817-5.966 6.817H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231 5.45-6.231Zm-1.16 17.52h1.833L7.084 4.126H5.117L17.083 19.77Z" />
+          </svg>
+        </a>
       </div>
-    </section>
-    
-    
-  </main>
+      <button class="theme-toggle" type="button" aria-label="テーマを切り替える">◐</button>
+    </footer>
 
-  <!-- フッター -->
-  <footer>
-    <nav>
-      <ul>
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="#works">WORKS</a></li>
-        <li><a href="about.html">ABOUT</a></li>
-        <!-- <li><a href="contact.html">CONTACT</a></li> -->
-      </ul>
-    </nav>
-    <p>© 2025 Shimizu Kato</p>
-  </footer>
-
-  <!-- JavaScript の読み込み -->
-  <script src="js/script.js"></script>
-  <script src="js/sketchLoader.js"></script>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.9.4/lib/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js"></script>
+    <script src="script.js?v=p5-editor-2"></script>
+    <script src="sketchLoader.js?v=p5-editor-2"></script>
+  </body>
 </html>

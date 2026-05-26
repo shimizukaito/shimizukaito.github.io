@@ -1,0 +1,586 @@
+[
+  {
+    "title": "Mealody Plate",
+    "slug": "mealody-plate",
+    "year": "2025",
+    "dateDisplay": "2025.05",
+    "category": "Mealody Plate",
+    "cover": "assets/imported/mealody-plate-cover.jpg",
+    "gallery": [
+      {
+        "src": "assets/imported/mealody-plate-1.png",
+        "type": "image"
+      },
+      {
+        "src": "assets/imported/mealody-plate-2.png",
+        "type": "image"
+      },
+      {
+        "src": "assets/imported/mealody-plate-3.png",
+        "type": "image"
+      },
+      {
+        "src": "assets/imported/mealody-plate-4.png",
+        "type": "image"
+      }
+    ],
+    "technologies": [
+      "M5stack Basic",
+      "カラーセンサー",
+      "ESP-BOW",
+      "Pure Data"
+    ],
+    "summary": "本作品は、「食事と音楽を結びつけたら面白いのではないか」という発想から生まれた、食事を通じて音楽を生成するインタラクティブデバイスです.鑑賞者は料理を楽しみながら、同時にその料理から生まれる音楽を体験し、最終的に「音を食べる」という新しい感",
+    "description": "本作品は、「食事と音楽を結びつけたら面白いのではないか」という発想から生まれた、食事を通じて音楽を生成するインタラクティブデバイスです.鑑賞者は料理を楽しみながら、同時にその料理から生まれる音楽を体験し、最終的に「音を食べる」という新しい感覚を味わうことができると考えています.\n\n本作品のデバイスには4つのカラーセンサーが搭載されており、それぞれが料理の皿に反応します.各センサーはRGBの色情報を取得し、4台のM5Stackデバイスがそれを受信専用のM5Stackデバイスに送信します.この情報をProcessingを介してPureDataに伝えられ、音の生成に活用されます.\n\n各カラーセンサーには異なる音色が割り当てられており、例えば金属的な音やハイハット的な音が再生されます.さらに、4つのセンサーから取得した色情報を周波数に変換し、和音として出力する仕組みも備えています.これにより、複数の皿を配置することで、より完成度の高い音楽が奏でられる設計になっています.（音楽はpatchstageに公開されているargarak氏の作品を参考にパッチを組みました）\n\n鑑賞者が料理を食べると、その皿に対応する音が消え、徐々に音楽が減少していきます.4つの皿をすべて配置した状態が「完成された音楽」として提示され、食べる行為を通じて音楽が消費されていくという体験を提供します.\n\n料理ごとに異なる色情報を取得するため、生成される音楽は毎回異なります.このため、鑑賞者は「その場限りの音楽」を楽しむことができ、さらに料理を食べることで音楽を消費するという新しい音楽体験が生まれると考えられます.",
+    "youtubeEmbeds": [
+      {
+        "src": "https://www.youtube.com/embed/ww6FJnAGZ5Q",
+        "width": 560,
+        "height": 315,
+        "title": "YouTube video player"
+      }
+    ],
+    "sourceUrl": "https://shimizukaito.github.io/works/MealodyPlate.html"
+  },
+  {
+    "title": "M5Arcade",
+    "slug": "m5arcade",
+    "year": "2025",
+    "dateDisplay": "2025.04",
+    "category": "M5ARCADE",
+    "cover": "assets/imported/m5arcade-cover.jpg",
+    "gallery": [
+      {
+        "src": "assets/imported/m5arcade-1.jpg",
+        "type": "image"
+      },
+      {
+        "src": "assets/imported/m5arcade-2.jpg",
+        "type": "image"
+      },
+      {
+        "src": "assets/imported/m5arcade-3.jpg",
+        "type": "image"
+      }
+    ],
+    "technologies": [
+      "M5stack Basic"
+    ],
+    "summary": "プログラミングが楽しいと思える瞬間は、どんなときだろう",
+    "description": "プログラミングが楽しいと思える瞬間は、どんなときだろう\n\n私がアルバイトをしているプログラミング教室では、小学生から高校生までの子どもたちがテキストに沿って変数や関数、クラス化といった概念を学んでいる。子どもたちはそれらを理解していく一方で、「プログラミングを通じて何ができるのか」を実感しづらい様子だった。\n\n私はクリエイティブコーディングを知ってから、コードを書くことそのものが楽しい行為になった。\n\nそこで、子どもたちにも「プログラミングの先にある楽しさ」を体験してほしいと考え、\n\nM5Stackを用いた作品 「M5Arcade」 を制作した。\n\nこの筐体では、「ブロック崩し」と「シューティングゲーム」の2種類のゲームを遊ぶことができる。\n\nどちらも教室で学ぶプログラミングの概念（変数・配列・クラスなど）によって構成されており、\n\nブロックや敵キャラクターをオブジェクトとして管理している。\n\nM5Arcadeは、学びの延長線上にある「作ることの面白さ」を伝えることを目的としている。\n\nプログラミングを通して、自分の想像を形にすることを示すことで、\n\n子どもたちの学びや人生をより豊かにするきっかけになることを願っている。",
+    "youtubeEmbeds": [
+      {
+        "src": "https://www.youtube.com/embed/KmXN0ksPKco?si=JaBfXj39K-FlB95m",
+        "width": 560,
+        "height": 315,
+        "title": "YouTube video player"
+      }
+    ],
+    "sourceUrl": "https://shimizukaito.github.io/works/M5ARCADE.html"
+  },
+  {
+    "title": "MEISEI Clossing",
+    "slug": "meisei-clossing",
+    "year": "2024",
+    "dateDisplay": "2024.07",
+    "category": "MEISEI Clossing",
+    "cover": "assets/imported/meisei-clossing-cover.jpg",
+    "gallery": [
+      {
+        "src": "assets/imported/meisei-clossing-1.jpeg",
+        "type": "image"
+      },
+      {
+        "src": "assets/imported/meisei-clossing-2.jpeg",
+        "type": "image"
+      },
+      {
+        "src": "assets/imported/meisei-clossing-3.mov",
+        "type": "video"
+      }
+    ],
+    "technologies": [
+      "MadMapper",
+      "プロジェクター",
+      "マイク"
+    ],
+    "summary": "ニューヨーク大学で行われたITP CAMPの最終発表で制作した作品",
+    "description": "ニューヨーク大学で行われたITP CAMPの最終発表で制作した作品\n\n1ヶ月間のITP CAMPに参加し、多くの人々と出会った。映像を制作する人、音楽を制作する人、CGでアニメーションを作る人、電子工作が得意な人、大規模なネットワーク制御に精通した人など、さまざまなバックグラウンドを持つ参加者が集まっていた。\n\n初めは、このように多様な分野の人々が一堂に会する環境に驚いたが、日が経つにつれ、すべての人が「良いものを作ろう」という共通の目標を持っていることに気づいた。\n\nそれぞれが自分のやり方で他者を楽しませ、感動させようとするこの空間は非常に心地よいものであった。\n\nこの作品に映し出されている線は、参加者の多様なバックグラウンドを表している。それぞれの参加者が、中央に配置された直方体という共通の目標に向かって進んでいる様子を表現した。\n\nまた、ITPの空間ではコミュニケーションが活発に行われ、誰もが他者の意見やアイデアを自身の作品に取り入れていると感じた。そのため、1段目や2段目の直方体の2つの面には異なる色の線を映し出し、上面はそれらが混ざり合った色にしている。\n\n異なる道が交わり、最終的に1つの色となることで、ITPという空間の一体感を表現しようと試みた。",
+    "youtubeEmbeds": [
+      {
+        "src": "https://www.youtube.com/embed/77nUNjC2stI?si=MPjk9N9zeC2pERFg",
+        "width": 560,
+        "height": 315,
+        "title": "YouTube video player"
+      }
+    ],
+    "sourceUrl": "https://shimizukaito.github.io/works/MEISEI%20Clossing.html"
+  },
+  {
+    "title": "Highly Explosive",
+    "slug": "highly-explosive",
+    "year": "2024",
+    "dateDisplay": "2024.07",
+    "category": "Highly Explosion",
+    "cover": "assets/imported/highly-explosive-cover.jpg",
+    "gallery": [
+      {
+        "src": "assets/imported/highly-explosive-cover.jpg",
+        "type": "image"
+      }
+    ],
+    "technologies": [
+      "マイク",
+      "プロジェクター",
+      "procesing",
+      "MadMapper",
+      "スピーカー"
+    ],
+    "summary": "おもちゃの銃で的を撃つと、背景に爆発の映像と巨大な音が流れるインタラクティブ作品",
+    "description": "おもちゃの銃で的を撃つと、背景に爆発の映像と巨大な音が流れるインタラクティブ作品\n\nこの作品は、ニューヨーク大学で行われたITP CAMP2024の最終発表プロジェクトの一つとして制作したものである。ドイツからの参加者であるChristophから「爆発の映像を作ってほしい」と依頼され、複数人のチームで協力して制作した。\n\n爆発というテーマに基づき、2種類の映像を制作した。1つ目はキャラクターが爆発する映像、2つ目は絵の具が爆発し、下に垂れていく映像である。\n\nこれらの映像はProcessingを用いてパーティクルを制御することで制作した．また，標的となる的の制作、プロジェクターの投影面の調整なども行った。",
+    "youtubeEmbeds": [
+      {
+        "src": "https://www.youtube.com/embed/2bFwsSkFTf8?si=xUlds4PJby5UpUgI",
+        "width": 560,
+        "height": 315,
+        "title": "YouTube video player"
+      },
+      {
+        "src": "https://www.youtube.com/embed/966m3mRGyqY",
+        "width": 816,
+        "height": 1450,
+        "title": "Highly Explosion"
+      },
+      {
+        "src": "https://www.youtube.com/embed/bXbVHdSbF3s",
+        "width": 816,
+        "height": 1450,
+        "title": "smile explosion"
+      },
+      {
+        "src": "https://www.youtube.com/embed/RDia1J2EilE",
+        "width": 816,
+        "height": 1450,
+        "title": "ink drop"
+      }
+    ],
+    "sourceUrl": "https://shimizukaito.github.io/works/HeighlyExplosive.html"
+  },
+  {
+    "title": "Robotic Drum Machine",
+    "slug": "robotic-drum-machine",
+    "year": "2024",
+    "dateDisplay": "2024.06",
+    "category": "Robotic Drum Machine",
+    "cover": "assets/imported/robotic-drum-machine-cover.jpg",
+    "gallery": [
+      {
+        "src": "assets/imported/robotic-drum-machine-1.png",
+        "type": "image"
+      },
+      {
+        "src": "assets/imported/robotic-drum-machine-2.png",
+        "type": "image"
+      },
+      {
+        "src": "assets/imported/robotic-drum-machine-3.png",
+        "type": "image"
+      }
+    ],
+    "technologies": [
+      "M5stickC",
+      "Processing",
+      "osc通信",
+      "CNC",
+      "ワークショップ"
+    ],
+    "summary": "明星大学内で行われたデザイン学部と情報学部共同で行なったワークショップで作成した作品",
+    "description": "明星大学内で行われたデザイン学部と情報学部共同で行なったワークショップで作成した作品\n\n”参加者でアルゴリズムを決定し、ルールのもとで演奏する”というテーマのもと、\"振り子の最も速度が速い時に対応したマレットが叩く\"というアルゴリズムでマレットの動きを制御している。「プログラムでシミュレーションをした振り子の動き」と「アクチュエータの動き」２つの視覚情報を提示している。\n\nCNCにより板を加工し外装を作成した。棚に日常に溶け込んでいる物をいれ、マレットで叩くことで演奏を行う。マレットをアルゴリズムで制御することでリズムを生み音楽を奏でている。",
+    "youtubeEmbeds": [
+      {
+        "src": "https://www.youtube.com/embed/55C9P9s0Tek?si=Z5A6ReZF1qmAyYen",
+        "width": 560,
+        "height": 315,
+        "title": "YouTube video player"
+      },
+      {
+        "src": "https://www.youtube.com/embed/dmmBdOeq41U?si=v3n1YtbV0Ps3GP_T",
+        "width": 560,
+        "height": 315,
+        "title": "YouTube video player"
+      }
+    ],
+    "sourceUrl": "https://shimizukaito.github.io/works/RoboticDrumMachine.html"
+  },
+  {
+    "title": "Twisted Band Display",
+    "slug": "twisted-band-display",
+    "year": "2024",
+    "dateDisplay": "2024.03",
+    "category": "Twisted Band Display",
+    "cover": "assets/imported/twisted-band-display-cover.jpg",
+    "gallery": [
+      {
+        "src": "assets/imported/twisted-band-display-1.jpg",
+        "type": "image"
+      },
+      {
+        "src": "assets/imported/twisted-band-display-2.png",
+        "type": "image"
+      },
+      {
+        "src": "assets/imported/twisted-band-display-3.png",
+        "type": "image"
+      },
+      {
+        "src": "assets/imported/twisted-band-display-4.png",
+        "type": "image"
+      }
+    ],
+    "technologies": [
+      "Arduino",
+      "サーボモータ",
+      "ゴム紐"
+    ],
+    "summary": "平行に配置した 2 本の紐とギア機構によるねじりを利用したディスプレイ。ギアにより平行の2本の紐をねじり、交差させることで、紐の表裏が反転し背面側の色が表示される。",
+    "description": "平行に配置した 2 本の紐とギア機構によるねじりを利用したディスプレイ。ギアにより平行の2本の紐をねじり、交差させることで、紐の表裏が反転し背面側の色が表示される。\n\n紐をねじることで上下方向に滑らかに移動するアニメーションを表示することができ、紐の裏表の表示を切り替えることでピクセル的に情報を表示することができる。\n\n紐のねじりは25台のサーボモータにより制御しておりサーボモータはArduinoを使用し制御している。\n\n本ディスプレイは、映像表現・芸術科学フォーラム2024にて発表した。",
+    "youtubeEmbeds": [
+      {
+        "src": "https://www.youtube.com/embed/5DxtzpPOCj0?si=X1h5KucGq9Hrew5M",
+        "width": 560,
+        "height": 315,
+        "title": "YouTube video player"
+      }
+    ],
+    "sourceUrl": "https://shimizukaito.github.io/works/TwistedBandDisplay.html"
+  },
+  {
+    "title": "スツール制作",
+    "slug": "stoolws",
+    "year": "2023",
+    "dateDisplay": "2023.12",
+    "category": "スツール",
+    "cover": "assets/imported/stoolws-cover.jpg",
+    "gallery": [
+      {
+        "src": "assets/imported/stoolws-1.png",
+        "type": "image"
+      },
+      {
+        "src": "assets/imported/stoolws-2.png",
+        "type": "image"
+      },
+      {
+        "src": "assets/imported/stoolws-3.png",
+        "type": "image"
+      },
+      {
+        "src": "assets/imported/stoolws-4.png",
+        "type": "image"
+      },
+      {
+        "src": "assets/imported/stoolws-5.png",
+        "type": "image"
+      }
+    ],
+    "technologies": [
+      "CNC",
+      "ワークショップ",
+      "Processing"
+    ],
+    "summary": "「明星大学デザイン学部主催の学内ワークショップで制作したスツール」",
+    "description": "「明星大学デザイン学部主催の学内ワークショップで制作したスツール」\n\n明星大学ないのデザイン学部、情報学部、建築学部、人文学部、の４つの学部が共同で一つのスツールを制作するワークショップ。異なる専門性を融合し、機能的かつ美しいスツールを創り出すことに挑戦した。\n\n私たちのコンセプトは、荷物を置けてゆったりとくつろげる椅子をデザインすることだった。異なる視点を持つ意見は、使いやすさとデザインの両方を考慮することの重要性を改めて考えるきっかけとなった。\n\nこのワークショップを通じて、 機能と使いやすさのバランスの重要性を再認識した。デバイスやシステムの設計において、機能だけでなく、人が使う際の使いやすさや快適さもそのシステムの評価に深く関わることを考える機会となった。",
+    "youtubeEmbeds": [],
+    "sourceUrl": "https://shimizukaito.github.io/works/stoolWS.html"
+  },
+  {
+    "title": "SnowFlake",
+    "slug": "snowflake",
+    "year": "2023",
+    "dateDisplay": "2023.08",
+    "category": "SnowFlake",
+    "cover": "assets/imported/snowflake-cover.jpg",
+    "gallery": [
+      {
+        "src": "assets/imported/snowflake-1.png",
+        "type": "image"
+      },
+      {
+        "src": "assets/imported/snowflake-2.png",
+        "type": "image"
+      }
+    ],
+    "technologies": [
+      "Processing",
+      "iPad",
+      "プロジェクター"
+    ],
+    "summary": "参加者がiPad上で雪の結晶を描くと、プロジェクターで映し出された風景にその雪の結晶が追加され、雪が降り始める。描かれた雪の結晶は、落下するにつれて徐々に溶け、完全に溶けると同じ形の雪の結晶が再び上から降りてくる。",
+    "description": "参加者がiPad上で雪の結晶を描くと、プロジェクターで映し出された風景にその雪の結晶が追加され、雪が降り始める。描かれた雪の結晶は、落下するにつれて徐々に溶け、完全に溶けると同じ形の雪の結晶が再び上から降りてくる。\n\n自然界の雪の結晶は非常に多様で美しい形状を持っている。同様に、参加者が描く雪の結晶もそれぞれ独自の形や模様を持ち、他の誰とも同じではないという特徴を備えている。\n\nこの作品は、参加者と観客が情報技術に触れるきっかけとなり、参加者の創造が身近で親しみやすい形で表現されることで、情報技術と参加者や観客との間に新たな共感を生み出すことを意図して制作された。\n\n本作品は、明星大学のオープンキャンパスにて展示された。",
+    "youtubeEmbeds": [
+      {
+        "src": "https://www.youtube.com/embed/6FnuAMI4-74?si=28FANuHUZaHXRJO6",
+        "width": 560,
+        "height": 315,
+        "title": "YouTube video player"
+      }
+    ],
+    "sourceUrl": "https://shimizukaito.github.io/works/SnowFlask.html"
+  },
+  {
+    "title": "Conecting Past Spase",
+    "slug": "conecting-past-spase",
+    "year": "2023",
+    "dateDisplay": "2023.08",
+    "category": "Conecting Past Spase",
+    "cover": "assets/imported/conecting-past-spase-cover.jpg",
+    "gallery": [
+      {
+        "src": "assets/imported/conecting-past-spase-1.png",
+        "type": "image"
+      },
+      {
+        "src": "assets/imported/conecting-past-spase-2.png",
+        "type": "image"
+      },
+      {
+        "src": "assets/imported/conecting-past-spase-3.png",
+        "type": "image"
+      },
+      {
+        "src": "assets/imported/conecting-past-spase-4.png",
+        "type": "image"
+      }
+    ],
+    "technologies": [
+      "esp32",
+      "M5Stack",
+      "M5stackC",
+      "BLE通信",
+      "タッチセンサー",
+      "ソレノイド"
+    ],
+    "summary": "物質はその姿を変えながら空間を循環していく。",
+    "description": "物質はその姿を変えながら空間を循環していく。\n\nアップサイクルとは、廃棄されるものに付加価値を与え、元の製品よりも高い価値を生み出す概念である。江東区のFILTER galleryでは、このアップサイクルをテーマに掲げ、前回の展示で使われた素材を次の展示に引き継ぎながら、廃棄物に新たな機能と価値を与えている。\n\nドアは机に、床は棚に変わり、空間を構成する要素は次の展示へと再び循環していく。\n\n私はこの「物質の循環」を体験できる点に興味を持ち、本作品 Connecting Past Space を制作した。\n\n過去に行われた展示の間取り図を層として重ね、各層の物体の位置をステンレスワイヤーで結んでいる。\n\nワイヤーに触れることで、空間内に設置されたソレノイドが叩かれ、現在の物体の“居場所”を音として伝える。最上層は現在の展示の間取り図であり、ワイヤーを辿ることで、かつてのその素材や用途を知ることができる。\n\n現在は本棚や机として存在しているが、かつては床材だったり、ドアであったりすることがわかる。間取り図にはそれぞれの素材の一部を貼り付け、触覚的にも素材感を感じ取れるようにした。\n\nインタラクションの検出にはESP32のタッチセンサを使用し、ESP-Now通信によってソレノイドを制御するM5StickCと連携している。\n\n本作品は，明星大学オープンラボと建築デザインユニット「ShuHaRe:」と合同で行ったハッカソンにより制作・展示した．",
+    "youtubeEmbeds": [
+      {
+        "src": "https://www.youtube.com/embed/4xow0ErRb1o",
+        "width": 560,
+        "height": 315,
+        "title": ""
+      },
+      {
+        "src": "https://www.youtube.com/embed/1NZxuDJghHw",
+        "width": 560,
+        "height": 315,
+        "title": "Conecting Past Spase1"
+      }
+    ],
+    "sourceUrl": "https://shimizukaito.github.io/works/ConectingPastSpase.html"
+  },
+  {
+    "title": "Sounds Drop",
+    "slug": "sounds-drop",
+    "year": "2023",
+    "dateDisplay": "2023.07",
+    "category": "Sounds Drop",
+    "cover": "assets/imported/sounds-drop-cover.jpg",
+    "gallery": [
+      {
+        "src": "assets/imported/sounds-drop-1.png",
+        "type": "image"
+      },
+      {
+        "src": "assets/imported/sounds-drop-2.png",
+        "type": "image"
+      },
+      {
+        "src": "assets/imported/sounds-drop-3.png",
+        "type": "image"
+      }
+    ],
+    "technologies": [
+      "Processing",
+      "プロジェクション",
+      "マイク",
+      "BOX2D"
+    ],
+    "summary": "周辺の音をマイクで集め，ディスプレイ内へ落とし，積層させていく作品。",
+    "description": "周辺の音をマイクで集め，ディスプレイ内へ落とし，積層させていく作品。\n\n図形の大きさは周辺の音の大きさと対応している。\n\n声などの音は発された瞬間からその場へ煙のように，発散されてしまう。その声を落とし，積層させることで，直近にその周辺で起きた出来事などを想像することができる。\n\n小さい図形が溜まっていれば通行人が多数いたことを想起し，大きな図形があれば盛り上がった会話があったことを想起することができる。\n\n本作品は明星大学オープンキャンパスのために制作され,学内28号館3階の廊下で展示された。",
+    "youtubeEmbeds": [],
+    "sourceUrl": "https://shimizukaito.github.io/works/SoundDrop.html"
+  },
+  {
+    "title": "Voice Flower",
+    "slug": "voice-flower",
+    "year": "2023",
+    "dateDisplay": "2023.06",
+    "category": "Voice Flower",
+    "cover": "assets/imported/voice-flower-cover.jpg",
+    "gallery": [
+      {
+        "src": "assets/imported/voice-flower-2.jpg",
+        "type": "image"
+      },
+      {
+        "src": "assets/imported/voice-flower-3.JPG",
+        "type": "image"
+      },
+      {
+        "src": "assets/imported/voice-flower-4.JPG",
+        "type": "image"
+      },
+      {
+        "src": "assets/imported/voice-flower-5.JPG",
+        "type": "image"
+      }
+    ],
+    "technologies": [
+      "Arduino",
+      "3Dプリンター",
+      "レーザーカッター",
+      "Processing"
+    ],
+    "summary": "「声」を花の形にして保存・再生するデバイス",
+    "description": "「声」を花の形にして保存・再生するデバイス\n\n録音した声は、波形の形の花びらが咲き保存される。花を花瓶に差すことで音声が再生される。録音した時の心情や感情などを声にして保存することができる。\n\n録音および花びらになる円形にした音の波形はProcesisngにより出力している。録音した音声データを花瓶へ組み込むことで、花瓶から音声が再生することができる。\n\n画像として出力した波形はレーザーカッターによりプラバンへ切り出される。切り出したプラ板は加熱することで花を作成する。\n\n本デバイスは明星大学100周年記念企画として制作ワークショップを行った．",
+    "youtubeEmbeds": [],
+    "sourceUrl": "https://shimizukaito.github.io/works/VoiceFlower.html"
+  },
+  {
+    "title": "これくらいデバイス",
+    "slug": "korekuraidecice",
+    "year": "2022",
+    "dateDisplay": "2022.12",
+    "category": "これくらいデバイス",
+    "cover": "assets/imported/korekuraidecice-cover.jpg",
+    "gallery": [
+      {
+        "src": "assets/imported/korekuraidecice-1.jpg",
+        "type": "image"
+      },
+      {
+        "src": "assets/imported/korekuraidecice-2.jpg",
+        "type": "image"
+      },
+      {
+        "src": "assets/imported/korekuraidecice-3.jpg",
+        "type": "image"
+      },
+      {
+        "src": "assets/imported/korekuraidecice-4.jpg",
+        "type": "image"
+      }
+    ],
+    "technologies": [
+      "M5stickC Plus",
+      "Processing",
+      "3Dプリンター",
+      "赤外線距離センサー",
+      "ジャイロセンサー"
+    ],
+    "summary": "メディア学者マーシャル・マクルーハンの言葉「数は触覚の拡張であり、身体的な起源を持つ」から着想を得て、",
+    "description": "メディア学者マーシャル・マクルーハンの言葉「数は触覚の拡張であり、身体的な起源を持つ」から着想を得て、\n\n単位によって失われつつある数の身体性を取り戻す装置「これくらいデバイス」を制作した。\n\n現代では、身体を基準とした尺度（尺、歩、手幅など）を使う機会が減り、\n\nグローバルな標準単位による数値が日常に溶け込んでいる。\n\n本作品は、人間が行う「これくらい」というジェスチャーを入力として扱うことで、\n\n人それぞれの身体感覚に基づいた直感的なスケール入力を可能にする。\n\nデバイスには距離センサーとIMU（慣性計測ユニット）を搭載し、\n\n指同士の距離と傾きを計測する。\n\nさらに、アプリケーション例として、ジェスチャによって3Dモデリングを行うアプリケーション\n\n「これくらいモデラー」を開発した。\n\n利用者は「これくらい」のジェスチャを使用したモデリングが可能であり、椅子や恐竜、文字などの立体をモデリングすることができる。\n\nこの作品は、身体的な感覚とデジタル空間のスケールの再接続を目指している。\n\n本研究は学部卒業研究として実施した。",
+    "youtubeEmbeds": [
+      {
+        "src": "https://www.youtube.com/embed/cIKnbaYKSzI",
+        "width": 560,
+        "height": 315,
+        "title": "YouTube video player"
+      }
+    ],
+    "sourceUrl": "https://shimizukaito.github.io/works/KorekuraiDecice.html"
+  },
+  {
+    "title": "Ywine",
+    "slug": "ywine",
+    "year": "2021",
+    "dateDisplay": "2021.12",
+    "category": "Ywine",
+    "cover": "assets/imported/ywine-cover.jpg",
+    "gallery": [
+      {
+        "src": "assets/imported/ywine-1.png",
+        "type": "image"
+      },
+      {
+        "src": "assets/imported/ywine-2.png",
+        "type": "image"
+      },
+      {
+        "src": "assets/imported/ywine-3.png",
+        "type": "image"
+      }
+    ],
+    "technologies": [
+      "Xcode (ARkit)",
+      "Blender",
+      "TinkerCAD"
+    ],
+    "summary": "3年生通年の授業で行った内容。コロナ禍でお客さんが減ってしまったカフェをプロモーションするため、情報学部と国際コミュニケーション学部が協力して開発を行なった。",
+    "description": "3年生通年の授業で行った内容。コロナ禍でお客さんが減ってしまったカフェをプロモーションするため、情報学部と国際コミュニケーション学部が協力して開発を行なった。\n\n３つのグループに分かれて開発が行われ、私のグループでは、販売されているワインに注目し、ワインの本場であるジョージアの宴会”スープラ”を体験できるARアプリを開発した。\n\nジョージアの伝統衣装をきてダンスを踊る”チョハくん”や伝統楽器などのモデルがARで表示され、新たなワインの試飲体験を提案した。\n\n実際のカフェで使用していただき訪れたお客さんにも体験していただくことができた。\n\nYwineは「わいわいとワインを飲んでもらいたい」という願いと、「Yの形がワイングラスに似ている」ことから命名した造語である。",
+    "youtubeEmbeds": [
+      {
+        "src": "https://www.youtube.com/embed/yniWcHpBpt4?si=JrMqJh1RZkT86Yxw",
+        "width": 560,
+        "height": 315,
+        "title": "YouTubew video player"
+      }
+    ],
+    "sourceUrl": "https://shimizukaito.github.io/works/works-Ywine.html"
+  },
+  {
+    "title": "Maze Generator",
+    "slug": "maze-generator",
+    "year": "2021",
+    "dateDisplay": "2021.07",
+    "category": "Maze Generator",
+    "cover": "assets/imported/maze-generator-cover.jpg",
+    "gallery": [
+      {
+        "src": "assets/imported/maze-generator-1.PNG",
+        "type": "image"
+      },
+      {
+        "src": "assets/imported/maze-generator-2.PNG",
+        "type": "image"
+      }
+    ],
+    "technologies": [
+      "ReacTIVision",
+      "Processing",
+      "Android Camera"
+    ],
+    "summary": "2年生後期の授業で行った内容。ブロックを置くことでディスプレイ上に道ができ、迷路を作ることができる。プレイヤーはPCの十字キーを使うことで迷路を探索することができる。",
+    "description": "2年生後期の授業で行った内容。ブロックを置くことでディスプレイ上に道ができ、迷路を作ることができる。プレイヤーはPCの十字キーを使うことで迷路を探索することができる。\n\nカメラによりブロック上部に貼り付けてあるマーカーを読み取ることでブロックの座標を読み取り、それを元にプログラムで処理しディスプレイに表示している。",
+    "youtubeEmbeds": [],
+    "sourceUrl": "https://shimizukaito.github.io/works/works-Maze%20Generator.html"
+  },
+  {
+    "title": "富戸ブルー PR提案",
+    "slug": "works-furtoblue",
+    "year": "2020",
+    "dateDisplay": "2020.12",
+    "category": "富戸ブルー",
+    "cover": "assets/imported/works-furtoblue-cover.jpg",
+    "gallery": [
+      {
+        "src": "assets/imported/works-furtoblue-1.jpg",
+        "type": "image"
+      },
+      {
+        "src": "assets/imported/works-furtoblue-2.jpg",
+        "type": "image"
+      }
+    ],
+    "technologies": [
+      "HTML",
+      "Python",
+      "openCV",
+      "Processing"
+    ],
+    "summary": "2年生後期の授業で行った内容。静岡県伊東市にある地域ブランド「富戸ブルー」をプロモーションするために情報学部と国際コミュニケーションが協力して開発を行なった。",
+    "description": "2年生後期の授業で行った内容。静岡県伊東市にある地域ブランド「富戸ブルー」をプロモーションするために情報学部と国際コミュニケーションが協力して開発を行なった。\n\n15人が3チームに分かれてそれぞれ開発を行った。私のグループではウェブサイトを作成することでプロモーションを行った。\n\nゲームやアートなどを体験することができ、webサイトを通して第三者に富戸の魅力を伝えることができる。（Webサイトは現在非公開）",
+    "youtubeEmbeds": [],
+    "sourceUrl": "https://shimizukaito.github.io/works/works-FurtoBlue.html"
+  }
+]

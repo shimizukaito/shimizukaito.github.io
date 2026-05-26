@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mealody Plate | Shimizu Kaito</title>
+    <link rel="stylesheet" href="../styles.css?v=detail-layout-2" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="../index.html#top"><span class="brand-mark"><img src="../assets/astronaut.ico" alt="" /></span><span>Shimizu Kaito</span></a>
+      <nav class="nav" aria-label="主要ナビゲーション">
+        <a href="../index.html#works">Works</a>
+        <a href="../about.html#about">About</a>
+        <a href="../about.html#achievements">Achievements</a>
+        <a href="../index.html#contact">Contact</a>
+      </nav>
+    </header>
+    <main class="work-detail">
+      <a class="back-link" href="../index.html#works">← Worksへ戻る</a>
+      <section class="detail-hero">
+        <div class="detail-title">
+          <h1>Mealody Plate</h1>
+        </div>
+        <div class="detail-media">
+          <img class="detail-cover" src="../assets/imported/mealody-plate-1.png" alt="Mealody Plateの代表画像" />
+          <div class="detail-video" style="aspect-ratio: 560 / 315;"><iframe src="https://www.youtube.com/embed/ww6FJnAGZ5Q" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+          <a class="video-fallback" href="https://www.youtube.com/watch?v=ww6FJnAGZ5Q" target="_blank" rel="noreferrer">YouTubeで動画を開く</a>
+        </div>
+      </section>
+      <section class="detail-stack">
+        <div>
+          <p class="eyebrow">Technology</p>
+          <ul class="tech-list"><li>M5stack Basic</li><li>カラーセンサー</li><li>ESP-BOW</li><li>Pure Data</li></ul>
+        </div>
+        <div class="detail-description">
+          <p>本作品は、「食事と音楽を結びつけたら面白いのではないか」という発想から生まれた、食事を通じて音楽を生成するインタラクティブデバイスです.鑑賞者は料理を楽しみながら、同時にその料理から生まれる音楽を体験し、最終的に「音を食べる」という新しい感覚を味わうことができると考えています.</p>
+          <p>本作品のデバイスには4つのカラーセンサーが搭載されており、それぞれが料理の皿に反応します.各センサーはRGBの色情報を取得し、4台のM5Stackデバイスがそれを受信専用のM5Stackデバイスに送信します.この情報をProcessingを介してPureDataに伝えられ、音の生成に活用されます.</p>
+          <p>各カラーセンサーには異なる音色が割り当てられており、例えば金属的な音やハイハット的な音が再生されます.さらに、4つのセンサーから取得した色情報を周波数に変換し、和音として出力する仕組みも備えています.これにより、複数の皿を配置することで、より完成度の高い音楽が奏でられる設計になっています.（音楽はpatchstageに公開されているargarak氏の作品を参考にパッチを組みました）</p>
+          <p>鑑賞者が料理を食べると、その皿に対応する音が消え、徐々に音楽が減少していきます.4つの皿をすべて配置した状態が「完成された音楽」として提示され、食べる行為を通じて音楽が消費されていくという体験を提供します.</p>
+          <p>料理ごとに異なる色情報を取得するため、生成される音楽は毎回異なります.このため、鑑賞者は「その場限りの音楽」を楽しむことができ、さらに料理を食べることで音楽を消費するという新しい音楽体験が生まれると考えられます.</p>
+        </div>
+        <div class="detail-gallery-shell" aria-label="作品写真">
+          <div class="detail-gallery">
+            <img src="../assets/imported/mealody-plate-1.png" alt="Mealody Plateの記録写真" />
+            <img src="../assets/imported/mealody-plate-2.png" alt="Mealody Plateの記録写真" />
+            <img src="../assets/imported/mealody-plate-3.png" alt="Mealody Plateの記録写真" />
+            <img src="../assets/imported/mealody-plate-4.png" alt="Mealody Plateの記録写真" />
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer"><span>© 2026 Shimizu Kaito</span><button class="theme-toggle" type="button" aria-label="テーマを切り替える">◐</button></footer>
+    <script src="../script.js?v=detail-layout-2"></script>
+  </body>
+</html>

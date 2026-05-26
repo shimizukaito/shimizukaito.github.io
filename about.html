@@ -1,108 +1,180 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ShimizuKato - Profile &amp; about</title>
-  <link rel="stylesheet" href="css/style.css">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-XXXXXXXXXX');
-  </script>
-</head>
-<body>
-  <!-- ヘッダー / ナビゲーション -->
-    <header>
-      <div class="logo">
-        <a href="index.html">Shimizu Kaito</a>
-      </div>
-      <nav>
-        <ul>
-          <li><a href="index.html">HOME</a></li>
-          <li><a href="#works">WORKS</a></li>
-          <li><a href="about.html">ABOUT</a></li>
-          <!-- <li><a href="contact.html">CONTACT</a></li> -->
-        </ul>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About | Shimizu Kaito</title>
+    <meta
+      name="description"
+      content="清水海人のプロフィール、関心領域、制作・研究に関する情報をまとめています。"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html#top" aria-label="トップページへ">
+        <span class="brand-mark"><img src="assets/astronaut.ico" alt="" /></span>
+        <span>Shimizu Kaito</span>
+      </a>
+      <nav class="nav" aria-label="主要ナビゲーション">
+        <a href="index.html#works">Works</a>
+        <a href="about.html#about">About</a>
+        <a href="about.html#achievements">Achievements</a>
+        <a href="index.html#contact">Contact</a>
       </nav>
     </header>
 
-  <!-- メインコンテンツ -->
-  <main>
-    <!-- プロフィール セクション -->
-    <section class="profile">
-      <h2>About / プロフィール</h2>
-      <figure>
-        <img src="images/profile.jpg" alt="SHIMIZUKAITO">
-        <figcaption>Shimizu Kaito</figcaption>
-        <figcaption>清水　海人</figcaption>
-      </figure>
-      <p>機構、アクチュエータに興味があります。<br>
-        2000年生まれ、東京都福生市　明星大学大学大学院 修士課程修了。</p>
-    </section>
-
-    <!-- 学歴・経歴（CV）セクション -->
-    <section class="cv">
-      <h2>Curriculum Vitae</h2>
-      <ul>
-        <li><strong>学歴</strong>
-          <ul>
-            <li>2025年～　　　　明星大学大学院 情報学研究科 博士課程 在学</li>
-            <li>2023年～2024年 明星大学大学院 情報学研究科 修士課程 修了</li>
-            <li>2019年～2022年 明星大学 情報学部卒業</li>
+    <main>
+      <section class="section split page-section" id="about" aria-labelledby="about-title">
+        <div class="section-heading">
+          <h1 id="about-title">ABOUT</h1>
+          <div class="profile-card">
+            <img src="assets/profile.jpg" alt="清水海人のプロフィール写真" />
+            <h3>Shimizu Kaito</h3>
+            <p>清水 海人</p>
+            <div class="social-links" aria-label="SNSリンク">
+              <a href="https://www.instagram.com/s_kaito_410/" target="_blank" rel="noreferrer" aria-label="Instagramを開く">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <rect x="3" y="3" width="18" height="18" rx="5" />
+                  <circle cx="12" cy="12" r="4" />
+                  <circle cx="17.5" cy="6.5" r="1" />
+                </svg>
+              </a>
+              <a href="https://x.com/S_Kaito410" target="_blank" rel="noreferrer" aria-label="Xを開く">
+                <svg class="x-icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817-5.966 6.817H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231 5.45-6.231Zm-1.16 17.52h1.833L7.084 4.126H5.117L17.083 19.77Z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="about-panel">
+          <p>
+            機構、アクチュエータ、インタラクション、生成表現に関心を持って制作しています。
+            実装を単なる完成手段としてではなく、問いを観察するための方法として扱い、
+            プロトタイプを通じて体験の変化を確かめています。2000年生まれ、東京都福生市出身。
+            現在は明星大学大学院 情報学研究科 博士課程に在学しています。
+          </p>
+          <ul class="skill-list">
+            <li>p5.js</li>
+            <li>Creative Coding</li>
+            <li>Interaction Design</li>
+            <li>Research Prototype</li>
+            <li>Web Development</li>
+            <li>Media Art</li>
           </ul>
-        </li>
-        <!-- <li><strong>個展</strong>やってないです
-          <ul>
-            <li>20XX年 『展覧会タイトル』 会場名</li>
-            <li>20XX年 『展覧会タイトル』 会場名</li>
-          </ul>
-        </li>
-        <li><strong>グループ展</strong>
-          <ul>
-            <li>20XX年 『展覧会タイトル』 会場名</li>
-            <li>20XX年 『展覧会タイトル』 会場名</li>
-          </ul>
-        </li> -->
-        <!-- <li><strong>受賞歴</strong>
-          <ul>
-            <li>2023年 NICOGRAPH 2023  ポスター賞 受賞</li>
-            <li>2022年 明星大学情報学部卒研展  支援センター賞 受賞</li>
-          </ul>
-        </li> -->
-      </ul>
-    </section>
+        </div>
+      </section>
 
-     <section class="cv">
-      <h2>CONTACT</h2>
-      <ul>
-        <li><strong>Mail</strong>
-          <ul>
-            <li>kait.mij@gmail.com</li>
-          </ul>
-        </li>
+      <section class="section achievements" id="achievements" aria-labelledby="achievements-title">
+        <div class="section-heading">
+          <h1 id="achievements-title">ACHIEVEMENTS</h1>
+        </div>
 
-    </section>
+        <div class="achievement-sections">
+          <section class="achievement-section" aria-labelledby="presentations-title">
+            <h3 id="presentations-title">発表歴</h3>
+            <div class="achievement-table">
+              <article>
+                <time datetime="2025-12">2025.12</time>
+                <div>
+                  <p>"Emerflux9 : 2層液体を用いた水面ディスプレイの提案". 清水海人，尼岡利崇. NICOGRAPH 2025.（国内・デモ）</p>
+                  <p>"Steering: 他者の意思決定へ介入する社会構造の可視化". 田中咲弥，清水海人，菊池康太，尼岡利崇. NICOGRAPH 2025.（国内・ポスター）</p>
+                  <p>"HydroZen 鹿おどしを利用した飲量提示による熱中症対策システムの提案". 大橋架，清水海人，徳尾篤俊，石川翔太郎. NICOGRAPH 2025.（国内・ポスター）</p>
+                </div>
+              </article>
+              <article>
+                <time datetime="2024-03">2024.03</time>
+                <div>
+                  <p>"Twisted Band Display 紐と絆りを利用した情報提示手法の提案". 清水海人，尼岡利崇. 映像表現技術科学フォーラム 2024.（国内・口頭）</p>
+                  <p>"太陽光を用いた視覚表現手法の提案". 熊田晴香，兼松美羽，清水海人，菊池康太，尼岡利崇. 映像表現技術科学フォーラム 2024.（国内・ポスター）</p>
+                </div>
+              </article>
+              <article>
+                <time datetime="2023-11">2023.11</time>
+                <p>"VOICE FLOWER: 想いを伝える花瓶型デバイス制作ワークショップ". 清水海人，圓山風夏，菊池康太，武富拓也，尼岡利崇. NICOGRAPH 2023.（国内・デモ）</p>
+              </article>
+              <article>
+                <time datetime="2023-06">2023.06</time>
+                <p>"Korekurai Device - Proposal For An Input Device Based On Body Scales And Gestures". Kaito Shimizu, Toshitaka Amaoka. NICOGRAPH International 2023.（国際・ポスター）</p>
+              </article>
+              <article>
+                <time datetime="2022-11">2022.11</time>
+                <p>"これくらいモデラー：身体尺度とジェスチャを用いたモデリング手法の提案". 清水海人，尼岡利崇. NICOGRAPH 2022.（国内・ポスター）</p>
+              </article>
+              <article>
+                <time datetime="2022-06">2022.06</time>
+                <p>"Ywine - Proposal to produce a cafe in the COVID-19 crisis". Kaito Shimizu, Toshitaka Amaoka. NICOGRAPH International 2022.（国際・ポスター）</p>
+              </article>
+            </div>
+          </section>
 
-  </main>
+          <section class="achievement-section" aria-labelledby="awards-title">
+            <h3 id="awards-title">受賞</h3>
+            <div class="achievement-table">
+              <article>
+                <time datetime="2025-11">2025.11</time>
+                <p>NICOGRAPH 2025　デモ展示賞</p>
+              </article>
+              <article>
+                <time datetime="2023-11">2023.11</time>
+                <p>NICOGRAPH 2023　ポスター・展示賞</p>
+              </article>
+              <article>
+                <time datetime="2021-03">2021.03</time>
+                <p>明星大学情報学部　卒研展　支援センター賞</p>
+              </article>
+            </div>
+          </section>
 
-  <!-- フッター -->
-  <footer>
-    <nav>
-      <ul>
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="index.html#works">WORKS</a></li>
-        <li><a href="about.html">ABOUT</a></li>
-        <!-- <li><a href="contact.html">CONTACT</a></li> -->
-      </ul>
-    </nav>
-    <p>© 2025 Shimizu Kaito</p>
-  </footer>
+          <section class="achievement-section" aria-labelledby="translation-title">
+            <h3 id="translation-title">翻訳</h3>
+            <div class="achievement-table">
+              <article>
+                <time datetime="">公開予定</time>
+                <p>p5.js Web Editorおよびml5.js公式ウェブサイトの日本語翻訳に協力。</p>
+              </article>
+            </div>
+          </section>
 
-  <!-- JavaScript の読み込み -->
-  <script src="js/script.js"></script>
-</body>
+          <section class="achievement-section" aria-labelledby="exhibitions-title">
+            <h3 id="exhibitions-title">展示歴</h3>
+            <div class="achievement-table">
+              <article>
+                <time datetime="2026-02">2026.02</time>
+                <p>"AI / 愛 と創造"　『創発展2026』｜東京</p>
+              </article>
+              <article>
+                <time datetime="2025-10">2025.10</time>
+                <p>"空間を繋ぐループゴールドバーグマシン"　『Maker Faire Tokyo 2025』　東京ビッグサイト　西4ホール｜東京</p>
+              </article>
+              <article>
+                <time datetime="2025-02">2025.02</time>
+                <p>"LiftableForm"　『創発展2025』　パルテノン多摩市民ホール｜東京</p>
+              </article>
+              <article>
+                <time datetime="2024-07">2024.07</time>
+                <p>"MEISEI Clossing" / "Highly Explosive"　『Show All Things Show』　ITP Camp 2024｜New York</p>
+              </article>
+              <article>
+                <time datetime="2024-03">2024.03</time>
+                <p>"Connecting Past Space"　『モノの移り変わり』　FILTER gallery｜東京</p>
+              </article>
+              <article>
+                <time datetime="2023-08">2023.08</time>
+                <p>"SnowFlake" / "Sounds Drop"　『明星大学オープンキャンパス』　明星大学｜東京</p>
+              </article>
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>© 2026 Shimizu Kaito</span>
+      <button class="theme-toggle" type="button" aria-label="テーマを切り替える">◐</button>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>

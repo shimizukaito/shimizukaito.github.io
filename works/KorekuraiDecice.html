@@ -1,112 +1,64 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-  <title>Shimizu Kaito</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link rel="shortcut icon" href="../images/favicon.ico">
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-XXXXXXXXXX');
-  </script>
-</head>
-<body>
-
-  <header>
-    <div class="logo">
-      <a href="../index.html">Shimizu Kaito</a>
-    </div>
-    <nav>
-      <ul>
-        <li><a href="../index.html">HOME</a></li>
-        <li><a href="../index.html#works">WORKS</a></li>
-        <li><a href="../about.html">ABOUT</a></li>
-        <!-- <li><a href="../contact.html">Contact</a></li> -->
-      </ul>
-    </nav>
-  </header>
-
-  <div class="works-containner">
-    <div class="works-name">これくらいデバイス</div>
-
-    <div class="works-img"><img src="img/korekurai/korekurai.jpg" alt="" /></div>
-    <div class="works-img">
-      <img src="img/korekurai/Invader.jpg" alt="" />
-      <img src="img/korekurai/Nessie Hand.jpg" alt="" />
-      <img src="img/korekurai/Nessie.jpg" alt="" />
-    </div>
-
-    <div class="works-technology">
-      <div class="tag">- M5stickC Plus</div>
-      <div class="tag">- Processing </div>
-      <div class="tag">- 3Dプリンター </div>
-      <div class="tag">- 赤外線距離センサー </div>
-      <div class="tag">- ジャイロセンサー</div>
-    </div>
-
-    <hr width = "80%">
-
-    <div class="works-info">
-
-
-      メディア学者マーシャル・マクルーハンの言葉「数は触覚の拡張であり、身体的な起源を持つ」から着想を得て、
-      単位によって失われつつある数の身体性を取り戻す装置「これくらいデバイス」を制作した。
-      <br>
-      現代では、身体を基準とした尺度（尺、歩、手幅など）を使う機会が減り、
-      グローバルな標準単位による数値が日常に溶け込んでいる。<br>
-      本作品は、人間が行う「これくらい」というジェスチャーを入力として扱うことで、
-      人それぞれの身体感覚に基づいた直感的なスケール入力を可能にする。<br>
-      <br>
-      デバイスには距離センサーとIMU（慣性計測ユニット）を搭載し、
-      指同士の距離と傾きを計測する。<br>
-      さらに、アプリケーション例として、ジェスチャによって3Dモデリングを行うアプリケーション
-      「これくらいモデラー」を開発した。
-      利用者は「これくらい」のジェスチャを使用したモデリングが可能であり、椅子や恐竜、文字などの立体をモデリングすることができる。
-      この作品は、身体的な感覚とデジタル空間のスケールの再接続を目指している。
-      <br>
-      本研究は学部卒業研究として実施した。
-    </div>
-
-    <div class="works-url">
-      <p><a href="https://www.is.meisei-u.ac.jp/thesis/project/633" target="_blank" rel="noopener">明星大学 卒研展</a></p>　
-      <p><a href="https://art-science.org/nicograph/nico2022/" target="_blank" rel="noopener">NICOGRAPH 2022</a></p>　
-      <p><a href="https://www.art-science.org/nicograph/nicoint2022/" target="_blank" rel="noopener">NICOGRAPH International 2022</a></p>　
-      <p><a href="https://ieeexplore.ieee.org/document/10196767" target="_blank" rel="noopener">IEEE Xplore</a></p>
-    </div>
-
-
-    <div class="youtube">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/cIKnbaYKSzI" title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen></iframe>
-    </div>
-
-  </div>
-
-
-
-
-
-  </div>
-
-
-
-
-
-  <footer>
-    <p>&copy; 2023 Shimizu Kaito.</p>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
-
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>これくらいデバイス | Shimizu Kaito</title>
+    <link rel="stylesheet" href="../styles.css?v=detail-layout-2" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="../index.html#top"><span class="brand-mark"><img src="../assets/astronaut.ico" alt="" /></span><span>Shimizu Kaito</span></a>
+      <nav class="nav" aria-label="主要ナビゲーション">
+        <a href="../index.html#works">Works</a>
+        <a href="../about.html#about">About</a>
+        <a href="../about.html#achievements">Achievements</a>
+        <a href="../index.html#contact">Contact</a>
+      </nav>
+    </header>
+    <main class="work-detail">
+      <a class="back-link" href="../index.html#works">← Worksへ戻る</a>
+      <section class="detail-hero">
+        <div class="detail-title">
+          <h1>これくらいデバイス</h1>
+        </div>
+        <div class="detail-media">
+          <img class="detail-cover" src="../assets/imported/korekuraidecice-1.jpg" alt="これくらいデバイスの代表画像" />
+          <div class="detail-video" style="aspect-ratio: 560 / 315;"><iframe src="https://www.youtube.com/embed/cIKnbaYKSzI" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+          <a class="video-fallback" href="https://www.youtube.com/watch?v=cIKnbaYKSzI" target="_blank" rel="noreferrer">YouTubeで動画を開く</a>
+        </div>
+      </section>
+      <section class="detail-stack">
+        <div>
+          <p class="eyebrow">Technology</p>
+          <ul class="tech-list"><li>M5stickC Plus</li><li>Processing</li><li>3Dプリンター</li><li>赤外線距離センサー</li><li>ジャイロセンサー</li></ul>
+        </div>
+        <div class="detail-description">
+          <p>メディア学者マーシャル・マクルーハンの言葉「数は触覚の拡張であり、身体的な起源を持つ」から着想を得て、</p>
+          <p>単位によって失われつつある数の身体性を取り戻す装置「これくらいデバイス」を制作した。</p>
+          <p>現代では、身体を基準とした尺度（尺、歩、手幅など）を使う機会が減り、</p>
+          <p>グローバルな標準単位による数値が日常に溶け込んでいる。</p>
+          <p>本作品は、人間が行う「これくらい」というジェスチャーを入力として扱うことで、</p>
+          <p>人それぞれの身体感覚に基づいた直感的なスケール入力を可能にする。</p>
+          <p>デバイスには距離センサーとIMU（慣性計測ユニット）を搭載し、</p>
+          <p>指同士の距離と傾きを計測する。</p>
+          <p>さらに、アプリケーション例として、ジェスチャによって3Dモデリングを行うアプリケーション</p>
+          <p>「これくらいモデラー」を開発した。</p>
+          <p>利用者は「これくらい」のジェスチャを使用したモデリングが可能であり、椅子や恐竜、文字などの立体をモデリングすることができる。</p>
+          <p>この作品は、身体的な感覚とデジタル空間のスケールの再接続を目指している。</p>
+          <p>本研究は学部卒業研究として実施した。</p>
+        </div>
+        <div class="detail-gallery-shell" aria-label="作品写真">
+          <div class="detail-gallery">
+            <img src="../assets/imported/korekuraidecice-1.jpg" alt="これくらいデバイスの記録写真" />
+            <img src="../assets/imported/korekuraidecice-2.jpg" alt="これくらいデバイスの記録写真" />
+            <img src="../assets/imported/korekuraidecice-3.jpg" alt="これくらいデバイスの記録写真" />
+            <img src="../assets/imported/korekuraidecice-4.jpg" alt="これくらいデバイスの記録写真" />
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer"><span>© 2026 Shimizu Kaito</span><button class="theme-toggle" type="button" aria-label="テーマを切り替える">◐</button></footer>
+    <script src="../script.js?v=detail-layout-2"></script>
+  </body>
 </html>
