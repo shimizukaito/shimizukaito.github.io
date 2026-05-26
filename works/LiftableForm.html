@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>LiftableForm | Shimizu Kaito</title>
+    <link rel="stylesheet" href="../styles.css?v=detail-layout-2" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="../index.html#top"><span class="brand-mark"><img src="../assets/astronaut.ico" alt="" /></span><span>Shimizu Kaito</span></a>
+      <nav class="nav" aria-label="主要ナビゲーション">
+        <a href="../index.html#works">Works</a>
+        <a href="../about.html#about">About</a>
+        <a href="../about.html#achievements">Achievements</a>
+        <a href="../index.html#contact">Contact</a>
+      </nav>
+    </header>
+    <main class="work-detail">
+      <a class="back-link" href="../index.html#works">← Worksへ戻る</a>
+      <section class="detail-hero">
+        <div class="detail-title">
+          <h1>LiftableForm </h1>
+        </div>
+        <div class="detail-media">
+          <img class="detail-cover" src="../assets/imported/LiftableForm_持ち上げ.jpg" alt="Conecting Past Spaseの代表画像" />
+          <img class="detail-cover" src="../assets/imported/LiftableForm_大きさの描画.jpg" alt="Conecting Past Spaseの代表画像" />
+          <img class="detail-cover" src="../assets/imported/LiftableForm_押し込み.PNG" alt="Conecting Past Spaseの代表画像" />
+        </div>
+      </section>
+      <section class="detail-stack">
+        <div>
+          <ul class="tech-list">
+            <li>Arduino</li>
+            <li>Processing</li>
+            <li>サーボモータ</li>
+            <li>PWM制御</li>
+            <li>ラックアンドピニオン機構</li>
+            <li>多節リンク機構</li>
+            <li>ピンディスプレイ</li>
+            <li>形状変化インターフェース</li>
+            <li>9軸IMUセンサ</li>
+            <li>3Dプリント</li>
+          </ul>
+        </div>
+        <div class="detail-description">
+            <p>Liftable Formは，ユーザが手に持って操作できるピン型の形状変化インターフェースである。</p>
+
+            <p>従来のピン型形状変化ディスプレイは，机や床に固定して使用する据え置き型の構成が多く，ユーザがデバイス自体を持ち上げたり，対象物に押し当てたり，向きを変えたりする動作をインタラクションに取り込むことが難しかった。
+              形状変化インターフェースに可搬性を付与することで，デバイスを「持つ」「動かす」「回す」「対象物に押し当てる」といった身体的な操作を入力として扱うことを目指した。
+            Liftable Formは，5×10本のピンをサーボモータによって個別に制御し，物理的な凹凸形状として情報を提示する。ピンの高さは視覚的に確認できるだけでなく，手で触れることで触覚的にも知覚できる。</p>
+
+            <p>本研究では，2種類の機構を実装した。タイプAはラックアンドピニオン機構を用いたモデルであり，表裏2面に形状を提示できる構造を持つ。対象物にデバイスを押し当てることで形状を取得し，取得した形状を再びピンの凹凸として再現することができる。
+            タイプBは多節リンク機構を用いたモデルであり，大きなストロークを活かしたダイナミックな形状提示を行う。装置の方位を取得するセンサと組み合わせることで，デバイスの向きに応じて地形情報を切り替えるアプリケーションを実装した
+            アプリケーション例として，対象物の形状を取得・再現する形状スキャン，物体の形に合わせて支持面を変化させる可変トレー，装置の向きに応じて表示範囲が変化する地形情報の立体表示を制作した。</p>
+
+            <p>展示では，来場者が実際にデバイスを手に取り，ピンの動きや形状提示を体験した。アンケートと観察を通して，動作速度や形状の認識しやすさについて良好な評価が得られた一方で，さらなる軽量化や構造の改善が今後の課題として明らかになった。</p>
+            <p>Liftable Formは，形状変化インターフェースを固定された表示装置としてではなく，ユーザの身体動作と結びついた可搬型のメディア装置として捉え直す試みである。</p>
+</div>
+        <div class="detail-gallery-shell" aria-label="作品写真">
+          <div class="detail-gallery">
+            <img src="../assets/imported/LiftableForm_大きさの描画.jpg" alt="LiftableFormの記録写真" />
+            <img src="../assets/imported/LiftableForm_押し込み.PNG" alt="LiftableFormの記録写真" />
+            <img src="../assets/imported/LiftableForm_持ち上げ.jpg" alt="LiftableFormの記録写真" />
+            <img src="../assets/imported/LiftableForm_物体保持.PNG" alt="LiftableFormの記録写真" />
+            <img src="../assets/imported/LiftableForm_中身.jpg" alt="LiftableFormの記録写真" />
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer"><span>© 2026 Shimizu Kaito</span><button class="theme-toggle" type="button" aria-label="テーマを切り替える">◐</button></footer>
+    <script src="../script.js?v=detail-layout-2"></script>
+  </body>
+</html>
