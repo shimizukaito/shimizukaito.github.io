@@ -194,13 +194,13 @@ main {
   font-weight: 500;
   left: 50%;
   line-height: 1.1;
+  max-width: calc(100% - 32px);
   padding: clamp(14px, 2.1vw, 24px) clamp(22px, 3.5vw, 42px);
   pointer-events: none;
   position: absolute;
   text-align: center;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  white-space: nowrap;
+  top: clamp(16px, 3vw, 32px);
+  transform: translateX(-50%);
   z-index: 2;
 }
 
