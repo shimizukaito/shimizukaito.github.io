@@ -78,10 +78,16 @@ function detailTemplate(work) {
     .join("\n          ");
   const youtubeEmbeds = work.youtubeEmbeds
     .map(
-      (video, index) => `<div class="detail-video" style="aspect-ratio: ${video.width} / ${video.height};"><iframe src="${video.src}" title="${escapeHtml(work.title)}の動画${work.youtubeEmbeds.length > 1 ? ` ${index + 1}` : ""}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+      (video, index) => `<div class="detail-video" style="aspect-ratio: ${video.width} / ${video.height};"><iframe loading="lazy" src="${video.src}" title="${escapeHtml(work.title)}の動画${work.youtubeEmbeds.length > 1 ? ` ${index + 1}` : ""}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
           <a class="video-fallback" href="${video.watch}" target="_blank" rel="noreferrer">YouTubeで動画を開く</a>`
     )
     .join("\n          ");
+  const youtubePreconnect = work.youtubeEmbeds.length
+    ? `    <link rel="preconnect" href="https://www.youtube.com" />
+    <link rel="preconnect" href="https://www.google.com" />
+    <link rel="preconnect" href="https://s.ytimg.com" />
+`
+    : "";
   const gallery = work.gallery.map((media) => mediaTag(media, work.title)).join("\n            ");
 
   return `<!doctype html>
@@ -89,6 +95,7 @@ function detailTemplate(work) {
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+${youtubePreconnect}
     <title>${escapeHtml(work.title)} | Shimizu Kaito</title>
     <link rel="stylesheet" href="../styles.css?v=detail-layout-2" />
   </head>

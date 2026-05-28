@@ -178,10 +178,16 @@ function detailTemplate(work) {
   const videoEmbed = youtubeEmbeds
     .map((video, index) => {
       const title = video.title || `${work.title}の動画${youtubeEmbeds.length > 1 ? ` ${index + 1}` : ""}`;
-      return `<div class="detail-video" style="aspect-ratio: ${video.width} / ${video.height};"><iframe src="${video.src}" title="${title}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+      return `<div class="detail-video" style="aspect-ratio: ${video.width} / ${video.height};"><iframe loading="lazy" src="${video.src}" title="${title}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
           <a class="video-fallback" href="${youtubeWatchUrl(video.src)}" target="_blank" rel="noreferrer">YouTubeで動画を開く</a>`;
     })
     .join("\n          ");
+  const youtubePreconnect = youtubeEmbeds.length
+    ? `    <link rel="preconnect" href="https://www.youtube.com" />
+    <link rel="preconnect" href="https://www.google.com" />
+    <link rel="preconnect" href="https://s.ytimg.com" />
+`
+    : "";
   const paragraphs = work.description
     .split("\n\n")
     .map((paragraph) => `<p>${paragraph}</p>`)
@@ -192,6 +198,7 @@ function detailTemplate(work) {
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+${youtubePreconnect}
     <title>${work.title} | Shimizu Kaito</title>
     <link rel="stylesheet" href="../styles.css?v=detail-layout-2" />
   </head>

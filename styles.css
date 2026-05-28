@@ -165,7 +165,8 @@ main {
 
 .sketch-root {
   background: #111615;
-  min-height: min(680px, calc(100svh - 150px));
+  height: 100%;
+  min-height: inherit;
   position: relative;
 }
 
@@ -810,6 +811,7 @@ h3 {
     grid-template-columns: 1fr;
   }
 
+  .sketch-panel,
   .sketch-root {
     min-height: 430px;
   }
