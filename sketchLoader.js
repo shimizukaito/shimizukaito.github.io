@@ -476,16 +476,23 @@ function sketchF(p) {
 
 sketches.push({ kind: 'p5', name: 'bouncing-balls', sketch: sketchF });
 
-function sketchP5Editor(container) {
-  const frame = document.createElement('iframe');
-  frame.className = 'sketch-frame';
-  frame.title = 'p5 Editor sketch';
-  frame.src = 'p5-editor/index.html';
-  frame.loading = 'eager';
-  container.append(frame);
+function sketchP5EditorScene(sceneId) {
+  return function renderP5EditorScene(container) {
+    const frame = document.createElement('iframe');
+    frame.className = 'sketch-frame';
+    frame.title = `p5 Editor ${sceneId} sketch`;
+    frame.src = `p5-editor/index.html?scene=${encodeURIComponent(sceneId)}`;
+    frame.loading = 'eager';
+    container.append(frame);
+  };
 }
 
-sketches.push({ kind: 'iframe', name: 'p5-editor', sketch: sketchP5Editor });
+sketches.push({ kind: 'iframe', name: 'p5-editor-maze-tiles', sketch: sketchP5EditorScene('maze-tiles') });
+sketches.push({ kind: 'iframe', name: 'p5-editor-mondrian', sketch: sketchP5EditorScene('mondrian') });
+sketches.push({ kind: 'iframe', name: 'p5-editor-curl-triangles', sketch: sketchP5EditorScene('curl-triangles') });
+sketches.push({ kind: 'iframe', name: 'p5-editor-square-spiral', sketch: sketchP5EditorScene('square-spiral') });
+sketches.push({ kind: 'iframe', name: 'p5-editor-line-grid', sketch: sketchP5EditorScene('line-grid') });
+sketches.push({ kind: 'iframe', name: 'p5-editor-oil-walkers', sketch: sketchP5EditorScene('oil-walkers') });
 
 function sketchP5EditorEyes(container) {
   const frame = document.createElement('iframe');

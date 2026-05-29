@@ -14,6 +14,16 @@ let autoMode = true;         // 自動切替ON/OFF
 let autoIntervalMs = 30000;   // 8秒ごとに切替
 let nextAutoMs = 0;          // 次回切替予定時刻
 
+function sceneDefinitions() {
+  return [
+    { id: "maze-tiles", create: () => new SceneA() },
+    { id: "mondrian", create: () => new SceneB() },
+    { id: "curl-triangles", create: () => new SceneCurlTriangles() },
+    { id: "square-spiral", create: () => new SceneSquareSpiralPulse() },
+    { id: "line-grid", create: () => new SceneLinesOnlyGrid() },
+    { id: "oil-walkers", create: () => new SceneOilWalkers() },
+  ];
+}
 
 // =====================================================
 // setup
@@ -22,14 +32,13 @@ function setup() {
   createCanvas(windowWidth, windowHeight);
   pixelDensity(1);
 
-  scenes = [
-    new SceneA(),
-    new SceneB(),
-    new SceneCurlTriangles(),
-    new SceneSquareSpiralPulse(),
-    new SceneLinesOnlyGrid(),
-    new SceneOilWalkers(),
-  ];
+  const definitions = sceneDefinitions();
+  const requestedScene = new URLSearchParams(window.location.search).get("scene");
+  const selectedScene = definitions.find((scene) => scene.id === requestedScene);
+  scenes = selectedScene
+    ? [selectedScene.create()]
+    : definitions.map((scene) => scene.create());
+  autoMode = !selectedScene;
 
   scenes[current].enter();
 
