@@ -110,7 +110,7 @@ class SceneB extends SceneBase {
     this.segments = this.computeSegments(this.leaves);
 
     stroke(0);
-    strokeWeight(this.LINE_W);
+    strokeWeight(this.currentLineWeight());
     for (const s of this.segments) line(s.x1, s.y1, s.x2, s.y2);
 
     // outer border
@@ -150,7 +150,9 @@ class SceneB extends SceneBase {
     this.phase = "HOLD";
     this.phaseStartMs = millis();
 
-    const targetLeaves = int(random(this.TARGET_MIN, this.TARGET_MAX));
+    const isCompact = min(width, height) < 620;
+    const targetLeaves = int(random(isCompact ? 12 : this.TARGET_MIN, isCompact ? 18 : this.TARGET_MAX));
+    const minSplitSize = this.currentMinSplitSize();
 
     // grow by splitting leaves
     let safety = 0;
@@ -163,8 +165,8 @@ class SceneB extends SceneBase {
       if (!leaf) break;
 
       const r = leaf.rect;
-      const canV = r.w > this.MIN_SPLIT_SIZE * 2;
-      const canH = r.h > this.MIN_SPLIT_SIZE * 2;
+      const canV = r.w > minSplitSize * 2;
+      const canH = r.h > minSplitSize * 2;
       if (!canV && !canH) break;
 
       // spanning checks
@@ -202,6 +204,14 @@ class SceneB extends SceneBase {
     // children colors: independent
     node.a.colA = random(this.palette); node.a.colB = random(this.palette);
     node.b.colA = random(this.palette); node.b.colB = random(this.palette);
+  }
+
+  currentLineWeight() {
+    return constrain(min(width, height) * 0.018, 5, this.LINE_W);
+  }
+
+  currentMinSplitSize() {
+    return min(width, height) < 620 ? 62 : this.MIN_SPLIT_SIZE;
   }
 
   initTargets(node) {

@@ -5,6 +5,7 @@
 
 const sketches = [];
 const sketchContainerId = 'sketch-root';
+const portfolioBasePath = window.PORTFOLIO_BASE_PATH || '';
 function sketchContainer() { return document.getElementById(sketchContainerId); }
 function sketchWidth() { const el = sketchContainer(); return Math.max(320, Math.floor((el?.getBoundingClientRect().width || window.innerWidth))); }
 function sketchHeight() { const el = sketchContainer(); return Math.max(320, Math.floor((el?.getBoundingClientRect().height || window.innerHeight * 0.72))); }
@@ -481,7 +482,7 @@ function sketchP5EditorScene(sceneId) {
     const frame = document.createElement('iframe');
     frame.className = 'sketch-frame';
     frame.title = `p5 Editor ${sceneId} sketch`;
-    frame.src = `p5-editor/index.html?scene=${encodeURIComponent(sceneId)}`;
+    frame.src = `${portfolioBasePath}p5-editor/index.html?scene=${encodeURIComponent(sceneId)}`;
     frame.loading = 'eager';
     container.append(frame);
   };
@@ -498,7 +499,7 @@ function sketchP5EditorEyes(container) {
   const frame = document.createElement('iframe');
   frame.className = 'sketch-frame';
   frame.title = 'p5 Editor eye tiles sketch';
-  frame.src = 'p5-editor-eyes/index.html';
+  frame.src = `${portfolioBasePath}p5-editor-eyes/index.html`;
   frame.loading = 'eager';
   container.append(frame);
 }

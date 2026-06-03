@@ -33,6 +33,9 @@ class SceneOilWalkers extends SceneBase {
 
   onResize() {
     // 簡単運用：サイズ変わったらカバー状況だけ作り直し、粒子は中にクランプ
+    const isCompact = min(width, height) < 620;
+    this.R = constrain(min(width, height) * 0.032, 8, 15);
+    this.CELL = isCompact ? 6 : 8;
     this.initCoverageGrid();
     for (const p of this.ps) p.clampInside();
   }
@@ -76,6 +79,10 @@ class SceneOilWalkers extends SceneBase {
       ];
     }
 
+    const isCompact = min(width, height) < 620;
+    this.NUM = isCompact ? 180 : 300;
+    this.R = constrain(min(width, height) * 0.032, 8, 15);
+    this.CELL = isCompact ? 6 : 8;
     background(255);
     this.initCoverageGrid();
 

@@ -50,10 +50,13 @@ class SceneLinesOnlyGrid extends SceneBase {
   initGrid() {
     this.cells = [];
 
-    this.cols = max(1, floor(width / this.CELL_MIN_PX));
-    this.rows = max(1, floor(height / this.CELL_MIN_PX));
+    const isCompact = min(width, height) < 620;
+    const targetCell = isCompact ? 88 : this.CELL_MIN_PX;
+    this.cols = max(isCompact ? 3 : 1, floor(width / targetCell));
+    this.rows = max(isCompact ? 4 : 1, floor(height / targetCell));
 
     this.cellSize = min(width / this.cols, height / this.rows);
+    this.lineWeight = constrain(this.cellSize * 0.05, 2.5, 5);
 
     this.gridW = this.cellSize * this.cols;
     this.gridH = this.cellSize * this.rows;

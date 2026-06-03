@@ -21,7 +21,10 @@ class SceneCurlTriangles extends SceneBase {
     this.ps = [];
 
     this.cols = 16;
+    this.rows = 16;
     this.unit = 0;
+    this.offsetX = 0;
+    this.offsetY = 0;
   }
 
   enter() {
@@ -33,14 +36,18 @@ class SceneCurlTriangles extends SceneBase {
       color(250, 222, 168),
     ];
 
-    this.unit = width / this.cols;
+    this.configureLayout();
 
     this.ps = [];
-    for (let i = 0; i < this.NUM; i++) {
+    for (let i = 0; i < this.currentParticleCount(); i++) {
       this.ps.push(new CurlParticle(this));
     }
 
     background(255);
+  }
+
+  onResize() {
+    this.enter();
   }
 
   draw() {
@@ -63,11 +70,24 @@ class SceneCurlTriangles extends SceneBase {
   drawGridPoints() {
     stroke(0);
     strokeWeight(2);
-    for (let j = 0; j < this.cols; j++) {
+    for (let j = 0; j < this.rows; j++) {
       for (let i = 0; i < this.cols; i++) {
-        point((i + 0.5) * this.unit, (j + 0.5) * this.unit);
+        point(this.offsetX + (i + 0.5) * this.unit, this.offsetY + (j + 0.5) * this.unit);
       }
     }
+  }
+
+  configureLayout() {
+    const isCompact = min(width, height) < 620;
+    this.cols = isCompact ? 12 : 16;
+    this.rows = max(this.cols, ceil(height / (width / this.cols)));
+    this.unit = min(width / this.cols, height / this.rows);
+    this.offsetX = (width - this.cols * this.unit) / 2;
+    this.offsetY = (height - this.rows * this.unit) / 2;
+  }
+
+  currentParticleCount() {
+    return min(width, height) < 620 ? 320 : this.NUM;
   }
 }
 
@@ -102,7 +122,8 @@ class CurlParticle {
     this.vel = p5.Vector.random2D();
     this.velTarget.set(0, 0);
 
-    this.baseSize = random(20.0, 30.0);
+    const compactScale = min(width, height) < 620 ? 0.68 : 1;
+    this.baseSize = random(20.0, 30.0) * compactScale;
     this.maxLife = int(random(220, 420));
     this.life = this.maxLife;
 

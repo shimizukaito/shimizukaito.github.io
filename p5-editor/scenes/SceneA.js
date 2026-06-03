@@ -100,7 +100,7 @@ class SceneA extends SceneBase {
 //     text(`speed: ${Math.round(this.speedPx)} px/s (1/2)`, 10, 54);
 //     text(`phase: ${this.cyclePhase}`, 10, 72);
 
-//     pop();
+    pop();
   }
 
   // =======================================================
@@ -110,8 +110,10 @@ class SceneA extends SceneBase {
   buildTiles() {
     this.sims = [];
 
-    this.cols = max(1, floor(width / this.desiredTile));
-    this.rows = max(1, floor(height / this.desiredTile));
+    const isCompact = min(width, height) < 620;
+    const targetTile = isCompact ? 132 : this.desiredTile;
+    this.cols = max(isCompact ? 2 : 1, floor(width / targetTile));
+    this.rows = max(isCompact ? 3 : 1, floor(height / targetTile));
 
     this.tileSize = min(width / this.cols, height / this.rows);
 

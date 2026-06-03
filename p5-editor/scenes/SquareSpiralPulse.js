@@ -68,7 +68,7 @@ class SceneSquareSpiralPulse extends SceneBase {
     // 3) このSceneで必要なスタイルを毎フレーム強制
     stroke(this.strokeCol);
     noFill();
-    strokeWeight(6);
+    strokeWeight(constrain(min(width, height) * 0.012, 3.5, 6));
     strokeJoin(ROUND);
     strokeCap(ROUND);
 
@@ -159,9 +159,11 @@ class SceneSquareSpiralPulse extends SceneBase {
   // ==============================
 
   rebuildSpiral() {
-    const targetDiameter = height * 0.5;
+    const targetDiameter = min(width, height) * 0.52;
     this.startRadius = targetDiameter / 2;
     this.endRadius = this.startRadius * this.END_RADIUS_RATIO;
+    this.AMP_MIN = min(width, height) < 620 ? 28 : 50;
+    this.AMP_MAX = min(width, height) < 620 ? 80 : 150;
 
     this.spiral = [];
     for (let i = 0; i < this.NUM_POINTS; i++) {

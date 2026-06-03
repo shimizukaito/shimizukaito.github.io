@@ -143,6 +143,39 @@ canvas {
   color: var(--text);
 }
 
+.language-switch {
+  align-items: center;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  display: inline-grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 3px;
+  width: 78px;
+}
+
+.language-switch span {
+  align-items: center;
+  border-radius: 999px;
+  color: var(--muted);
+  display: flex;
+  font-size: 12px;
+  font-weight: 800;
+  justify-content: center;
+  line-height: 1;
+  min-height: 28px;
+  padding: 0 9px;
+}
+
+.language-switch::after {
+  display: none;
+}
+
+.language-switch span.is-active {
+  background: var(--text);
+  color: var(--bg);
+}
+
 main {
   overflow: hidden;
 }
@@ -769,6 +802,55 @@ h3 {
   animation-delay: -6s;
 }
 
+.is-zoomable {
+  cursor: zoom-in;
+}
+
+.image-lightbox {
+  align-items: center;
+  background: rgba(17, 22, 21, 0.88);
+  display: flex;
+  inset: 0;
+  justify-content: center;
+  padding: clamp(18px, 4vw, 48px);
+  position: fixed;
+  z-index: 50;
+}
+
+.image-lightbox[hidden] {
+  display: none;
+}
+
+.image-lightbox img {
+  border-radius: 8px;
+  max-height: 92vh;
+  max-width: 92vw;
+  object-fit: contain;
+  width: auto;
+}
+
+.image-lightbox-close {
+  align-items: center;
+  background: var(--surface-strong);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--text);
+  cursor: pointer;
+  display: flex;
+  font-size: 28px;
+  height: 44px;
+  justify-content: center;
+  line-height: 1;
+  position: fixed;
+  right: clamp(14px, 3vw, 30px);
+  top: clamp(14px, 3vw, 30px);
+  width: 44px;
+}
+
+body.lightbox-open {
+  overflow: hidden;
+}
+
 @keyframes slow-photo-rotate {
   from {
     transform: rotate(-1.15deg);
@@ -823,12 +905,15 @@ h3 {
 
 @media (max-width: 720px) {
   .site-header {
-    align-items: flex-start;
-    flex-direction: column;
+    gap: 12px;
+    padding: 12px 14px;
   }
 
   .nav {
-    justify-content: flex-start;
+    flex-wrap: nowrap;
+    font-size: 13px;
+    gap: clamp(7px, 2vw, 12px);
+    justify-content: flex-end;
   }
 
   .work-grid {
@@ -856,13 +941,37 @@ h3 {
 }
 
 @media (max-width: 520px) {
-  .brand,
+  .brand {
+    font-size: 0;
+    gap: 0;
+    width: auto;
+  }
+
+  .brand-mark {
+    height: 34px;
+    width: 34px;
+  }
+
   .button {
     width: 100%;
   }
 
   .nav {
-    width: 100%;
+    width: auto;
+  }
+
+  .nav a {
+    padding-bottom: 2px;
+  }
+
+  .language-switch {
+    width: 62px;
+  }
+
+  .language-switch span {
+    font-size: 11px;
+    min-height: 24px;
+    padding: 0 6px;
   }
 
   h1 {
