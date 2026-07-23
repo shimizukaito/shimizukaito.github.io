@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="水と油の二層液体構造を用い、液面上に有機的なピクセル表現を生成するサーフェスディスプレイEmerFlux。" />
+    <title>EmerFlux | Shimizu Kaito</title>
+    <link rel="stylesheet" href="../styles.css?v=detail-layout-2" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="../index.html#top"><span class="brand-mark"><img src="../assets/astronaut.ico" alt="" /></span><span>Shimizu Kaito</span></a>
+      <nav class="nav" aria-label="主要ナビゲーション">
+        <a href="../index.html#works">Works</a>
+        <a href="../about.html#about">About</a>
+        <a href="../about.html#achievements">Achievements</a>
+        <a href="../index.html#contact">Contact</a>
+        <a class="language-switch" href="../en/works/emerflux.html" aria-label="Switch language to EN">
+          <span class="is-active">JP</span><span>EN</span>
+        </a>
+      </nav>
+    </header>
+    <main class="work-detail">
+      <a class="back-link" href="../index.html#works">← Worksへ戻る</a>
+      <section class="detail-hero">
+        <div class="detail-title"><h1>EmerFlux</h1></div>
+        <div class="detail-media">
+          <img class="detail-cover" src="../assets/imported/emerflux-cover.png" alt="液面上に現れるEmerFluxの白い液体ピクセル" />
+        </div>
+      </section>
+      <section class="detail-stack">
+        <div>
+          <ul class="tech-list">
+            <li>Liquid Surface Display</li>
+            <li>Water / Oil Interface</li>
+            <li>11 × 11 Pixel Array</li>
+            <li>121 Submersible Pumps</li>
+            <li>Physical Computing</li>
+          </ul>
+        </div>
+        <div class="detail-description">
+          <p>EmerFluxは、水と油の混ざり合わない二層液体構造を用いて、液面上に白い隆起ピクセルを提示するサーフェスディスプレイです。</p>
+          <p>黒く着色した油の下に白く着色した水を配置し、下層の水をポンプで局所的に押し上げることで、黒い液面から高いコントラストを持つ白いピクセルを出現させます。ポンプを停止すると隆起は液面下へ戻り、ピクセルは滑らかに消えていきます。</p>
+          <p>11 × 11に配置した121個の水中ポンプを独立制御することで、文字やアイコン、動的なパターンを液面上に表示できます。隣接するピクセル同士を結合させることで、点だけでなく線や面のような連続した液体表現も生成します。</p>
+          <p>液体が持つ揺らぎや連続的な形態変化を情報提示に取り込み、計算による制御と物理現象が液体の境界面上で共存する新しいディスプレイの可能性を探っています。</p>
+          <p>本作品は、2026年7月19日から23日にロサンゼルスで開催のSIGGRAPH Emerging Technologies ’26にて、卓上型の液体サーフェス展示として発表しました。</p>
+          <p><a href="https://doi.org/10.1145/3799826.3812426" target="_blank" rel="noreferrer">論文情報を見る（DOI）</a></p>
+        </div>
+        <div class="detail-gallery-shell" aria-label="作品写真">
+          <div class="detail-gallery">
+            <img src="../assets/imported/emerflux-pixel-array.png" alt="11 × 11配列上に表示された複数の白い液体ピクセル" />
+            <img src="../assets/imported/emerflux-pixel-cluster.png" alt="複数のピクセルが結合して面を形成する様子" />
+            <img src="../assets/imported/emerflux-connected-pixels.png" alt="二つの液体ピクセルが結合して線状になる様子" />
+            <img src="../assets/imported/emerflux-single-pixel.png" alt="黒い液面上に現れた単一の白いピクセル" />
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer"><span>© 2026 Shimizu Kaito</span><button class="theme-toggle" type="button" aria-label="テーマを切り替える">◐</button></footer>
+    <script src="../script.js?v=detail-layout-2"></script>
+  </body>
+</html>
