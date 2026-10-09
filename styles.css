@@ -227,26 +227,10 @@ main {
   width: 100%;
 }
 
-.sketch-title {
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
-  background: rgba(255, 255, 255, 0.68);
-  border: 1px solid rgba(255, 255, 255, 0.72);
-  border-radius: 8px;
-  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.16);
-  color: #111615;
-  font-size: clamp(22px, 3.2vw, 42px);
-  font-weight: 500;
-  left: 50%;
-  line-height: 1.1;
-  max-width: calc(100% - 32px);
-  padding: clamp(14px, 2.1vw, 24px) clamp(22px, 3.5vw, 42px);
-  pointer-events: none;
-  position: absolute;
-  text-align: center;
-  top: clamp(16px, 3vw, 32px);
-  transform: translateX(-50%);
-  z-index: 2;
+@media (pointer: coarse) {
+  .sketch-root {
+    pointer-events: none;
+  }
 }
 
 .eyebrow,

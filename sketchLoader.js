@@ -477,6 +477,19 @@ function sketchF(p) {
 
 sketches.push({ kind: 'p5', name: 'bouncing-balls', sketch: sketchF });
 
+function forwardSketchWheel(frame) {
+  frame.addEventListener('load', () => {
+    frame.contentWindow.addEventListener('wheel', (event) => {
+      if (event.ctrlKey) return;
+      event.preventDefault();
+      event.stopImmediatePropagation();
+      const scale = event.deltaMode === WheelEvent.DOM_DELTA_LINE ? 16
+        : event.deltaMode === WheelEvent.DOM_DELTA_PAGE ? window.innerHeight : 1;
+      window.scrollBy({ top: event.deltaY * scale, left: event.deltaX * scale, behavior: 'instant' });
+    }, { capture: true, passive: false });
+  });
+}
+
 function sketchP5EditorScene(sceneId) {
   return function renderP5EditorScene(container) {
     const frame = document.createElement('iframe');
@@ -484,6 +497,7 @@ function sketchP5EditorScene(sceneId) {
     frame.title = `p5 Editor ${sceneId} sketch`;
     frame.src = `${portfolioBasePath}p5-editor/index.html?scene=${encodeURIComponent(sceneId)}`;
     frame.loading = 'eager';
+    forwardSketchWheel(frame);
     container.append(frame);
   };
 }
@@ -501,6 +515,7 @@ function sketchP5EditorEyes(container) {
   frame.title = 'p5 Editor eye tiles sketch';
   frame.src = `${portfolioBasePath}p5-editor-eyes/index.html`;
   frame.loading = 'eager';
+  forwardSketchWheel(frame);
   container.append(frame);
 }
 
