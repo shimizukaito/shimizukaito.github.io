@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="ColorFlow adds color variation to EmerFlux liquid pixels by controlling the flow of two differently colored liquids." />
+    <title>ColorFlow | Shimizu Kaito</title>
+    <link rel="stylesheet" href="../../styles.css?v=colorflow-1" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="../index.html#top"><span class="brand-mark"><img src="../../assets/astronaut.ico" alt="" /></span><span>Shimizu Kaito</span></a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="../index.html#works">Works</a>
+        <a href="../about.html#about">About</a>
+        <a href="../about.html#achievements">Achievements</a>
+        <a href="../index.html#contact">Contact</a>
+        <a class="language-switch" href="../../works/colorflow.html" aria-label="Switch language to JP">
+          <span>JP</span><span class="is-active">EN</span>
+        </a>
+      </nav>
+    </header>
+    <main class="work-detail">
+      <a class="back-link" href="../index.html#works">← Back to Works</a>
+      <section class="detail-hero">
+        <div class="detail-title"><h1>ColorFlow</h1></div>
+        <div class="detail-media">
+          <img class="detail-cover" src="../../assets/imported/colorflow-device.png" alt="ColorFlow prototype with two colored-liquid reservoirs, pumps, and a central display tank" />
+        </div>
+      </section>
+      <section class="detail-stack">
+        <div>
+          <ul class="tech-list">
+            <li>Liquid Surface Display</li>
+            <li>Color Mixing</li>
+            <li>Two-Pump Flow Control</li>
+            <li>Water / Oil Interface</li>
+            <li>Arduino Mega</li>
+          </ul>
+        </div>
+        <div class="detail-description">
+          <p>ColorFlow extends <a href="emerflux.html">EmerFlux</a> by adding color to its white liquid pixels. It feeds differently colored liquids into one pixel to create changing colors on a black liquid surface.</p>
+          <p>Two pumps send colored liquids through a T-shaped junction into a single nozzle, which pushes the liquid into the display tank. Adjusting the pumps' flow-rate ratio changes the proportion and mixing of colors within the pixel. A third pump maintains the water level in the display tank.</p>
+          <p>In the single-pixel prototype, black and white liquids at 50% PVA concentration remained visibly separated. Red and blue liquids at 25% PVA concentration mixed, changing color continuously with the pump ratio. The results show different modes of color expression at different liquid viscosities. Extending the method to an array of pixels remains future work.</p>
+          <p>The research was presented as a poster at NICOGRAPH International 2026 and received the <a href="https://www.is.meisei-u.ac.jp/news/2959/" target="_blank" rel="noreferrer">Best Poster Presentation Award</a>.</p>
+          <p><a href="../../assets/papers/colorflow-nicograph-international-2026.pdf" target="_blank" rel="noreferrer">Kaito Shimizu and Toshitaka Amaoka. 2026. ColorFlow: An Approach to Colorized Pixel Representation in EmerFlux. In <cite>NICOGRAPH International 2026</cite> (Poster).</a></p>
+        </div>
+        <div class="detail-gallery-shell" aria-label="ColorFlow results and system design">
+          <div class="detail-gallery colorflow-gallery">
+            <figure>
+              <img src="../../assets/imported/colorflow-results.png" alt="Liquid pixel colors at different PVA concentrations and pump flow-rate ratios" loading="lazy" />
+            </figure>
+            <figure>
+              <img src="../../assets/imported/colorflow-system.png" alt="Diagram of two colored liquids merging into a nozzle and rising through a black oil surface" loading="lazy" />
+            </figure>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer"><span>© 2026 Shimizu Kaito</span><button class="theme-toggle" type="button" aria-label="Toggle theme">◐</button></footer>
+    <script src="../../script.js?v=detail-layout-2"></script>
+  </body>
+</html>

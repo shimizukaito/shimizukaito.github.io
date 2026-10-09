@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="ColorFlowは、2色の液体の流量を制御し、EmerFluxの液体ピクセルに色の変化を加える研究です。" />
+    <title>ColorFlow | Shimizu Kaito</title>
+    <link rel="stylesheet" href="../styles.css?v=colorflow-1" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="../index.html#top"><span class="brand-mark"><img src="../assets/astronaut.ico" alt="" /></span><span>Shimizu Kaito</span></a>
+      <nav class="nav" aria-label="主要ナビゲーション">
+        <a href="../index.html#works">Works</a>
+        <a href="../about.html#about">About</a>
+        <a href="../about.html#achievements">Achievements</a>
+        <a href="../index.html#contact">Contact</a>
+        <a class="language-switch" href="../en/works/colorflow.html" aria-label="Switch language to EN">
+          <span class="is-active">JP</span><span>EN</span>
+        </a>
+      </nav>
+    </header>
+    <main class="work-detail">
+      <a class="back-link" href="../index.html#works">← Worksへ戻る</a>
+      <section class="detail-hero">
+        <div class="detail-title"><h1>ColorFlow</h1></div>
+        <div class="detail-media">
+          <img class="detail-cover" src="../assets/imported/colorflow-device.png" alt="2色の液体タンク、ポンプ、中央の表示槽からなるColorFlowの試作装置" />
+        </div>
+      </section>
+      <section class="detail-stack">
+        <div>
+          <ul class="tech-list">
+            <li>Liquid Surface Display</li>
+            <li>Color Mixing</li>
+            <li>Two-Pump Flow Control</li>
+            <li>Water / Oil Interface</li>
+            <li>Arduino Mega</li>
+          </ul>
+        </div>
+        <div class="detail-description">
+          <p>ColorFlowは、<a href="emerflux.html">EmerFlux</a>の白い液体ピクセルに色の表現を加える研究です。異なる色の液体を1つのピクセルに送り込み、黒い液面上で色が変化する表現を目指しました。</p>
+          <p>2台のポンプから送られる液体をT字型の管で合流させ、1つのノズルから表示槽へ押し上げます。それぞれのポンプの流量比を変えることで、ピクセル内の色の割合や混ざり方を制御します。別のポンプで表示槽の水位を保ちます。</p>
+          <p>試作した単一ピクセルで、PVA濃度50%の黒と白の液体は分かれたまま現れ、PVA濃度25%の赤と青の液体は混ざって流量比に応じて色が連続的に変化しました。液体の粘度によって異なる色の表現ができることを示しています。複数ピクセルへの拡張は今後の課題です。</p>
+          <p>本研究はNICOGRAPH International 2026でポスター発表し、<a href="https://www.is.meisei-u.ac.jp/news/2959/" target="_blank" rel="noreferrer">Best Poster Presentation Award</a>を受賞しました。</p>
+          <p><a href="../assets/papers/colorflow-nicograph-international-2026.pdf" target="_blank" rel="noreferrer">Kaito Shimizu and Toshitaka Amaoka. 2026. ColorFlow: An Approach to Colorized Pixel Representation in EmerFlux. In <cite>NICOGRAPH International 2026</cite> (Poster).</a></p>
+        </div>
+        <div class="detail-gallery-shell" aria-label="ColorFlowの実験結果と装置構成">
+          <div class="detail-gallery colorflow-gallery">
+            <figure>
+              <img src="../assets/imported/colorflow-results.png" alt="PVA濃度とポンプの流量比を変えたときの液体ピクセルの色の変化" loading="lazy" />
+            </figure>
+            <figure>
+              <img src="../assets/imported/colorflow-system.png" alt="2色の液体をポンプで合流させ、黒い油の液面に押し上げる装置構成図" loading="lazy" />
+            </figure>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer"><span>© 2026 Shimizu Kaito</span><button class="theme-toggle" type="button" aria-label="テーマを切り替える">◐</button></footer>
+    <script src="../script.js?v=detail-layout-2"></script>
+  </body>
+</html>

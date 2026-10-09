@@ -227,6 +227,31 @@ main {
   width: 100%;
 }
 
+.sketch-title {
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.16);
+  color: #111615;
+  font-size: clamp(22px, 3.2vw, 42px);
+  font-weight: 700;
+  left: 50%;
+  line-height: 1.15;
+  margin: 0;
+  max-width: calc(100% - 32px);
+  padding: clamp(14px, 2.1vw, 24px) clamp(20px, 3.5vw, 42px);
+  pointer-events: none;
+  position: absolute;
+  text-align: center;
+  text-wrap: balance;
+  top: clamp(16px, 3vw, 32px);
+  transform: translateX(-50%);
+  width: max-content;
+  z-index: 2;
+}
+
 @media (pointer: coarse) {
   .sketch-root {
     pointer-events: none;
@@ -829,6 +854,26 @@ h3 {
 .detail-gallery img:nth-child(3n),
 .detail-gallery video:nth-child(3n) {
   animation-delay: -6s;
+}
+
+.colorflow-gallery {
+  grid-template-columns: minmax(0, 1fr);
+  justify-items: center;
+}
+
+.colorflow-gallery figure {
+  margin: 0;
+  width: 100%;
+}
+
+.colorflow-gallery figure:last-child {
+  max-width: 760px;
+}
+
+.colorflow-gallery img {
+  animation: none;
+  aspect-ratio: auto;
+  object-fit: contain;
 }
 
 .is-zoomable {
