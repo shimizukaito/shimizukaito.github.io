@@ -524,7 +524,18 @@ sketches.push({ kind: 'iframe', name: 'p5-editor-eyes', sketch: sketchP5EditorEy
 
 
 
-window.addEventListener('load', () => {
+function loadSketchScript(src) {
+  return new Promise((resolve, reject) => {
+    const script = document.createElement('script');
+    script.src = src;
+    script.async = true;
+    script.onload = resolve;
+    script.onerror = () => reject(new Error(`Unable to load sketch dependency: ${src}`));
+    document.head.append(script);
+  });
+}
+
+async function startSketch() {
   const container = sketchContainer();
   if (!container) return;
   container.innerHTML = '';
@@ -539,6 +550,35 @@ window.addEventListener('load', () => {
     return;
   }
 
-  if (!window.p5) return;
-  new window.p5(selected.sketch);
-});
+  try {
+    const dependencies = [];
+    if (!window.p5) {
+      dependencies.push(loadSketchScript('https://cdn.jsdelivr.net/npm/p5@1.9.4/lib/p5.min.js'));
+    }
+    if (selected.name === 'qr' && !window.qrcode) {
+      dependencies.push(loadSketchScript('https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js'));
+    }
+    await Promise.all(dependencies);
+    new window.p5(selected.sketch);
+  } catch (error) {
+    console.error('Sketch could not start:', error);
+    const message = document.createElement('p');
+    message.textContent = document.documentElement.lang === 'ja'
+      ? 'スケッチを読み込めませんでした。ページを再読み込みしてください。'
+      : 'The sketch could not load. Please reload the page.';
+    message.style.color = '#fff';
+    message.style.padding = '1rem';
+    container.append(message);
+  }
+}
+
+// Allow the initial page to paint, without waiting for every image to load.
+function scheduleSketch() {
+  requestAnimationFrame(() => setTimeout(startSketch, 0));
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', scheduleSketch, { once: true });
+} else {
+  scheduleSketch();
+}

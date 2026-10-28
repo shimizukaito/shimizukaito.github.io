@@ -351,6 +351,7 @@ h3 {
 }
 
 .work-card img {
+  height: auto;
   aspect-ratio: 1 / 0.78;
   background: var(--surface-strong);
   object-fit: cover;
