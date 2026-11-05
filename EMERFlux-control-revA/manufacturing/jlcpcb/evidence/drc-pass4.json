@@ -1,0 +1,460 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-11-03T20:31:25",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.8",
+    "schematic_parity": [],
+    "source": "EmerFlux-11ch-driver.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'EmerFlux' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント C1",
+                    "pos": {
+                        "x": 68.0,
+                        "y": 43.0
+                    },
+                    "uuid": "031bbf24-b389-4a67-8015-bf0cf7c91ad3"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'EmerFlux' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント U1",
+                    "pos": {
+                        "x": 17.62,
+                        "y": 25.62
+                    },
+                    "uuid": "06aea78f-ccc2-458f-abf4-11007668f2d4"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'EmerFlux' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント C3",
+                    "pos": {
+                        "x": 89.0,
+                        "y": 31.0
+                    },
+                    "uuid": "0b421869-9071-4996-8a94-d1de6beeb790"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'EmerFlux' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント J10",
+                    "pos": {
+                        "x": 81.8,
+                        "y": 6.0
+                    },
+                    "uuid": "2bf39e69-f5c7-46dc-b6ad-fab78d903e5a"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'EmerFlux' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント J1",
+                    "pos": {
+                        "x": 8.0,
+                        "y": 6.0
+                    },
+                    "uuid": "53664981-055f-4ab1-ab44-df2c329289b7"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'EmerFlux' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント J11",
+                    "pos": {
+                        "x": 90.0,
+                        "y": 6.0
+                    },
+                    "uuid": "55f6b6c8-a204-46aa-a937-aa72f5daae31"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'EmerFlux' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント U2",
+                    "pos": {
+                        "x": 65.0,
+                        "y": 25.62
+                    },
+                    "uuid": "571a2fdd-c408-440d-b44e-4514cd3004c7"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'EmerFlux' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント J4",
+                    "pos": {
+                        "x": 32.6,
+                        "y": 6.0
+                    },
+                    "uuid": "63d8c840-8ca0-47b2-bd8d-0ca1ba6a48e0"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'EmerFlux' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント J6",
+                    "pos": {
+                        "x": 49.0,
+                        "y": 6.0
+                    },
+                    "uuid": "6a14e106-b59a-4f38-b272-55db8bbf9f74"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'EmerFlux' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント J13",
+                    "pos": {
+                        "x": 85.0,
+                        "y": 45.0
+                    },
+                    "uuid": "70e9bfe2-61e6-4135-bccb-8848daaebda2"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'EmerFlux' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント J8",
+                    "pos": {
+                        "x": 65.4,
+                        "y": 6.0
+                    },
+                    "uuid": "71ff2b5b-b01b-4949-a956-3de7decbae60"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'EmerFlux' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント J9",
+                    "pos": {
+                        "x": 73.6,
+                        "y": 6.0
+                    },
+                    "uuid": "7c31089c-0ff7-4e45-9bd0-f897ee88d784"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'EmerFlux' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント J3",
+                    "pos": {
+                        "x": 24.4,
+                        "y": 6.0
+                    },
+                    "uuid": "8fdb4f43-1da5-4722-86ec-e0d2700a3e99"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'EmerFlux' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント J12",
+                    "pos": {
+                        "x": 34.0,
+                        "y": 43.0
+                    },
+                    "uuid": "a51759fc-c5c0-4c54-8228-efc2ac3cb707"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'EmerFlux' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント J2",
+                    "pos": {
+                        "x": 16.2,
+                        "y": 6.0
+                    },
+                    "uuid": "b6307615-8686-4629-aea4-93761dcffe11"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'EmerFlux' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント C2",
+                    "pos": {
+                        "x": 4.0,
+                        "y": 31.0
+                    },
+                    "uuid": "bb69097b-ec0c-4d3f-a3aa-41252ce70a98"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'EmerFlux' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント F1",
+                    "pos": {
+                        "x": 75.0,
+                        "y": 33.0
+                    },
+                    "uuid": "c406cb99-ebed-4d0d-afd4-5ae6ff72d13f"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'EmerFlux' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント J7",
+                    "pos": {
+                        "x": 57.2,
+                        "y": 6.0
+                    },
+                    "uuid": "c5b87e02-006e-41d8-98ac-77973635992c"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "現在の構成にはフットプリント ライブラリ 'EmerFlux' が含まれていません",
+            "items": [
+                {
+                    "description": "フットプリント J5",
+                    "pos": {
+                        "x": 40.8,
+                        "y": 6.0
+                    },
+                    "uuid": "e31dea41-0c44-48fa-8133-a09bb47ad307"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "円 of C1 、f.silkscreen 上",
+                    "pos": {
+                        "x": 68.0,
+                        "y": 43.0
+                    },
+                    "uuid": "613b9e70-4d3a-4fde-9da3-3d8b2b5b7655"
+                },
+                {
+                    "description": "C1 のフットプリント テキスト ( + )",
+                    "pos": {
+                        "x": 65.0,
+                        "y": 40.0
+                    },
+                    "uuid": "b52ca754-9c4e-4ae3-ad17-5f8398755b8a"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "J13 のフットプリント テキスト ( +12V   GND )",
+                    "pos": {
+                        "x": 87.54,
+                        "y": 33.9
+                    },
+                    "uuid": "15c50b32-aee5-409e-8ffa-35de7870a3ad"
+                },
+                {
+                    "description": "矩形 of F1 、f.silkscreen 上",
+                    "pos": {
+                        "x": 71.55,
+                        "y": 31.5
+                    },
+                    "uuid": "3e72f499-9409-48ed-b570-7dc264405bc1"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "矩形 of F1 、f.silkscreen 上",
+                    "pos": {
+                        "x": 71.55,
+                        "y": 31.5
+                    },
+                    "uuid": "3e72f499-9409-48ed-b570-7dc264405bc1"
+                },
+                {
+                    "description": "PTHパッド 1 [+12V_PROTECTED] (F1)",
+                    "pos": {
+                        "x": 75.0,
+                        "y": 33.0
+                    },
+                    "uuid": "00000000-0000-4000-8000-000000000073"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "矩形 of F1 、f.silkscreen 上",
+                    "pos": {
+                        "x": 71.55,
+                        "y": 31.5
+                    },
+                    "uuid": "3e72f499-9409-48ed-b570-7dc264405bc1"
+                },
+                {
+                    "description": "PTHパッド 2 [+12V_RAW] (F1)",
+                    "pos": {
+                        "x": 80.1,
+                        "y": 33.0
+                    },
+                    "uuid": "00000000-0000-4000-8000-000000000074"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "矩形 of J13 、f.silkscreen 上",
+                    "pos": {
+                        "x": 81.21,
+                        "y": 35.69
+                    },
+                    "uuid": "25d0c823-dba6-47f8-9761-110f41ae1798"
+                },
+                {
+                    "description": "PTHパッド 1 [+12V_RAW] (J13)",
+                    "pos": {
+                        "x": 85.0,
+                        "y": 37.38
+                    },
+                    "uuid": "58d4b494-8ebf-4f0b-b86b-50ac76931f8f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "矩形 of J13 、f.silkscreen 上",
+                    "pos": {
+                        "x": 81.21,
+                        "y": 35.69
+                    },
+                    "uuid": "25d0c823-dba6-47f8-9761-110f41ae1798"
+                },
+                {
+                    "description": "PTHパッド 2 [GND] (J13)",
+                    "pos": {
+                        "x": 90.08,
+                        "y": 37.38
+                    },
+                    "uuid": "595f82ff-0306-43fd-bb27-38d761643a08"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        }
+    ]
+}

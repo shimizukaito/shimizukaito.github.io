@@ -1,0 +1,14 @@
+Reference,Quantity,Value / Part,Akizuki code,Unit price JPY,Description
+U1-U2,2,TBD62783APG,110957,150,8ch source DMOS DIP18; split 6+5
+J1-J11,11,B2B-XH-A(LF)(SN),112247,10,Genuine JST XH 2P board header for pump outputs
+J12,1,B12B-XH-A (LF)(SN),113892,30,Genuine JST XH 12P board header for PCA9685 GND + PWM0-PWM10
+J12 housing,1,XHP-12,113900,25,Cable-side housing for PCA9685 signal harness
+J12 contacts,12,SXH-001T-P0.6,112265,2,Contacts for XHP-12; 100-pack allocation
+J13,1,WJ142V-5.08-02P-14G-00A,117002,40,15A push-in 12V terminal
+F1,1,MF-R300,112630,40,3A hold 6A trip 30V resettable fuse 5.1mm lead pitch
+C1,1,25PX470MEFC8X11.5,117883,20,470uF 25V 105C diameter8mm pitch3.5mm
+C2-C3,2,0.1uF 50V X7R radial ceramic,131527,8,2.54mm pitch; 20-pack price allocation rounded up
+U1-U2 sockets,2,2227-18-03,100008,22,Optional low-cost DIP18 socket
+Pump JST housing,11,XHP-2,112255,5,Pump cable side housing
+Pump JST contacts,22,SXH-001T-P0.6,112265,2,Contacts for pump XHP-2 housings; 100-pack allocation
+PCB,1,100x50mm 2-layer,-,-,1.6mm FR4; layout must replace old 1x12 pin header footprint with XH 12P

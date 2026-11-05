@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180mm" height="100mm" viewBox="0 0 180 100">
+  <style>text{font-family:Arial,sans-serif;font-size:3px}.outline{fill:none;stroke:#000;stroke-width:.4}.part{fill:none;stroke:#555;stroke-width:.25}.bank{fill:none;stroke:#999;stroke-width:.25;stroke-dasharray:2 1}</style>
+  <rect class="outline" x="0.5" y="0.5" width="179" height="99"/>
+  <circle class="part" cx="5" cy="5" r="1.6"/><circle class="part" cx="175" cy="5" r="1.6"/><circle class="part" cx="5" cy="95" r="1.6"/><circle class="part" cx="175" cy="95" r="1.6"/>
+  <rect class="bank" x="8" y="6" width="54" height="56"/><rect class="bank" x="63" y="6" width="54" height="56"/><rect class="bank" x="118" y="6" width="54" height="56"/>
+  <text x="35" y="11" text-anchor="middle">BANK A / ROW 0–3</text><text x="90" y="11" text-anchor="middle">BANK B / ROW 4–7</text><text x="145" y="11" text-anchor="middle">BANK C / ROW 8–10</text>
+  <g class="part">
+    <rect x="11" y="15" width="20" height="12"/><rect x="34" y="15" width="10" height="12"/>
+    <rect x="11" y="34" width="9" height="14"/><rect x="21" y="34" width="9" height="14"/><rect x="31" y="34" width="9" height="14"/><rect x="41" y="34" width="9" height="14"/><rect x="51" y="34" width="8" height="14"/>
+    <rect x="66" y="15" width="20" height="12"/><rect x="89" y="15" width="10" height="12"/>
+    <rect x="66" y="34" width="9" height="14"/><rect x="76" y="34" width="9" height="14"/><rect x="86" y="34" width="9" height="14"/><rect x="96" y="34" width="9" height="14"/><rect x="106" y="34" width="8" height="14"/>
+    <rect x="121" y="15" width="20" height="12"/><rect x="144" y="15" width="10" height="12"/>
+    <rect x="121" y="34" width="9" height="14"/><rect x="131" y="34" width="9" height="14"/><rect x="141" y="34" width="9" height="14"/><rect x="151" y="34" width="8" height="14"/>
+    <rect x="10" y="70" width="25" height="18"/><rect x="43" y="70" width="30" height="18"/><rect x="82" y="70" width="18" height="18"/><rect x="108" y="70" width="18" height="18"/><rect x="134" y="70" width="18" height="18"/><rect x="158" y="70" width="14" height="18"/>
+  </g>
+  <text x="21" y="22" text-anchor="middle">BANK IN</text><text x="39" y="22" text-anchor="middle">15A</text><text x="76" y="22" text-anchor="middle">BANK IN</text><text x="94" y="22" text-anchor="middle">15A</text><text x="131" y="22" text-anchor="middle">BANK IN</text><text x="149" y="22" text-anchor="middle">15A</text>
+  <text x="35" y="55" text-anchor="middle">4 × row fuse/output</text><text x="90" y="55" text-anchor="middle">4 × row fuse/output</text><text x="140" y="55" text-anchor="middle">3 × row fuse/output</text>
+  <text x="22" y="80" text-anchor="middle">5V BUCK</text><text x="58" y="80" text-anchor="middle">TCA9548A / MASTER</text><text x="91" y="80" text-anchor="middle">BRANCH A</text><text x="117" y="80" text-anchor="middle">BRANCH B</text><text x="143" y="80" text-anchor="middle">BRANCH C</text><text x="165" y="80" text-anchor="middle">ARM/OE</text>
+  <text x="90" y="97" text-anchor="middle">PWR-I2C-DIST-11 planning template — print 100% — 180 × 100 mm — placement concept only</text>
+</svg>

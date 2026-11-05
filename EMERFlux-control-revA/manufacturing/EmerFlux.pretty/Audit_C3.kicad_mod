@@ -1,0 +1,78 @@
+(footprint "Audit_C3"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(property "Reference" "C3"
+		(at 0 -3 0)
+		(layer "F.SilkS")
+		(uuid "8f980c3f-b209-4ba9-b96f-7d1a9c1c7233")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Value" "100nF_U2"
+		(at 0 3 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "4a7e640e-796b-4ccc-853c-d36e8257dfd7")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "630b58f7-c087-4c18-8ccc-634bd076938c")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b285863b-17c3-4cac-8070-3205e6c1d370")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_rect
+		(start -2.8 -1.8)
+		(end 2.8 1.8)
+		(stroke
+			(width 0.25)
+			(type default)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "a5ebb841-d719-4c11-af01-b50fc1ba643b")
+	)
+	(pad "1" thru_hole rect
+		(at -1.27 0)
+		(size 1.8 1.8)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "00000000-0000-4000-8000-000000000079")
+	)
+	(pad "2" thru_hole circle
+		(at 1.27 0)
+		(size 1.8 1.8)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "00000000-0000-4000-8000-000000000080")
+	)
+	(embedded_fonts no)
+)

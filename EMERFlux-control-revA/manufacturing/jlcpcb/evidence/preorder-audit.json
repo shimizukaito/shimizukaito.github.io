@@ -1,0 +1,13 @@
+{
+  "date": "2026-11-04",
+  "board_revision": "Rev.D 1oz",
+  "zip_sha256": "f34f6351b930c1bd98bcca7eb69adf4db94b5846a65413fed3540218c96d5a16",
+  "pcb_sha256": "ae16e67540f634c8581b5a5442d0d808723ccf67865375e2d05bb6e10423766e",
+  "fresh_export_match": "all 9 files match except timestamps",
+  "drc_violations": 0,
+  "unconnected": 0,
+  "holes": 110,
+  "outline": "closed 100x50, 4 unique edges",
+  "pin_mapping": "11 channels and 3 independently protected supplies passed",
+  "zip_unchanged": true
+}

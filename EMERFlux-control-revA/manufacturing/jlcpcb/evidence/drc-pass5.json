@@ -1,0 +1,2590 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-11-03T20:31:49",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.8",
+    "schematic_parity": [],
+    "source": "EmerFlux-11ch-driver.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "シルクスクリーンのクリアランス (ルール 'JLCPCB silk' クリアランス 0.1500 mm; 現状 0.1442 mm)",
+            "items": [
+                {
+                    "description": "基板上のテキスト '1:GND  2-12:PWM0-10' ( f.silkscreen 上)",
+                    "pos": {
+                        "x": 48.0,
+                        "y": 46.0
+                    },
+                    "uuid": "78c3de29-af7a-4943-b769-be99183a750b"
+                },
+                {
+                    "description": "ゾーン [GND] F.Cu 上, 優先度 0",
+                    "pos": {
+                        "x": 1.0,
+                        "y": 1.0
+                    },
+                    "uuid": "85340f4e-975a-47d5-bcac-daf9c450375f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "シルクスクリーンのクリアランス (ルール 'JLCPCB silk' クリアランス 0.1500 mm; 現状 0.1057 mm)",
+            "items": [
+                {
+                    "description": "J12 のフットプリント テキスト ( GND PWM0...PWM10 )",
+                    "pos": {
+                        "x": 48.0,
+                        "y": 40.5
+                    },
+                    "uuid": "0bd9dd2c-7e66-49a3-bbd2-21c079606f2c"
+                },
+                {
+                    "description": "ゾーン [GND] F.Cu 上, 優先度 0",
+                    "pos": {
+                        "x": 1.0,
+                        "y": 1.0
+                    },
+                    "uuid": "85340f4e-975a-47d5-bcac-daf9c450375f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "シルクスクリーンのクリアランス (ルール 'JLCPCB silk' クリアランス 0.1500 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "基板上のテキスト 'TBD62783APG x2 / 12V / PCA9685 PWM0-10' ( f.silkscreen 上)",
+                    "pos": {
+                        "x": 50.0,
+                        "y": 48.0
+                    },
+                    "uuid": "6a5f9c67-3770-4982-93ef-3cd1cbc9c944"
+                },
+                {
+                    "description": "ゾーン [GND] F.Cu 上, 優先度 0",
+                    "pos": {
+                        "x": 1.0,
+                        "y": 1.0
+                    },
+                    "uuid": "85340f4e-975a-47d5-bcac-daf9c450375f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "シルクスクリーンのクリアランス (ルール 'JLCPCB silk' クリアランス 0.1500 mm; 現状 0.1250 mm)",
+            "items": [
+                {
+                    "description": "セグメント (f.silkscreen 上)",
+                    "pos": {
+                        "x": 18.12,
+                        "y": 20.0
+                    },
+                    "uuid": "0b792963-b666-4d7b-8e60-dbd86bcd23af"
+                },
+                {
+                    "description": "ゾーン [GND] F.Cu 上, 優先度 0",
+                    "pos": {
+                        "x": 1.0,
+                        "y": 1.0
+                    },
+                    "uuid": "85340f4e-975a-47d5-bcac-daf9c450375f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "シルクスクリーンのクリアランス (ルール 'JLCPCB silk' クリアランス 0.1500 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "U1のリファレンスフィールド",
+                    "pos": {
+                        "x": 27.78,
+                        "y": 21.81
+                    },
+                    "uuid": "1cd77d7b-44b8-43b9-bd4c-5238fa50d064"
+                },
+                {
+                    "description": "ゾーン [GND] F.Cu 上, 優先度 0",
+                    "pos": {
+                        "x": 1.0,
+                        "y": 1.0
+                    },
+                    "uuid": "85340f4e-975a-47d5-bcac-daf9c450375f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "シルクスクリーンのクリアランス (ルール 'JLCPCB silk' クリアランス 0.1500 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "セグメント (f.silkscreen 上)",
+                    "pos": {
+                        "x": 18.12,
+                        "y": 23.6
+                    },
+                    "uuid": "b99567fa-717c-47a0-b413-0a91beade6b9"
+                },
+                {
+                    "description": "ゾーン [GND] F.Cu 上, 優先度 0",
+                    "pos": {
+                        "x": 1.0,
+                        "y": 1.0
+                    },
+                    "uuid": "85340f4e-975a-47d5-bcac-daf9c450375f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "シルクスクリーンのクリアランス (ルール 'JLCPCB silk' クリアランス 0.1500 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "J12のリファレンスフィールド",
+                    "pos": {
+                        "x": 34.0,
+                        "y": 40.0
+                    },
+                    "uuid": "27523827-9550-41c1-b973-b257d174bc82"
+                },
+                {
+                    "description": "ゾーン [GND] F.Cu 上, 優先度 0",
+                    "pos": {
+                        "x": 1.0,
+                        "y": 1.0
+                    },
+                    "uuid": "85340f4e-975a-47d5-bcac-daf9c450375f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "シルクスクリーンのクリアランス (ルール 'JLCPCB silk' クリアランス 0.1500 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "矩形 of J12 、f.silkscreen 上",
+                    "pos": {
+                        "x": 32.6,
+                        "y": 41.6
+                    },
+                    "uuid": "ebf15a9f-9607-4970-b405-13a4093fa14a"
+                },
+                {
+                    "description": "ゾーン [GND] F.Cu 上, 優先度 0",
+                    "pos": {
+                        "x": 1.0,
+                        "y": 1.0
+                    },
+                    "uuid": "85340f4e-975a-47d5-bcac-daf9c450375f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "シルクスクリーンのクリアランス (ルール 'JLCPCB silk' クリアランス 0.1500 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "基板上のテキスト 'EmerFlux 11ch Driver Rev.A' ( f.silkscreen 上)",
+                    "pos": {
+                        "x": 50.0,
+                        "y": 15.0
+                    },
+                    "uuid": "c8ef78ab-42f5-4ff5-ba40-cf90f7f13186"
+                },
+                {
+                    "description": "ゾーン [GND] F.Cu 上, 優先度 0",
+                    "pos": {
+                        "x": 1.0,
+                        "y": 1.0
+                    },
+                    "uuid": "85340f4e-975a-47d5-bcac-daf9c450375f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "シルクスクリーンのクリアランス (ルール 'JLCPCB silk' クリアランス 0.1500 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "基板上のテキスト 'EmerFlux 11ch Driver Rev.A' ( f.silkscreen 上)",
+                    "pos": {
+                        "x": 50.0,
+                        "y": 15.0
+                    },
+                    "uuid": "c8ef78ab-42f5-4ff5-ba40-cf90f7f13186"
+                },
+                {
+                    "description": "配線 [PUMP5_PLUS] ( F.Cu 上、長さ: 20.5230 mm )",
+                    "pos": {
+                        "x": 30.32,
+                        "y": 17.0
+                    },
+                    "uuid": "38890805-a94d-46f9-9763-92783a9725f5"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "シルクスクリーンのクリアランス (ルール 'JLCPCB silk' クリアランス 0.1500 mm; 現状 0.0702 mm)",
+            "items": [
+                {
+                    "description": "J5 のフットプリント テキスト ( 4 + - )",
+                    "pos": {
+                        "x": 42.05,
+                        "y": 10.0
+                    },
+                    "uuid": "1a3f5bfa-7cee-4671-9040-818fe9596398"
+                },
+                {
+                    "description": "ゾーン [GND] F.Cu 上, 優先度 0",
+                    "pos": {
+                        "x": 1.0,
+                        "y": 1.0
+                    },
+                    "uuid": "85340f4e-975a-47d5-bcac-daf9c450375f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "シルクスクリーンのクリアランス (ルール 'JLCPCB silk' クリアランス 0.1500 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "J5 のフットプリント テキスト ( 4 + - )",
+                    "pos": {
+                        "x": 42.05,
+                        "y": 10.0
+                    },
+                    "uuid": "1a3f5bfa-7cee-4671-9040-818fe9596398"
+                },
+                {
+                    "description": "配線 [PUMP4_PLUS] ( F.Cu 上、長さ: 15.5490 mm )",
+                    "pos": {
+                        "x": 27.78,
+                        "y": 17.0
+                    },
+                    "uuid": "6b98f12d-9c49-44d8-b952-ff2c8d4093e9"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "シルクスクリーンのクリアランス (ルール 'JLCPCB silk' クリアランス 0.1500 mm; 現状 0.0440 mm)",
+            "items": [
+                {
+                    "description": "J5 のフットプリント テキスト ( 4 + - )",
+                    "pos": {
+                        "x": 42.05,
+                        "y": 10.0
+                    },
+                    "uuid": "1a3f5bfa-7cee-4671-9040-818fe9596398"
+                },
+                {
+                    "description": "配線 [PUMP5_PLUS] ( F.Cu 上、長さ: 20.5230 mm )",
+                    "pos": {
+                        "x": 30.32,
+                        "y": 17.0
+                    },
+                    "uuid": "38890805-a94d-46f9-9763-92783a9725f5"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "シルクスクリーンのクリアランス (ルール 'JLCPCB silk' クリアランス 0.1500 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "J5のリファレンスフィールド",
+                    "pos": {
+                        "x": 42.05,
+                        "y": 1.3
+                    },
+                    "uuid": "0ed3241c-34f1-4c15-ae8d-bd687dfbda5d"
+                },
+                {
+                    "description": "ゾーン [GND] F.Cu 上, 優先度 0",
+                    "pos": {
+                        "x": 1.0,
+                        "y": 1.0
+                    },
+                    "uuid": "85340f4e-975a-47d5-bcac-daf9c450375f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "シルクスクリーンのクリアランス (ルール 'JLCPCB silk' クリアランス 0.1500 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "矩形 of J5 、f.silkscreen 上",
+                    "pos": {
+                        "x": 38.35,
+                        "y": 2.5
+                    },
+                    "uuid": "fdddc6c3-6a53-49ec-b72a-d3814c864b62"
+                },
+                {
+                    "description": "ゾーン [GND] F.Cu 上, 優先度 0",
+                    "pos": {
+                        "x": 1.0,
+                        "y": 1.0
+                    },
+                    "uuid": "85340f4e-975a-47d5-bcac-daf9c450375f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "シルクスクリーンのクリアランス (ルール 'JLCPCB silk' クリアランス 0.1500 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "矩形 of J5 、f.silkscreen 上",
+                    "pos": {
+                        "x": 38.35,
+                        "y": 2.5
+                    },
+                    "uuid": "fdddc6c3-6a53-49ec-b72a-d3814c864b62"
+                },
+                {
+                    "description": "配線 [PUMP4_PLUS] ( F.Cu 上、長さ: 15.5490 mm )",
+                    "pos": {
+                        "x": 27.78,
+                        "y": 17.0
+                    },
+                    "uuid": "6b98f12d-9c49-44d8-b952-ff2c8d4093e9"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "シルクスクリーンのクリアランス (ルール 'JLCPCB silk' クリアランス 0.1500 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "矩形 of J5 、f.silkscreen 上",
+                    "pos": {
+                        "x": 38.35,
+                        "y": 2.5
+                    },
+                    "uuid": "fdddc6c3-6a53-49ec-b72a-d3814c864b62"
+                },
+                {
+                    "description": "配線 [PUMP4_PLUS] ( F.Cu 上、長さ: 2.5000 mm )",
+                    "pos": {
+                        "x": 40.8,
+                        "y": 8.5
+                    },
+                    "uuid": "b78916de-c4fe-4941-b484-9d054756567e"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "シルクスクリーンのクリアランス (ルール 'JLCPCB silk' クリアランス 0.1500 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "矩形 of J1 、f.silkscreen 上",
+                    "pos": {
+                        "x": 5.55,
+                        "y": 2.5
+                    },
+                    "uuid": "1c86d52a-bce8-40e1-a1a6-a953253fb8d5"
+                },
+                {
+                    "description": "ゾーン [GND] F.Cu 上, 優先度 0",
+                    "pos": {
+                        "x": 1.0,
+                        "y": 1.0
+                    },
+                    "uuid": "85340f4e-975a-47d5-bcac-daf9c450375f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "シルクスクリーンのクリアランス (ルール 'JLCPCB silk' クリアランス 0.1500 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "J2 のフットプリント テキスト ( 1 + - )",
+                    "pos": {
+                        "x": 17.45,
+                        "y": 10.0
+                    },
+                    "uuid": "571620a6-09dc-46af-a7f8-99e39950f531"
+                },
+                {
+                    "description": "ゾーン [GND] F.Cu 上, 優先度 0",
+                    "pos": {
+                        "x": 1.0,
+                        "y": 1.0
+                    },
+                    "uuid": "85340f4e-975a-47d5-bcac-daf9c450375f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "シルクスクリーンのクリアランス (ルール 'JLCPCB silk' クリアランス 0.1500 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "J3 のフットプリント テキスト ( 2 + - )",
+                    "pos": {
+                        "x": 25.65,
+                        "y": 10.0
+                    },
+                    "uuid": "e0f8215b-8366-4d3e-b163-ab04fbb55313"
+                },
+                {
+                    "description": "ゾーン [GND] F.Cu 上, 優先度 0",
+                    "pos": {
+                        "x": 1.0,
+                        "y": 1.0
+                    },
+                    "uuid": "85340f4e-975a-47d5-bcac-daf9c450375f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "シルクスクリーンのクリアランス (ルール 'JLCPCB silk' クリアランス 0.1500 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "J3 のフットプリント テキスト ( 2 + - )",
+                    "pos": {
+                        "x": 25.65,
+                        "y": 10.0
+                    },
+                    "uuid": "e0f8215b-8366-4d3e-b163-ab04fbb55313"
+                },
+                {
+                    "description": "配線 [PUMP2_PLUS] ( F.Cu 上、長さ: 8.6683 mm )",
+                    "pos": {
+                        "x": 22.7,
+                        "y": 17.0
+                    },
+                    "uuid": "fbfff879-a450-49f8-bcfd-5aa12bae3b68"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "シルクスクリーンのクリアランス (ルール 'JLCPCB silk' クリアランス 0.1500 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "J2 のフットプリント テキスト ( 1 + - )",
+                    "pos": {
+                        "x": 17.45,
+                        "y": 10.0
+                    },
+                    "uuid": "571620a6-09dc-46af-a7f8-99e39950f531"
+                },
+                {
+                    "description": "配線 [PUMP1_PLUS] ( F.Cu 上、長さ: 9.3772 mm )",
+                    "pos": {
+                        "x": 20.16,
+                        "y": 17.0
+                    },
+                    "uuid": "b8bf132e-b81e-4097-accf-65ef449f6511"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "シルクスクリーンのクリアランス (ルール 'JLCPCB silk' クリアランス 0.1500 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "J1のリファレンスフィールド",
+                    "pos": {
+                        "x": 9.25,
+                        "y": 1.3
+                    },
+                    "uuid": "ac9cad2e-7f06-4e12-977f-4aa937734906"
+                },
+                {
+                    "description": "ゾーン [GND] F.Cu 上, 優先度 0",
+                    "pos": {
+                        "x": 1.0,
+                        "y": 1.0
+                    },
+                    "uuid": "85340f4e-975a-47d5-bcac-daf9c450375f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "シルクスクリーンのクリアランス (ルール 'JLCPCB silk' クリアランス 0.1500 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "矩形 of J1 、f.silkscreen 上",
+                    "pos": {
+                        "x": 5.55,
+                        "y": 2.5
+                    },
+                    "uuid": "1c86d52a-bce8-40e1-a1a6-a953253fb8d5"
+                },
+                {
+                    "description": "配線 [PUMP0_PLUS] ( F.Cu 上、長さ: 12.8372 mm )",
+                    "pos": {
+                        "x": 17.62,
+                        "y": 17.0
+                    },
+                    "uuid": "27a7a783-fe70-47fa-9eb9-06e8ece8cc79"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "シルクスクリーンのクリアランス (ルール 'JLCPCB silk' クリアランス 0.1500 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "矩形 of J1 、f.silkscreen 上",
+                    "pos": {
+                        "x": 5.55,
+                        "y": 2.5
+                    },
+                    "uuid": "1c86d52a-bce8-40e1-a1a6-a953253fb8d5"
+                },
+                {
+                    "description": "配線 [PUMP0_PLUS] ( F.Cu 上、長さ: 2.5000 mm )",
+                    "pos": {
+                        "x": 8.0,
+                        "y": 8.5
+                    },
+                    "uuid": "b2b748b4-4d63-44a3-acca-aa4f0df5bbbe"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "シルクスクリーンのクリアランス (ルール 'JLCPCB silk' クリアランス 0.1500 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "J1 のフットプリント テキスト ( 0 + - )",
+                    "pos": {
+                        "x": 9.25,
+                        "y": 10.0
+                    },
+                    "uuid": "bc1c9b02-d1ef-415f-8443-ccd2062723ec"
+                },
+                {
+                    "description": "ゾーン [GND] F.Cu 上, 優先度 0",
+                    "pos": {
+                        "x": 1.0,
+                        "y": 1.0
+                    },
+                    "uuid": "85340f4e-975a-47d5-bcac-daf9c450375f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "シルクスクリーンのクリアランス (ルール 'JLCPCB silk' クリアランス 0.1500 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "J1 のフットプリント テキスト ( 0 + - )",
+                    "pos": {
+                        "x": 9.25,
+                        "y": 10.0
+                    },
+                    "uuid": "bc1c9b02-d1ef-415f-8443-ccd2062723ec"
+                },
+                {
+                    "description": "配線 [PUMP0_PLUS] ( F.Cu 上、長さ: 12.8372 mm )",
+                    "pos": {
+                        "x": 17.62,
+                        "y": 17.0
+                    },
+                    "uuid": "27a7a783-fe70-47fa-9eb9-06e8ece8cc79"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "シルクスクリーンのクリアランス (ルール 'JLCPCB silk' クリアランス 0.1500 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "J4のリファレンスフィールド",
+                    "pos": {
+                        "x": 33.85,
+                        "y": 1.3
+                    },
+                    "uuid": "1f4d2153-808d-47bc-91b4-df6e127b1dc0"
+                },
+                {
+                    "description": "ゾーン [GND] F.Cu 上, 優先度 0",
+                    "pos": {
+                        "x": 1.0,
+                        "y": 1.0
+                    },
+                    "uuid": "85340f4e-975a-47d5-bcac-daf9c450375f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "シルクスクリーンのクリアランス (ルール 'JLCPCB silk' クリアランス 0.1500 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "矩形 of J4 、f.silkscreen 上",
+                    "pos": {
+                        "x": 30.15,
+                        "y": 2.5
+                    },
+                    "uuid": "01ac0e0d-f786-4eca-b4e5-c04e4fb48e18"
+                },
+                {
+                    "description": "ゾーン [GND] F.Cu 上, 優先度 0",
+                    "pos": {
+                        "x": 1.0,
+                        "y": 1.0
+                    },
+                    "uuid": "85340f4e-975a-47d5-bcac-daf9c450375f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "シルクスクリーンのクリアランス (ルール 'JLCPCB silk' クリアランス 0.1500 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "矩形 of J4 、f.silkscreen 上",
+                    "pos": {
+                        "x": 30.15,
+                        "y": 2.5
+                    },
+                    "uuid": "01ac0e0d-f786-4eca-b4e5-c04e4fb48e18"
+                },
+                {
+                    "description": "配線 [PUMP3_PLUS] ( F.Cu 上、長さ: 2.5000 mm )",
+                    "pos": {
+                        "x": 32.6,
+                        "y": 8.5
+                    },
+                    "uuid": "42fe0be8-e76e-427b-bd66-6256276930b4"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "シルクスクリーンのクリアランス (ルール 'JLCPCB silk' クリアランス 0.1500 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "矩形 of J4 、f.silkscreen 上",
+                    "pos": {
+                        "x": 30.15,
+                        "y": 2.5
+                    },
+                    "uuid": "01ac0e0d-f786-4eca-b4e5-c04e4fb48e18"
+                },
+                {
+                    "description": "配線 [PUMP3_PLUS] ( F.Cu 上、長さ: 11.2436 mm )",
+                    "pos": {
+                        "x": 25.24,
+                        "y": 17.0
+                    },
+                    "uuid": "1bf022c0-18e6-44a5-b627-48793d09f223"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "シルクスクリーンのクリアランス (ルール 'JLCPCB silk' クリアランス 0.1500 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "J4 のフットプリント テキスト ( 3 + - )",
+                    "pos": {
+                        "x": 33.85,
+                        "y": 10.0
+                    },
+                    "uuid": "9f940b4b-a16e-4611-9dc0-4ef4d8efb2c2"
+                },
+                {
+                    "description": "配線 [PUMP3_PLUS] ( F.Cu 上、長さ: 11.2436 mm )",
+                    "pos": {
+                        "x": 25.24,
+                        "y": 17.0
+                    },
+                    "uuid": "1bf022c0-18e6-44a5-b627-48793d09f223"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "シルクスクリーンのクリアランス (ルール 'JLCPCB silk' クリアランス 0.1500 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "J4 のフットプリント テキスト ( 3 + - )",
+                    "pos": {
+                        "x": 33.85,
+                        "y": 10.0
+                    },
+                    "uuid": "9f940b4b-a16e-4611-9dc0-4ef4d8efb2c2"
+                },
+                {
+                    "description": "ゾーン [GND] F.Cu 上, 優先度 0",
+                    "pos": {
+                        "x": 1.0,
+                        "y": 1.0
+                    },
+                    "uuid": "85340f4e-975a-47d5-bcac-daf9c450375f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "シルクスクリーンのクリアランス (ルール 'JLCPCB silk' クリアランス 0.1500 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "J2のリファレンスフィールド",
+                    "pos": {
+                        "x": 17.45,
+                        "y": 1.3
+                    },
+                    "uuid": "aacd56c8-d76e-4380-b861-4a4e8e6b368d"
+                },
+                {
+                    "description": "ゾーン [GND] F.Cu 上, 優先度 0",
+                    "pos": {
+                        "x": 1.0,
+                        "y": 1.0
+                    },
+                    "uuid": "85340f4e-975a-47d5-bcac-daf9c450375f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "シルクスクリーンのクリアランス (ルール 'JLCPCB silk' クリアランス 0.1500 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "J3のリファレンスフィールド",
+                    "pos": {
+                        "x": 25.65,
+                        "y": 1.3
+                    },
+                    "uuid": "7c1b1b64-37f4-40c9-9973-cc7667cb7b3a"
+                },
+                {
+                    "description": "ゾーン [GND] F.Cu 上, 優先度 0",
+                    "pos": {
+                        "x": 1.0,
+                        "y": 1.0
+                    },
+                    "uuid": "85340f4e-975a-47d5-bcac-daf9c450375f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "シルクスクリーンのクリアランス (ルール 'JLCPCB silk' クリアランス 0.1500 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "矩形 of J3 、f.silkscreen 上",
+                    "pos": {
+                        "x": 21.95,
+                        "y": 2.5
+                    },
+                    "uuid": "03635695-fb92-435c-aead-39d92782a1b5"
+                },
+                {
+                    "description": "ゾーン [GND] F.Cu 上, 優先度 0",
+                    "pos": {
+                        "x": 1.0,
+                        "y": 1.0
+                    },
+                    "uuid": "85340f4e-975a-47d5-bcac-daf9c450375f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "シルクスクリーンのクリアランス (ルール 'JLCPCB silk' クリアランス 0.1500 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "矩形 of J3 、f.silkscreen 上",
+                    "pos": {
+                        "x": 21.95,
+                        "y": 2.5
+                    },
+                    "uuid": "03635695-fb92-435c-aead-39d92782a1b5"
+                },
+                {
+                    "description": "配線 [PUMP2_PLUS] ( F.Cu 上、長さ: 8.6683 mm )",
+                    "pos": {
+                        "x": 22.7,
+                        "y": 17.0
+                    },
+                    "uuid": "fbfff879-a450-49f8-bcfd-5aa12bae3b68"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "シルクスクリーンのクリアランス (ルール 'JLCPCB silk' クリアランス 0.1500 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "矩形 of J3 、f.silkscreen 上",
+                    "pos": {
+                        "x": 21.95,
+                        "y": 2.5
+                    },
+                    "uuid": "03635695-fb92-435c-aead-39d92782a1b5"
+                },
+                {
+                    "description": "配線 [PUMP2_PLUS] ( F.Cu 上、長さ: 2.5000 mm )",
+                    "pos": {
+                        "x": 24.4,
+                        "y": 8.5
+                    },
+                    "uuid": "bfe80bdc-ef65-4f96-a609-0074eb6fb413"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "シルクスクリーンのクリアランス (ルール 'JLCPCB silk' クリアランス 0.1500 mm; 現状 0.1313 mm)",
+            "items": [
+                {
+                    "description": "矩形 of J2 、f.silkscreen 上",
+                    "pos": {
+                        "x": 13.75,
+                        "y": 2.5
+                    },
+                    "uuid": "a8937a45-966e-4d81-b3dd-0b8ffb2b761d"
+                },
+                {
+                    "description": "ゾーン [GND] F.Cu 上, 優先度 0",
+                    "pos": {
+                        "x": 1.0,
+                        "y": 1.0
+                    },
+                    "uuid": "85340f4e-975a-47d5-bcac-daf9c450375f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "シルクスクリーンのクリアランス (ルール 'JLCPCB silk' クリアランス 0.1500 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "矩形 of J2 、f.silkscreen 上",
+                    "pos": {
+                        "x": 13.75,
+                        "y": 2.5
+                    },
+                    "uuid": "a8937a45-966e-4d81-b3dd-0b8ffb2b761d"
+                },
+                {
+                    "description": "配線 [PUMP1_PLUS] ( F.Cu 上、長さ: 9.3772 mm )",
+                    "pos": {
+                        "x": 20.16,
+                        "y": 17.0
+                    },
+                    "uuid": "b8bf132e-b81e-4097-accf-65ef449f6511"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "シルクスクリーンのクリアランス (ルール 'JLCPCB silk' クリアランス 0.1500 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "矩形 of J2 、f.silkscreen 上",
+                    "pos": {
+                        "x": 13.75,
+                        "y": 2.5
+                    },
+                    "uuid": "a8937a45-966e-4d81-b3dd-0b8ffb2b761d"
+                },
+                {
+                    "description": "配線 [PUMP1_PLUS] ( F.Cu 上、長さ: 2.5000 mm )",
+                    "pos": {
+                        "x": 16.2,
+                        "y": 8.5
+                    },
+                    "uuid": "0298e7ef-d3ba-4c9f-8468-a9aa722db9a4"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "シルクスクリーンのクリアランス (ルール 'JLCPCB silk' クリアランス 0.1500 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "U1 のフットプリント テキスト ( 1 )",
+                    "pos": {
+                        "x": 15.62,
+                        "y": 25.62
+                    },
+                    "uuid": "39f114e0-0fd5-48dc-91f3-3bfa178d8ebe"
+                },
+                {
+                    "description": "ゾーン [GND] F.Cu 上, 優先度 0",
+                    "pos": {
+                        "x": 1.0,
+                        "y": 1.0
+                    },
+                    "uuid": "85340f4e-975a-47d5-bcac-daf9c450375f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "シルクスクリーンのクリアランス (ルール 'JLCPCB silk' クリアランス 0.1500 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "セグメント of U1 、f.silkscreen 上",
+                    "pos": {
+                        "x": 16.12,
+                        "y": 18.61
+                    },
+                    "uuid": "6b7952e1-6da4-4add-bc09-7a4fb67ca70a"
+                },
+                {
+                    "description": "ゾーン [GND] F.Cu 上, 優先度 0",
+                    "pos": {
+                        "x": 1.0,
+                        "y": 1.0
+                    },
+                    "uuid": "85340f4e-975a-47d5-bcac-daf9c450375f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "シルクスクリーンのクリアランス (ルール 'JLCPCB silk' クリアランス 0.1500 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "セグメント of U1 、f.silkscreen 上",
+                    "pos": {
+                        "x": 16.12,
+                        "y": 23.31
+                    },
+                    "uuid": "0e956a63-acf1-4520-92c6-d1788d87a263"
+                },
+                {
+                    "description": "ゾーン [GND] F.Cu 上, 優先度 0",
+                    "pos": {
+                        "x": 1.0,
+                        "y": 1.0
+                    },
+                    "uuid": "85340f4e-975a-47d5-bcac-daf9c450375f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "シルクスクリーンのクリアランス (ルール 'JLCPCB silk' クリアランス 0.1500 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "円弧 of U1 、f.silkscreen 上",
+                    "pos": {
+                        "x": 16.12,
+                        "y": 21.81
+                    },
+                    "uuid": "0cfe57b6-e7f4-4d3c-b042-72aef15fc45f"
+                },
+                {
+                    "description": "ゾーン [GND] F.Cu 上, 優先度 0",
+                    "pos": {
+                        "x": 1.0,
+                        "y": 1.0
+                    },
+                    "uuid": "85340f4e-975a-47d5-bcac-daf9c450375f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "シルクスクリーンのクリアランス (ルール 'JLCPCB silk' クリアランス 0.1500 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "C2のリファレンスフィールド",
+                    "pos": {
+                        "x": 4.0,
+                        "y": 28.0
+                    },
+                    "uuid": "4ebbb3e2-15e3-414e-be73-1eeba5a33b6f"
+                },
+                {
+                    "description": "ゾーン [GND] F.Cu 上, 優先度 0",
+                    "pos": {
+                        "x": 1.0,
+                        "y": 1.0
+                    },
+                    "uuid": "85340f4e-975a-47d5-bcac-daf9c450375f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "シルクスクリーンのクリアランス (ルール 'JLCPCB silk' クリアランス 0.1500 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "矩形 of C2 、f.silkscreen 上",
+                    "pos": {
+                        "x": 1.2,
+                        "y": 29.2
+                    },
+                    "uuid": "b33f5bbf-7b71-42d5-b946-a3b81403f7e6"
+                },
+                {
+                    "description": "ゾーン [GND] F.Cu 上, 優先度 0",
+                    "pos": {
+                        "x": 1.0,
+                        "y": 1.0
+                    },
+                    "uuid": "85340f4e-975a-47d5-bcac-daf9c450375f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "シルクスクリーンのクリアランス (ルール 'JLCPCB silk' クリアランス 0.1500 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "矩形 of C2 、f.silkscreen 上",
+                    "pos": {
+                        "x": 1.2,
+                        "y": 29.2
+                    },
+                    "uuid": "b33f5bbf-7b71-42d5-b946-a3b81403f7e6"
+                },
+                {
+                    "description": "配線 [+12V_PROTECTED] ( F.Cu 上、長さ: 5.0000 mm )",
+                    "pos": {
+                        "x": 2.73,
+                        "y": 31.0
+                    },
+                    "uuid": "1ee9dcf3-2421-4c8b-a29b-18d8fefaea5c"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "シルクスクリーンのクリアランス (ルール 'JLCPCB silk' クリアランス 0.1500 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "基板上のテキスト '-' ( f.silkscreen 上)",
+                    "pos": {
+                        "x": 73.2,
+                        "y": 43.0
+                    },
+                    "uuid": "ebaf7a08-9602-4d00-be42-7eb7103a56c6"
+                },
+                {
+                    "description": "ゾーン [GND] F.Cu 上, 優先度 0",
+                    "pos": {
+                        "x": 1.0,
+                        "y": 1.0
+                    },
+                    "uuid": "85340f4e-975a-47d5-bcac-daf9c450375f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "シルクスクリーンのクリアランス (ルール 'JLCPCB silk' クリアランス 0.1500 mm; 現状 0.0198 mm)",
+            "items": [
+                {
+                    "description": "基板上のテキスト '+12V' ( f.silkscreen 上)",
+                    "pos": {
+                        "x": 85.0,
+                        "y": 41.5
+                    },
+                    "uuid": "838dcdcd-3e6e-4467-bed4-34bb64cf7e5f"
+                },
+                {
+                    "description": "ゾーン [GND] F.Cu 上, 優先度 0",
+                    "pos": {
+                        "x": 1.0,
+                        "y": 1.0
+                    },
+                    "uuid": "85340f4e-975a-47d5-bcac-daf9c450375f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "シルクスクリーンのクリアランス (ルール 'JLCPCB silk' クリアランス 0.1500 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "円 of C1 、f.silkscreen 上",
+                    "pos": {
+                        "x": 68.0,
+                        "y": 43.0
+                    },
+                    "uuid": "613b9e70-4d3a-4fde-9da3-3d8b2b5b7655"
+                },
+                {
+                    "description": "ゾーン [GND] F.Cu 上, 優先度 0",
+                    "pos": {
+                        "x": 1.0,
+                        "y": 1.0
+                    },
+                    "uuid": "85340f4e-975a-47d5-bcac-daf9c450375f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "シルクスクリーンのクリアランス (ルール 'JLCPCB silk' クリアランス 0.1500 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "円 of C1 、f.silkscreen 上",
+                    "pos": {
+                        "x": 68.0,
+                        "y": 43.0
+                    },
+                    "uuid": "613b9e70-4d3a-4fde-9da3-3d8b2b5b7655"
+                },
+                {
+                    "description": "配線 [+12V_PROTECTED] ( F.Cu 上、長さ: 7.0000 mm )",
+                    "pos": {
+                        "x": 66.25,
+                        "y": 43.0
+                    },
+                    "uuid": "e0d96cc5-460d-4d99-aab0-0e316c7f01c1"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "シルクスクリーンのクリアランス (ルール 'JLCPCB silk' クリアランス 0.1500 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "C1 のフットプリント テキスト ( + )",
+                    "pos": {
+                        "x": 64.0,
+                        "y": 38.0
+                    },
+                    "uuid": "b52ca754-9c4e-4ae3-ad17-5f8398755b8a"
+                },
+                {
+                    "description": "ゾーン [GND] F.Cu 上, 優先度 0",
+                    "pos": {
+                        "x": 1.0,
+                        "y": 1.0
+                    },
+                    "uuid": "85340f4e-975a-47d5-bcac-daf9c450375f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "シルクスクリーンのクリアランス (ルール 'JLCPCB silk' クリアランス 0.1500 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "C1のリファレンスフィールド",
+                    "pos": {
+                        "x": 68.0,
+                        "y": 40.0
+                    },
+                    "uuid": "7dc3310f-839e-4535-bdb3-15fd7c432325"
+                },
+                {
+                    "description": "ゾーン [GND] F.Cu 上, 優先度 0",
+                    "pos": {
+                        "x": 1.0,
+                        "y": 1.0
+                    },
+                    "uuid": "85340f4e-975a-47d5-bcac-daf9c450375f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "シルクスクリーンのクリアランス (ルール 'JLCPCB silk' クリアランス 0.1500 mm; 現状 0.1332 mm)",
+            "items": [
+                {
+                    "description": "C1のリファレンスフィールド",
+                    "pos": {
+                        "x": 68.0,
+                        "y": 40.0
+                    },
+                    "uuid": "7dc3310f-839e-4535-bdb3-15fd7c432325"
+                },
+                {
+                    "description": "配線 [+12V_PROTECTED] ( F.Cu 上、長さ: 7.0000 mm )",
+                    "pos": {
+                        "x": 66.25,
+                        "y": 43.0
+                    },
+                    "uuid": "e0d96cc5-460d-4d99-aab0-0e316c7f01c1"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "シルクスクリーンのクリアランス (ルール 'JLCPCB silk' クリアランス 0.1500 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "基板上のテキスト '+12V' ( f.silkscreen 上)",
+                    "pos": {
+                        "x": 85.0,
+                        "y": 41.5
+                    },
+                    "uuid": "838dcdcd-3e6e-4467-bed4-34bb64cf7e5f"
+                },
+                {
+                    "description": "配線 [+12V_RAW] ( F.Cu 上、長さ: 7.6200 mm )",
+                    "pos": {
+                        "x": 85.0,
+                        "y": 45.0
+                    },
+                    "uuid": "4f8ffcbc-ecd0-4fb1-bc31-55138b974871"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "シルクスクリーンのクリアランス (ルール 'JLCPCB silk' クリアランス 0.1500 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "基板上のテキスト 'GND' ( f.silkscreen 上)",
+                    "pos": {
+                        "x": 90.08,
+                        "y": 41.5
+                    },
+                    "uuid": "71684c4b-52b4-4f31-8f02-c283841b7eba"
+                },
+                {
+                    "description": "ゾーン [GND] F.Cu 上, 優先度 0",
+                    "pos": {
+                        "x": 1.0,
+                        "y": 1.0
+                    },
+                    "uuid": "85340f4e-975a-47d5-bcac-daf9c450375f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "シルクスクリーンのクリアランス (ルール 'JLCPCB silk' クリアランス 0.1500 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "J13のリファレンスフィールド",
+                    "pos": {
+                        "x": 87.54,
+                        "y": 40.0
+                    },
+                    "uuid": "0574786f-ce32-4059-8eab-4e6eb5df8a2e"
+                },
+                {
+                    "description": "ゾーン [GND] F.Cu 上, 優先度 0",
+                    "pos": {
+                        "x": 1.0,
+                        "y": 1.0
+                    },
+                    "uuid": "85340f4e-975a-47d5-bcac-daf9c450375f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "シルクスクリーンのクリアランス (ルール 'JLCPCB silk' クリアランス 0.1500 mm; 現状 0.0697 mm)",
+            "items": [
+                {
+                    "description": "J13のリファレンスフィールド",
+                    "pos": {
+                        "x": 87.54,
+                        "y": 40.0
+                    },
+                    "uuid": "0574786f-ce32-4059-8eab-4e6eb5df8a2e"
+                },
+                {
+                    "description": "配線 [+12V_RAW] ( F.Cu 上、長さ: 7.6200 mm )",
+                    "pos": {
+                        "x": 85.0,
+                        "y": 45.0
+                    },
+                    "uuid": "4f8ffcbc-ecd0-4fb1-bc31-55138b974871"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "シルクスクリーンのクリアランス (ルール 'JLCPCB silk' クリアランス 0.1500 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "F1のリファレンスフィールド",
+                    "pos": {
+                        "x": 75.0,
+                        "y": 30.0
+                    },
+                    "uuid": "a9ff9668-b3da-43a3-abd1-0ee1f394fae1"
+                },
+                {
+                    "description": "ゾーン [GND] F.Cu 上, 優先度 0",
+                    "pos": {
+                        "x": 1.0,
+                        "y": 1.0
+                    },
+                    "uuid": "85340f4e-975a-47d5-bcac-daf9c450375f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "シルクスクリーンのクリアランス (ルール 'JLCPCB silk' クリアランス 0.1500 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "U2 のフットプリント テキスト ( 1 )",
+                    "pos": {
+                        "x": 63.0,
+                        "y": 25.62
+                    },
+                    "uuid": "dbdd6fe9-d03c-4cc3-b0d6-a7fb141abde6"
+                },
+                {
+                    "description": "ゾーン [GND] F.Cu 上, 優先度 0",
+                    "pos": {
+                        "x": 1.0,
+                        "y": 1.0
+                    },
+                    "uuid": "85340f4e-975a-47d5-bcac-daf9c450375f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "シルクスクリーンのクリアランス (ルール 'JLCPCB silk' クリアランス 0.1500 mm; 現状 0.1250 mm)",
+            "items": [
+                {
+                    "description": "セグメント (f.silkscreen 上)",
+                    "pos": {
+                        "x": 65.5,
+                        "y": 20.0
+                    },
+                    "uuid": "4261117a-9c60-42b0-93a0-034f5a6d25bf"
+                },
+                {
+                    "description": "ゾーン [GND] F.Cu 上, 優先度 0",
+                    "pos": {
+                        "x": 1.0,
+                        "y": 1.0
+                    },
+                    "uuid": "85340f4e-975a-47d5-bcac-daf9c450375f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "シルクスクリーンのクリアランス (ルール 'JLCPCB silk' クリアランス 0.1500 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "セグメント (f.silkscreen 上)",
+                    "pos": {
+                        "x": 65.5,
+                        "y": 23.6
+                    },
+                    "uuid": "aac88642-a5fa-429e-be84-7b9500853be2"
+                },
+                {
+                    "description": "ゾーン [GND] F.Cu 上, 優先度 0",
+                    "pos": {
+                        "x": 1.0,
+                        "y": 1.0
+                    },
+                    "uuid": "85340f4e-975a-47d5-bcac-daf9c450375f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "シルクスクリーンのクリアランス (ルール 'JLCPCB silk' クリアランス 0.1500 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "U2のリファレンスフィールド",
+                    "pos": {
+                        "x": 75.16,
+                        "y": 21.81
+                    },
+                    "uuid": "61fcf8b5-33c6-4310-966c-e093480e1152"
+                },
+                {
+                    "description": "ゾーン [GND] F.Cu 上, 優先度 0",
+                    "pos": {
+                        "x": 1.0,
+                        "y": 1.0
+                    },
+                    "uuid": "85340f4e-975a-47d5-bcac-daf9c450375f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "シルクスクリーンのクリアランス (ルール 'JLCPCB silk' クリアランス 0.1500 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "セグメント of U2 、f.silkscreen 上",
+                    "pos": {
+                        "x": 63.5,
+                        "y": 23.31
+                    },
+                    "uuid": "a450afcc-f226-4d1a-af6a-9e9031e6a7e2"
+                },
+                {
+                    "description": "ゾーン [GND] F.Cu 上, 優先度 0",
+                    "pos": {
+                        "x": 1.0,
+                        "y": 1.0
+                    },
+                    "uuid": "85340f4e-975a-47d5-bcac-daf9c450375f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "シルクスクリーンのクリアランス (ルール 'JLCPCB silk' クリアランス 0.1500 mm; 現状 0.0100 mm)",
+            "items": [
+                {
+                    "description": "円弧 of U2 、f.silkscreen 上",
+                    "pos": {
+                        "x": 63.5,
+                        "y": 21.81
+                    },
+                    "uuid": "eb67b508-64ad-4dea-9321-e43249f15bae"
+                },
+                {
+                    "description": "ゾーン [GND] F.Cu 上, 優先度 0",
+                    "pos": {
+                        "x": 1.0,
+                        "y": 1.0
+                    },
+                    "uuid": "85340f4e-975a-47d5-bcac-daf9c450375f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "シルクスクリーンのクリアランス (ルール 'JLCPCB silk' クリアランス 0.1500 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "C3のリファレンスフィールド",
+                    "pos": {
+                        "x": 89.0,
+                        "y": 28.0
+                    },
+                    "uuid": "6d984f82-1141-485d-8650-b9f8b79d69d8"
+                },
+                {
+                    "description": "ゾーン [GND] F.Cu 上, 優先度 0",
+                    "pos": {
+                        "x": 1.0,
+                        "y": 1.0
+                    },
+                    "uuid": "85340f4e-975a-47d5-bcac-daf9c450375f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "シルクスクリーンのクリアランス (ルール 'JLCPCB silk' クリアランス 0.1500 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "矩形 of C3 、f.silkscreen 上",
+                    "pos": {
+                        "x": 86.2,
+                        "y": 29.2
+                    },
+                    "uuid": "a5ebb841-d719-4c11-af01-b50fc1ba643b"
+                },
+                {
+                    "description": "ゾーン [GND] F.Cu 上, 優先度 0",
+                    "pos": {
+                        "x": 1.0,
+                        "y": 1.0
+                    },
+                    "uuid": "85340f4e-975a-47d5-bcac-daf9c450375f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "シルクスクリーンのクリアランス (ルール 'JLCPCB silk' クリアランス 0.1500 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "矩形 of C3 、f.silkscreen 上",
+                    "pos": {
+                        "x": 86.2,
+                        "y": 29.2
+                    },
+                    "uuid": "a5ebb841-d719-4c11-af01-b50fc1ba643b"
+                },
+                {
+                    "description": "配線 [+12V_PROTECTED] ( F.Cu 上、長さ: 2.4100 mm )",
+                    "pos": {
+                        "x": 87.73,
+                        "y": 31.0
+                    },
+                    "uuid": "b6d6e2a0-39a0-42ee-ae2f-0ea37608e296"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "シルクスクリーンのクリアランス (ルール 'JLCPCB silk' クリアランス 0.1500 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "J10 のフットプリント テキスト ( 9 + - )",
+                    "pos": {
+                        "x": 83.05,
+                        "y": 10.0
+                    },
+                    "uuid": "d6a00dfd-ce3f-4a1b-8cbc-c2f84ae79d71"
+                },
+                {
+                    "description": "ゾーン [GND] F.Cu 上, 優先度 0",
+                    "pos": {
+                        "x": 1.0,
+                        "y": 1.0
+                    },
+                    "uuid": "85340f4e-975a-47d5-bcac-daf9c450375f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "シルクスクリーンのクリアランス (ルール 'JLCPCB silk' クリアランス 0.1500 mm; 現状 0.0059 mm)",
+            "items": [
+                {
+                    "description": "J10 のフットプリント テキスト ( 9 + - )",
+                    "pos": {
+                        "x": 83.05,
+                        "y": 10.0
+                    },
+                    "uuid": "d6a00dfd-ce3f-4a1b-8cbc-c2f84ae79d71"
+                },
+                {
+                    "description": "配線 [PUMP9_PLUS] ( F.Cu 上、長さ: 12.5109 mm )",
+                    "pos": {
+                        "x": 72.62,
+                        "y": 17.0
+                    },
+                    "uuid": "06c3d880-67a4-4421-ae2b-19cdbec0a5db"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "シルクスクリーンのクリアランス (ルール 'JLCPCB silk' クリアランス 0.1500 mm; 現状 0.0702 mm)",
+            "items": [
+                {
+                    "description": "J11 のフットプリント テキスト ( 10 + - )",
+                    "pos": {
+                        "x": 91.25,
+                        "y": 10.0
+                    },
+                    "uuid": "ec8d8b82-4ae5-41dc-bf7c-6c3cd91aa3c1"
+                },
+                {
+                    "description": "ゾーン [GND] F.Cu 上, 優先度 0",
+                    "pos": {
+                        "x": 1.0,
+                        "y": 1.0
+                    },
+                    "uuid": "85340f4e-975a-47d5-bcac-daf9c450375f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "シルクスクリーンのクリアランス (ルール 'JLCPCB silk' クリアランス 0.1500 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "J11のリファレンスフィールド",
+                    "pos": {
+                        "x": 91.25,
+                        "y": 1.3
+                    },
+                    "uuid": "8104391d-b424-4afe-b014-385000f26306"
+                },
+                {
+                    "description": "ゾーン [GND] F.Cu 上, 優先度 0",
+                    "pos": {
+                        "x": 1.0,
+                        "y": 1.0
+                    },
+                    "uuid": "85340f4e-975a-47d5-bcac-daf9c450375f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "シルクスクリーンのクリアランス (ルール 'JLCPCB silk' クリアランス 0.1500 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "矩形 of J11 、f.silkscreen 上",
+                    "pos": {
+                        "x": 87.55,
+                        "y": 2.5
+                    },
+                    "uuid": "cf6c2f6d-21e7-4483-b318-d9f3870acc2f"
+                },
+                {
+                    "description": "ゾーン [GND] F.Cu 上, 優先度 0",
+                    "pos": {
+                        "x": 1.0,
+                        "y": 1.0
+                    },
+                    "uuid": "85340f4e-975a-47d5-bcac-daf9c450375f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "シルクスクリーンのクリアランス (ルール 'JLCPCB silk' クリアランス 0.1500 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "矩形 of J11 、f.silkscreen 上",
+                    "pos": {
+                        "x": 87.55,
+                        "y": 2.5
+                    },
+                    "uuid": "cf6c2f6d-21e7-4483-b318-d9f3870acc2f"
+                },
+                {
+                    "description": "配線 [PUMP10_PLUS] ( F.Cu 上、長さ: 17.1019 mm )",
+                    "pos": {
+                        "x": 75.16,
+                        "y": 17.0
+                    },
+                    "uuid": "4417d45a-cc2e-47e8-9b92-2f5735156e52"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "シルクスクリーンのクリアランス (ルール 'JLCPCB silk' クリアランス 0.1500 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "矩形 of J11 、f.silkscreen 上",
+                    "pos": {
+                        "x": 87.55,
+                        "y": 2.5
+                    },
+                    "uuid": "cf6c2f6d-21e7-4483-b318-d9f3870acc2f"
+                },
+                {
+                    "description": "配線 [PUMP10_PLUS] ( F.Cu 上、長さ: 2.5000 mm )",
+                    "pos": {
+                        "x": 90.0,
+                        "y": 8.5
+                    },
+                    "uuid": "4a474925-e0b8-4af1-a355-375fd1ca61c2"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "シルクスクリーンのクリアランス (ルール 'JLCPCB silk' クリアランス 0.1500 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "J11 のフットプリント テキスト ( 10 + - )",
+                    "pos": {
+                        "x": 91.25,
+                        "y": 10.0
+                    },
+                    "uuid": "ec8d8b82-4ae5-41dc-bf7c-6c3cd91aa3c1"
+                },
+                {
+                    "description": "配線 [PUMP10_PLUS] ( F.Cu 上、長さ: 17.1019 mm )",
+                    "pos": {
+                        "x": 75.16,
+                        "y": 17.0
+                    },
+                    "uuid": "4417d45a-cc2e-47e8-9b92-2f5735156e52"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "シルクスクリーンのクリアランス (ルール 'JLCPCB silk' クリアランス 0.1500 mm; 現状 0.0812 mm)",
+            "items": [
+                {
+                    "description": "基板上のテキスト 'EmerFlux 11ch Driver Rev.A' ( f.silkscreen 上)",
+                    "pos": {
+                        "x": 50.0,
+                        "y": 15.0
+                    },
+                    "uuid": "c8ef78ab-42f5-4ff5-ba40-cf90f7f13186"
+                },
+                {
+                    "description": "配線 [PUMP6_PLUS] ( F.Cu 上、長さ: 11.5365 mm )",
+                    "pos": {
+                        "x": 65.0,
+                        "y": 17.0
+                    },
+                    "uuid": "f7af1a26-1ae3-4704-9d00-e9276f6e1cf7"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "シルクスクリーンのクリアランス (ルール 'JLCPCB silk' クリアランス 0.1500 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "セグメント of U2 、f.silkscreen 上",
+                    "pos": {
+                        "x": 63.5,
+                        "y": 18.61
+                    },
+                    "uuid": "cbf4c535-1c48-4f4b-b769-0e6dc2403aab"
+                },
+                {
+                    "description": "ゾーン [GND] F.Cu 上, 優先度 0",
+                    "pos": {
+                        "x": 1.0,
+                        "y": 1.0
+                    },
+                    "uuid": "85340f4e-975a-47d5-bcac-daf9c450375f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "シルクスクリーンのクリアランス (ルール 'JLCPCB silk' クリアランス 0.1500 mm; 現状 0.0032 mm)",
+            "items": [
+                {
+                    "description": "基板上のテキスト 'EmerFlux 11ch Driver Rev.A' ( f.silkscreen 上)",
+                    "pos": {
+                        "x": 50.0,
+                        "y": 15.0
+                    },
+                    "uuid": "c8ef78ab-42f5-4ff5-ba40-cf90f7f13186"
+                },
+                {
+                    "description": "配線 [PUMP7_PLUS] ( F.Cu 上、長さ: 8.7652 mm )",
+                    "pos": {
+                        "x": 67.54,
+                        "y": 17.0
+                    },
+                    "uuid": "275a96d4-7c68-4bd5-a6e4-8e7b4783d641"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "シルクスクリーンのクリアランス (ルール 'JLCPCB silk' クリアランス 0.1500 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "J6のリファレンスフィールド",
+                    "pos": {
+                        "x": 50.25,
+                        "y": 1.3
+                    },
+                    "uuid": "30a4571b-a333-4a0f-9236-062cfff3e4f5"
+                },
+                {
+                    "description": "ゾーン [GND] F.Cu 上, 優先度 0",
+                    "pos": {
+                        "x": 1.0,
+                        "y": 1.0
+                    },
+                    "uuid": "85340f4e-975a-47d5-bcac-daf9c450375f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "シルクスクリーンのクリアランス (ルール 'JLCPCB silk' クリアランス 0.1500 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "矩形 of J6 、f.silkscreen 上",
+                    "pos": {
+                        "x": 46.55,
+                        "y": 2.5
+                    },
+                    "uuid": "71662d7f-1809-4261-91da-e03c221c9035"
+                },
+                {
+                    "description": "ゾーン [GND] F.Cu 上, 優先度 0",
+                    "pos": {
+                        "x": 1.0,
+                        "y": 1.0
+                    },
+                    "uuid": "85340f4e-975a-47d5-bcac-daf9c450375f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "シルクスクリーンのクリアランス (ルール 'JLCPCB silk' クリアランス 0.1500 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "矩形 of J6 、f.silkscreen 上",
+                    "pos": {
+                        "x": 46.55,
+                        "y": 2.5
+                    },
+                    "uuid": "71662d7f-1809-4261-91da-e03c221c9035"
+                },
+                {
+                    "description": "配線 [PUMP5_PLUS] ( F.Cu 上、長さ: 20.5230 mm )",
+                    "pos": {
+                        "x": 30.32,
+                        "y": 17.0
+                    },
+                    "uuid": "38890805-a94d-46f9-9763-92783a9725f5"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "シルクスクリーンのクリアランス (ルール 'JLCPCB silk' クリアランス 0.1500 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "矩形 of J6 、f.silkscreen 上",
+                    "pos": {
+                        "x": 46.55,
+                        "y": 2.5
+                    },
+                    "uuid": "71662d7f-1809-4261-91da-e03c221c9035"
+                },
+                {
+                    "description": "配線 [PUMP5_PLUS] ( F.Cu 上、長さ: 2.5000 mm )",
+                    "pos": {
+                        "x": 49.0,
+                        "y": 8.5
+                    },
+                    "uuid": "d1e20363-1a65-494e-8dff-3cf5abaedcd1"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "シルクスクリーンのクリアランス (ルール 'JLCPCB silk' クリアランス 0.1500 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "J6 のフットプリント テキスト ( 5 + - )",
+                    "pos": {
+                        "x": 50.25,
+                        "y": 10.0
+                    },
+                    "uuid": "7d8fc694-f292-487a-a0a5-8047773c8de3"
+                },
+                {
+                    "description": "配線 [PUMP5_PLUS] ( F.Cu 上、長さ: 20.5230 mm )",
+                    "pos": {
+                        "x": 30.32,
+                        "y": 17.0
+                    },
+                    "uuid": "38890805-a94d-46f9-9763-92783a9725f5"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "シルクスクリーンのクリアランス (ルール 'JLCPCB silk' クリアランス 0.1500 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "J6 のフットプリント テキスト ( 5 + - )",
+                    "pos": {
+                        "x": 50.25,
+                        "y": 10.0
+                    },
+                    "uuid": "7d8fc694-f292-487a-a0a5-8047773c8de3"
+                },
+                {
+                    "description": "ゾーン [GND] F.Cu 上, 優先度 0",
+                    "pos": {
+                        "x": 1.0,
+                        "y": 1.0
+                    },
+                    "uuid": "85340f4e-975a-47d5-bcac-daf9c450375f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "シルクスクリーンのクリアランス (ルール 'JLCPCB silk' クリアランス 0.1500 mm; 現状 0.0273 mm)",
+            "items": [
+                {
+                    "description": "J8のリファレンスフィールド",
+                    "pos": {
+                        "x": 66.65,
+                        "y": 1.3
+                    },
+                    "uuid": "57031490-e30b-41f5-b997-ecdad671c03a"
+                },
+                {
+                    "description": "ゾーン [GND] F.Cu 上, 優先度 0",
+                    "pos": {
+                        "x": 1.0,
+                        "y": 1.0
+                    },
+                    "uuid": "85340f4e-975a-47d5-bcac-daf9c450375f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "シルクスクリーンのクリアランス (ルール 'JLCPCB silk' クリアランス 0.1500 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "J7のリファレンスフィールド",
+                    "pos": {
+                        "x": 58.45,
+                        "y": 1.3
+                    },
+                    "uuid": "ea140e7d-341d-41ed-914f-95cdbf48cd60"
+                },
+                {
+                    "description": "ゾーン [GND] F.Cu 上, 優先度 0",
+                    "pos": {
+                        "x": 1.0,
+                        "y": 1.0
+                    },
+                    "uuid": "85340f4e-975a-47d5-bcac-daf9c450375f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "シルクスクリーンのクリアランス (ルール 'JLCPCB silk' クリアランス 0.1500 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "矩形 of J8 、f.silkscreen 上",
+                    "pos": {
+                        "x": 62.95,
+                        "y": 2.5
+                    },
+                    "uuid": "70f36f7b-ff74-413c-bcd0-97d57cded0e4"
+                },
+                {
+                    "description": "ゾーン [GND] F.Cu 上, 優先度 0",
+                    "pos": {
+                        "x": 1.0,
+                        "y": 1.0
+                    },
+                    "uuid": "85340f4e-975a-47d5-bcac-daf9c450375f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "シルクスクリーンのクリアランス (ルール 'JLCPCB silk' クリアランス 0.1500 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "矩形 of J8 、f.silkscreen 上",
+                    "pos": {
+                        "x": 62.95,
+                        "y": 2.5
+                    },
+                    "uuid": "70f36f7b-ff74-413c-bcd0-97d57cded0e4"
+                },
+                {
+                    "description": "配線 [PUMP7_PLUS] ( F.Cu 上、長さ: 2.5000 mm )",
+                    "pos": {
+                        "x": 65.4,
+                        "y": 8.5
+                    },
+                    "uuid": "f67210be-26d5-4b24-86de-966fe5fdd306"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "シルクスクリーンのクリアランス (ルール 'JLCPCB silk' クリアランス 0.1500 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "矩形 of J8 、f.silkscreen 上",
+                    "pos": {
+                        "x": 62.95,
+                        "y": 2.5
+                    },
+                    "uuid": "70f36f7b-ff74-413c-bcd0-97d57cded0e4"
+                },
+                {
+                    "description": "配線 [PUMP7_PLUS] ( F.Cu 上、長さ: 8.7652 mm )",
+                    "pos": {
+                        "x": 67.54,
+                        "y": 17.0
+                    },
+                    "uuid": "275a96d4-7c68-4bd5-a6e4-8e7b4783d641"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "シルクスクリーンのクリアランス (ルール 'JLCPCB silk' クリアランス 0.1500 mm; 現状 0.0702 mm)",
+            "items": [
+                {
+                    "description": "J8 のフットプリント テキスト ( 7 + - )",
+                    "pos": {
+                        "x": 66.65,
+                        "y": 10.0
+                    },
+                    "uuid": "a579c803-0ab1-4261-9ca1-6b3c63745802"
+                },
+                {
+                    "description": "ゾーン [GND] F.Cu 上, 優先度 0",
+                    "pos": {
+                        "x": 1.0,
+                        "y": 1.0
+                    },
+                    "uuid": "85340f4e-975a-47d5-bcac-daf9c450375f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "シルクスクリーンのクリアランス (ルール 'JLCPCB silk' クリアランス 0.1500 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "J8 のフットプリント テキスト ( 7 + - )",
+                    "pos": {
+                        "x": 66.65,
+                        "y": 10.0
+                    },
+                    "uuid": "a579c803-0ab1-4261-9ca1-6b3c63745802"
+                },
+                {
+                    "description": "配線 [PUMP7_PLUS] ( F.Cu 上、長さ: 8.7652 mm )",
+                    "pos": {
+                        "x": 67.54,
+                        "y": 17.0
+                    },
+                    "uuid": "275a96d4-7c68-4bd5-a6e4-8e7b4783d641"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "シルクスクリーンのクリアランス (ルール 'JLCPCB silk' クリアランス 0.1500 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "矩形 of J7 、f.silkscreen 上",
+                    "pos": {
+                        "x": 54.75,
+                        "y": 2.5
+                    },
+                    "uuid": "5e5b084c-66c3-44fa-bff5-49fdb0d1e4c7"
+                },
+                {
+                    "description": "ゾーン [GND] F.Cu 上, 優先度 0",
+                    "pos": {
+                        "x": 1.0,
+                        "y": 1.0
+                    },
+                    "uuid": "85340f4e-975a-47d5-bcac-daf9c450375f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "シルクスクリーンのクリアランス (ルール 'JLCPCB silk' クリアランス 0.1500 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "矩形 of J7 、f.silkscreen 上",
+                    "pos": {
+                        "x": 54.75,
+                        "y": 2.5
+                    },
+                    "uuid": "5e5b084c-66c3-44fa-bff5-49fdb0d1e4c7"
+                },
+                {
+                    "description": "配線 [PUMP6_PLUS] ( F.Cu 上、長さ: 2.5000 mm )",
+                    "pos": {
+                        "x": 57.2,
+                        "y": 8.5
+                    },
+                    "uuid": "b1086929-8c23-41ea-b95c-242a3df4b0cb"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "シルクスクリーンのクリアランス (ルール 'JLCPCB silk' クリアランス 0.1500 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "矩形 of J7 、f.silkscreen 上",
+                    "pos": {
+                        "x": 54.75,
+                        "y": 2.5
+                    },
+                    "uuid": "5e5b084c-66c3-44fa-bff5-49fdb0d1e4c7"
+                },
+                {
+                    "description": "配線 [PUMP6_PLUS] ( F.Cu 上、長さ: 11.5365 mm )",
+                    "pos": {
+                        "x": 65.0,
+                        "y": 17.0
+                    },
+                    "uuid": "f7af1a26-1ae3-4704-9d00-e9276f6e1cf7"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "シルクスクリーンのクリアランス (ルール 'JLCPCB silk' クリアランス 0.1500 mm; 現状 0.0730 mm)",
+            "items": [
+                {
+                    "description": "J7 のフットプリント テキスト ( 6 + - )",
+                    "pos": {
+                        "x": 58.45,
+                        "y": 10.0
+                    },
+                    "uuid": "1e6a9fd6-2e47-4fdc-8a21-ff202be3963f"
+                },
+                {
+                    "description": "ゾーン [GND] F.Cu 上, 優先度 0",
+                    "pos": {
+                        "x": 1.0,
+                        "y": 1.0
+                    },
+                    "uuid": "85340f4e-975a-47d5-bcac-daf9c450375f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "シルクスクリーンのクリアランス (ルール 'JLCPCB silk' クリアランス 0.1500 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "J7 のフットプリント テキスト ( 6 + - )",
+                    "pos": {
+                        "x": 58.45,
+                        "y": 10.0
+                    },
+                    "uuid": "1e6a9fd6-2e47-4fdc-8a21-ff202be3963f"
+                },
+                {
+                    "description": "配線 [PUMP6_PLUS] ( F.Cu 上、長さ: 11.5365 mm )",
+                    "pos": {
+                        "x": 65.0,
+                        "y": 17.0
+                    },
+                    "uuid": "f7af1a26-1ae3-4704-9d00-e9276f6e1cf7"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "シルクスクリーンのクリアランス (ルール 'JLCPCB silk' クリアランス 0.1500 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "J10のリファレンスフィールド",
+                    "pos": {
+                        "x": 83.05,
+                        "y": 1.3
+                    },
+                    "uuid": "6d8de3a2-3750-490f-9b43-01e214261c37"
+                },
+                {
+                    "description": "ゾーン [GND] F.Cu 上, 優先度 0",
+                    "pos": {
+                        "x": 1.0,
+                        "y": 1.0
+                    },
+                    "uuid": "85340f4e-975a-47d5-bcac-daf9c450375f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "シルクスクリーンのクリアランス (ルール 'JLCPCB silk' クリアランス 0.1500 mm; 現状 0.0506 mm)",
+            "items": [
+                {
+                    "description": "矩形 of J10 、f.silkscreen 上",
+                    "pos": {
+                        "x": 79.35,
+                        "y": 2.5
+                    },
+                    "uuid": "1707826a-db73-4e82-9978-301f8e4d94e6"
+                },
+                {
+                    "description": "ゾーン [GND] F.Cu 上, 優先度 0",
+                    "pos": {
+                        "x": 1.0,
+                        "y": 1.0
+                    },
+                    "uuid": "85340f4e-975a-47d5-bcac-daf9c450375f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "シルクスクリーンのクリアランス (ルール 'JLCPCB silk' クリアランス 0.1500 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "矩形 of J10 、f.silkscreen 上",
+                    "pos": {
+                        "x": 79.35,
+                        "y": 2.5
+                    },
+                    "uuid": "1707826a-db73-4e82-9978-301f8e4d94e6"
+                },
+                {
+                    "description": "配線 [PUMP9_PLUS] ( F.Cu 上、長さ: 12.5109 mm )",
+                    "pos": {
+                        "x": 72.62,
+                        "y": 17.0
+                    },
+                    "uuid": "06c3d880-67a4-4421-ae2b-19cdbec0a5db"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "シルクスクリーンのクリアランス (ルール 'JLCPCB silk' クリアランス 0.1500 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "矩形 of J10 、f.silkscreen 上",
+                    "pos": {
+                        "x": 79.35,
+                        "y": 2.5
+                    },
+                    "uuid": "1707826a-db73-4e82-9978-301f8e4d94e6"
+                },
+                {
+                    "description": "配線 [PUMP9_PLUS] ( F.Cu 上、長さ: 2.5000 mm )",
+                    "pos": {
+                        "x": 81.8,
+                        "y": 8.5
+                    },
+                    "uuid": "b83d0b5e-86a8-4ec1-a779-873031b8d956"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "シルクスクリーンのクリアランス (ルール 'JLCPCB silk' クリアランス 0.1500 mm; 現状 0.0982 mm)",
+            "items": [
+                {
+                    "description": "矩形 of J9 、f.silkscreen 上",
+                    "pos": {
+                        "x": 71.15,
+                        "y": 2.5
+                    },
+                    "uuid": "b0331a10-4138-4111-b364-e5e1bec7c7e5"
+                },
+                {
+                    "description": "ゾーン [GND] F.Cu 上, 優先度 0",
+                    "pos": {
+                        "x": 1.0,
+                        "y": 1.0
+                    },
+                    "uuid": "85340f4e-975a-47d5-bcac-daf9c450375f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "シルクスクリーンのクリアランス (ルール 'JLCPCB silk' クリアランス 0.1500 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "J9のリファレンスフィールド",
+                    "pos": {
+                        "x": 74.85,
+                        "y": 1.3
+                    },
+                    "uuid": "7aec6913-db93-4d72-b801-3dcec1f9d90f"
+                },
+                {
+                    "description": "ゾーン [GND] F.Cu 上, 優先度 0",
+                    "pos": {
+                        "x": 1.0,
+                        "y": 1.0
+                    },
+                    "uuid": "85340f4e-975a-47d5-bcac-daf9c450375f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "シルクスクリーンのクリアランス (ルール 'JLCPCB silk' クリアランス 0.1500 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "矩形 of J9 、f.silkscreen 上",
+                    "pos": {
+                        "x": 71.15,
+                        "y": 2.5
+                    },
+                    "uuid": "b0331a10-4138-4111-b364-e5e1bec7c7e5"
+                },
+                {
+                    "description": "配線 [PUMP8_PLUS] ( F.Cu 上、長さ: 2.5000 mm )",
+                    "pos": {
+                        "x": 73.6,
+                        "y": 8.5
+                    },
+                    "uuid": "e9a4c352-7f88-41aa-aa5f-53e8fc30996c"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "シルクスクリーンのクリアランス (ルール 'JLCPCB silk' クリアランス 0.1500 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "矩形 of J9 、f.silkscreen 上",
+                    "pos": {
+                        "x": 71.15,
+                        "y": 2.5
+                    },
+                    "uuid": "b0331a10-4138-4111-b364-e5e1bec7c7e5"
+                },
+                {
+                    "description": "配線 [PUMP8_PLUS] ( F.Cu 上、長さ: 9.2000 mm )",
+                    "pos": {
+                        "x": 70.08,
+                        "y": 17.0
+                    },
+                    "uuid": "a508cdac-4ee2-4a83-b2d9-da946a10246c"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "シルクスクリーンのクリアランス (ルール 'JLCPCB silk' クリアランス 0.1500 mm; 現状 0.0143 mm)",
+            "items": [
+                {
+                    "description": "J9 のフットプリント テキスト ( 8 + - )",
+                    "pos": {
+                        "x": 74.85,
+                        "y": 10.0
+                    },
+                    "uuid": "f06cad9b-23b6-44d5-9cf9-5e66367e69d2"
+                },
+                {
+                    "description": "ゾーン [GND] F.Cu 上, 優先度 0",
+                    "pos": {
+                        "x": 1.0,
+                        "y": 1.0
+                    },
+                    "uuid": "85340f4e-975a-47d5-bcac-daf9c450375f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "シルクスクリーンのクリアランス (ルール 'JLCPCB silk' クリアランス 0.1500 mm; 現状 0.0104 mm)",
+            "items": [
+                {
+                    "description": "J9 のフットプリント テキスト ( 8 + - )",
+                    "pos": {
+                        "x": 74.85,
+                        "y": 10.0
+                    },
+                    "uuid": "f06cad9b-23b6-44d5-9cf9-5e66367e69d2"
+                },
+                {
+                    "description": "配線 [PUMP8_PLUS] ( F.Cu 上、長さ: 9.2000 mm )",
+                    "pos": {
+                        "x": 70.08,
+                        "y": 17.0
+                    },
+                    "uuid": "a508cdac-4ee2-4a83-b2d9-da946a10246c"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "シルクスクリーンのクリアランス (ルール 'JLCPCB silk' クリアランス 0.1500 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "基板上のテキスト 'EmerFlux Rev.A1  12V  TEST ONLY' ( b.silkscreen 上)",
+                    "pos": {
+                        "x": 48.0,
+                        "y": 47.8
+                    },
+                    "uuid": "6eedee7c-5a4f-450b-b47c-0bc63cd0442a"
+                },
+                {
+                    "description": "ゾーン [GND] B.Cu 上, 優先度 0",
+                    "pos": {
+                        "x": 1.0,
+                        "y": 1.0
+                    },
+                    "uuid": "25825bb8-9d43-4d2e-89ef-f27aa60dee7e"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "シルクスクリーンのクリアランス (ルール 'JLCPCB silk' クリアランス 0.1500 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "基板上のテキスト '+12V' ( b.silkscreen 上)",
+                    "pos": {
+                        "x": 85.0,
+                        "y": 41.5
+                    },
+                    "uuid": "ddd465ae-45c6-46b2-b013-9fcbf582c16a"
+                },
+                {
+                    "description": "ゾーン [GND] B.Cu 上, 優先度 0",
+                    "pos": {
+                        "x": 1.0,
+                        "y": 1.0
+                    },
+                    "uuid": "25825bb8-9d43-4d2e-89ef-f27aa60dee7e"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "シルクスクリーンのクリアランス (ルール 'JLCPCB silk' クリアランス 0.1500 mm; 現状 0.0000 mm)",
+            "items": [
+                {
+                    "description": "基板上のテキスト 'GND' ( b.silkscreen 上)",
+                    "pos": {
+                        "x": 90.08,
+                        "y": 41.5
+                    },
+                    "uuid": "f17cad4a-fce2-40e8-9a69-b3770f565142"
+                },
+                {
+                    "description": "ゾーン [GND] B.Cu 上, 優先度 0",
+                    "pos": {
+                        "x": 1.0,
+                        "y": 1.0
+                    },
+                    "uuid": "25825bb8-9d43-4d2e-89ef-f27aa60dee7e"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        }
+    ]
+}

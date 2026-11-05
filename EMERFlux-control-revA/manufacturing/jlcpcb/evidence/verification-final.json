@@ -1,0 +1,42 @@
+{
+  "drc": [],
+  "holes_matched_to_pcb": 110,
+  "pth": 106,
+  "npth": 4,
+  "outline_mm": [
+    100,
+    50
+  ],
+  "layers": [
+    [
+      "top",
+      "copper"
+    ],
+    [
+      "top",
+      "mask"
+    ],
+    [
+      "top",
+      "silk"
+    ],
+    [
+      "bottom",
+      "copper"
+    ],
+    [
+      "bottom",
+      "mask"
+    ],
+    [
+      "bottom",
+      "silk"
+    ],
+    [
+      "mechanical",
+      "outline"
+    ]
+  ],
+  "channel_mapping": "11/11 passed",
+  "zip_files": 9
+}

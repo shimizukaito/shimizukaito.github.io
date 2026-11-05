@@ -1,0 +1,12 @@
+﻿Reference,Quantity,Value / Part,Akizuki code,Unit price JPY,Description
+U1-U3,3,TBD62783APG,110957,150,8ch source DMOS DIP18; split 4+4+3
+J1-J11,11,B2B-XH-A(LF)(SN),112247,10,Genuine JST XH 2P board header
+J12,0.3,PH-1x40SG,100167,35,Cut twelve pins; one strip supplies three boards
+J13,1,WJ142V-5.08-02P-14G-00A,117002,40,15A push-in 12V terminal
+F1-F3,3,MF-R185,112629,40,One PTC per TBD; 1.85A hold at 23C; 5.1mm pitch
+C1,1,25PX470MEFC8X11.5,117883,20,470uF 25V 105C diameter8mm pitch3.5mm
+C2-C4,3,0.1uF 50V X7R radial ceramic,131527,8,2.54mm pitch; 20-pack price allocation rounded up
+U1-U3 sockets,3,2227-18-03,100008,22,Optional low-cost DIP18 socket
+JST housing,11,XHP-2,112255,10,Pump cable side
+JST contacts,22,SXH-001T-P0.6,112265,2,AWG28-22; package allocation
+PCB,1,100x50mm 2-layer,-,-,1.6mm FR4

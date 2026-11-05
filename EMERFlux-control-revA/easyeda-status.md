@@ -1,0 +1,3 @@
+# EasyEDAの位置付け
+
+現行の製造対象はローカルKiCad PCBです。クラウド側への更新・送信は実施していません。旧PCA9685内蔵＋個別MOSFET案および旧インポートZIPは製造禁止。最終製造ZIPはmanufacturing/jlcpcbにあります。過去のEasyEDA DRC結果を現在のKiCad基板の検証結果として扱わないでください。

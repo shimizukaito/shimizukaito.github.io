@@ -1,0 +1,1 @@
+(fp_lib_table (version 7) (lib (name "EmerFlux") (type "KiCad") (uri "${KIPRJMOD}/EmerFlux.pretty") (options "") (descr "Audited EmerFlux through-hole footprints")))

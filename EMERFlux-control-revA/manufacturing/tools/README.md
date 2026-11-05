@@ -1,0 +1,5 @@
+verify_gerber.py は最終Gerber検証用。revise_board.py とfinish_board.py は監査途中の作業履歴であり、再実行すると最終修正を失います。製造データの正本は現在のkicad_pcbです。
+
+Rev.Cの分岐PTC変更はrevise_branch_ptc.py。archive-RevB-singlePTCを入力に生成します。古いrevise_3tbd.pyを実行するとRev.Bに戻るため使用しないこと。export_pad_audit.pyで穴・ネット証拠を出力し、verify_gerber.pyで再照合。正本は現在のPCBです。
+
+最新Rev.Dはrevise_1oz.pyでarchive-RevC-2ozから生成。旧スクリプトの再実行で版が戻る点に注意。Gerber検証後に従来ZIP名へ同一内容をコピーしています。

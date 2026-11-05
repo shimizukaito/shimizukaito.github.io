@@ -1,0 +1,28 @@
+Reference,Quantity,Value / Part,Description,Footprint / rating,Population note
+U1,1,TCA9548APWR,8-channel I2C switch fixed at 0x77,TSSOP-24,Required; A0 A1 A2 tied to +5V
+U2,1,OKI-78SR-5/1.5-W36-C,Regulated 5 V 1.5 A logic supply,Murata SIP module; footprint from current drawing,Required
+FLOGIC,1,0.75 A hold PTC >=30 V,Logic-rail input protection,Radial or SMD to selected part,Required; final after logic-current test
+FBA-FBC,3,15 A MINI 32 V,Bank input protection,Littelfuse 01530008Z holder,Initial value; coordinate with external protection and load test
+F0-F10,11,5 A MINI 32 V,Individual row protection,Littelfuse 01530008Z holder,Initial value; final from startup test
+JPA-JPC,3,Phoenix Contact 1714926,12 V bank inputs 32 A nominal,MKDS 5/2-9.5 two-position THT,Required; pin1 positive pin2 return
+JROW0-JROW10,11,JST B2P-VH-FB-B,12 V fused row feeds,JST VH 2-pin THT,Required; mating VHR-2N
+JSA-JSC,3,JST B6B-XH-A(LF)(SN),Three daisy-chain I2C branches with 5V and OE,JST XH 6-pin THT,Required
+JM,1,JST B6B-XH-A(LF)(SN),Arduino SDA SCL GND ARM and reserved signals,JST XH 6-pin THT,Required; pin6 NC not Arduino 5V
+JESTOP,1,4-pin contactor/aux connector,Optional external DC contactor interface,Keyed,DNP unless future stop/interlock is installed
+RUP0-RUP7,8,4.7 kohm,I2C pull-ups upstream and three used branches,0603,Fit per branch; exact value from rise-time test
+RPAR0-RPAR7,8,4.7 kohm,Optional parallel I2C pull-ups producing about 2.35 kohm total,0603,DNP initially
+RS0-RS7,8,33 ohm,I2C series damping,0603,Optional/DNP initially
+ROE,1,10 kohm,Global OE fail-safe pull-up,0603,Required
+QOE,1,2N7002 or equivalent,Global OE open-drain sink,SOT-23,Required
+RARM,1,1 kohm,ARM gate series resistor,0603,Required
+RARMPD,1,100 kohm,ARM gate fail-safe pull-down,0603,Required
+QCOIL,1,TBD,Optional external contactor coil driver rated for selected coil,SMD power package,DNP in current configuration
+DCOIL,1,TBD,Optional contactor coil flyback diode rated for selected coil,SMD,DNP in current configuration
+DTVSA-DTVSC,3,SMBJ15A,Bank TVS,SMBJ,Required
+CBA-CBC,3,470 uF 25 V,Bank bulk capacitors,Radial footprint optionally accepting 1000 uF,Required; increase only after transient and inrush test
+C1,1,100 nF 16 V X7R,U1 decoupling,0603,Required
+C2,1,4.7 uF 10 V X7R,U1 local bulk,0805,Required
+LED0-LED10,11,Red,Fused-row power indicator,0603/0805,Optional but recommended
+RLED0-RLED10,11,10 kohm,Row LED resistor,0603/0805,Optional but recommended
+TP_SET,1,Test points,All bank rails logic rail I2C branches OE,Loop or SMT pad,Required
+MH1-MH6,6,M3 mounting hole,Mechanical mounting,3.2 mm NPTH with optional chassis pad,Required

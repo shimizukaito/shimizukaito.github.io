@@ -1,0 +1,51 @@
+{
+  "base": {
+    "valid_solid": true,
+    "stl_closed": true,
+    "facets": 7520,
+    "bounds_mm": [
+      130.0,
+      125.0,
+      50.0
+    ]
+  },
+  "lid": {
+    "valid_solid": true,
+    "stl_closed": true,
+    "facets": 1932,
+    "bounds_mm": [
+      130.0,
+      125.0,
+      2.4
+    ]
+  },
+  "fit_gauge": {
+    "valid_solid": true,
+    "stl_closed": true,
+    "facets": 2732,
+    "bounds_mm": [
+      130.0,
+      125.0,
+      1.2000000000000002
+    ]
+  },
+  "screw_coupon": {
+    "valid_solid": true,
+    "stl_closed": true,
+    "facets": 1356,
+    "bounds_mm": [
+      44.0,
+      14.0,
+      8.0
+    ]
+  },
+  "clearance": {
+    "board_bottom_z": 10.4,
+    "board_top_z": 12,
+    "lid_underside_z": 50,
+    "available_above_pcb_mm": 38,
+    "assumed_component_and_connector_height_mm": 30,
+    "nominal_top_margin_mm": 8,
+    "physical_fit_test_required": true
+  }
+}

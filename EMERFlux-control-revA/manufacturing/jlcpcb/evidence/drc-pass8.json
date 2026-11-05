@@ -1,0 +1,267 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-11-03T20:32:53",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.8",
+    "schematic_parity": [],
+    "source": "EmerFlux-11ch-driver.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "Courtyards overlap",
+            "items": [
+                {
+                    "description": "フットプリント J11",
+                    "pos": {
+                        "x": 90.0,
+                        "y": 6.0
+                    },
+                    "uuid": "4217aef9-2a1b-4d02-856a-7e22a0c7ac86"
+                },
+                {
+                    "description": "フットプリント J10",
+                    "pos": {
+                        "x": 81.8,
+                        "y": 6.0
+                    },
+                    "uuid": "5ed68eb3-77f9-4641-b056-0e910d2530ad"
+                }
+            ],
+            "severity": "error",
+            "type": "courtyards_overlap"
+        },
+        {
+            "description": "Courtyards overlap",
+            "items": [
+                {
+                    "description": "フットプリント J1",
+                    "pos": {
+                        "x": 8.0,
+                        "y": 6.0
+                    },
+                    "uuid": "59ba2f4b-17bc-4ac5-85da-41062010c29f"
+                },
+                {
+                    "description": "フットプリント J2",
+                    "pos": {
+                        "x": 16.2,
+                        "y": 6.0
+                    },
+                    "uuid": "95aedfe1-385f-4740-ae1e-84d44e7988ab"
+                }
+            ],
+            "severity": "error",
+            "type": "courtyards_overlap"
+        },
+        {
+            "description": "Courtyards overlap",
+            "items": [
+                {
+                    "description": "フットプリント J10",
+                    "pos": {
+                        "x": 81.8,
+                        "y": 6.0
+                    },
+                    "uuid": "5ed68eb3-77f9-4641-b056-0e910d2530ad"
+                },
+                {
+                    "description": "フットプリント J9",
+                    "pos": {
+                        "x": 73.6,
+                        "y": 6.0
+                    },
+                    "uuid": "9b443d4a-c6df-4d53-ae18-fc730edc3d34"
+                }
+            ],
+            "severity": "error",
+            "type": "courtyards_overlap"
+        },
+        {
+            "description": "Courtyards overlap",
+            "items": [
+                {
+                    "description": "フットプリント J8",
+                    "pos": {
+                        "x": 65.4,
+                        "y": 6.0
+                    },
+                    "uuid": "6d2972dc-718f-4b53-bbb9-54a2c2bc5d31"
+                },
+                {
+                    "description": "フットプリント J9",
+                    "pos": {
+                        "x": 73.6,
+                        "y": 6.0
+                    },
+                    "uuid": "9b443d4a-c6df-4d53-ae18-fc730edc3d34"
+                }
+            ],
+            "severity": "error",
+            "type": "courtyards_overlap"
+        },
+        {
+            "description": "Courtyards overlap",
+            "items": [
+                {
+                    "description": "フットプリント J8",
+                    "pos": {
+                        "x": 65.4,
+                        "y": 6.0
+                    },
+                    "uuid": "6d2972dc-718f-4b53-bbb9-54a2c2bc5d31"
+                },
+                {
+                    "description": "フットプリント J7",
+                    "pos": {
+                        "x": 57.2,
+                        "y": 6.0
+                    },
+                    "uuid": "ceb573a6-92ee-4d5a-9e49-6e4cdbf8b6db"
+                }
+            ],
+            "severity": "error",
+            "type": "courtyards_overlap"
+        },
+        {
+            "description": "Courtyards overlap",
+            "items": [
+                {
+                    "description": "フットプリント J6",
+                    "pos": {
+                        "x": 49.0,
+                        "y": 6.0
+                    },
+                    "uuid": "7f8f133f-27ce-493f-87bb-32c687825da2"
+                },
+                {
+                    "description": "フットプリント J5",
+                    "pos": {
+                        "x": 40.8,
+                        "y": 6.0
+                    },
+                    "uuid": "884ee524-fabc-4b7e-8aff-09ab3b9dc6f8"
+                }
+            ],
+            "severity": "error",
+            "type": "courtyards_overlap"
+        },
+        {
+            "description": "Courtyards overlap",
+            "items": [
+                {
+                    "description": "フットプリント J6",
+                    "pos": {
+                        "x": 49.0,
+                        "y": 6.0
+                    },
+                    "uuid": "7f8f133f-27ce-493f-87bb-32c687825da2"
+                },
+                {
+                    "description": "フットプリント J7",
+                    "pos": {
+                        "x": 57.2,
+                        "y": 6.0
+                    },
+                    "uuid": "ceb573a6-92ee-4d5a-9e49-6e4cdbf8b6db"
+                }
+            ],
+            "severity": "error",
+            "type": "courtyards_overlap"
+        },
+        {
+            "description": "Courtyards overlap",
+            "items": [
+                {
+                    "description": "フットプリント J5",
+                    "pos": {
+                        "x": 40.8,
+                        "y": 6.0
+                    },
+                    "uuid": "884ee524-fabc-4b7e-8aff-09ab3b9dc6f8"
+                },
+                {
+                    "description": "フットプリント J4",
+                    "pos": {
+                        "x": 32.6,
+                        "y": 6.0
+                    },
+                    "uuid": "bfc019b3-0bf9-45d2-be15-29e8605855bc"
+                }
+            ],
+            "severity": "error",
+            "type": "courtyards_overlap"
+        },
+        {
+            "description": "Courtyards overlap",
+            "items": [
+                {
+                    "description": "フットプリント J2",
+                    "pos": {
+                        "x": 16.2,
+                        "y": 6.0
+                    },
+                    "uuid": "95aedfe1-385f-4740-ae1e-84d44e7988ab"
+                },
+                {
+                    "description": "フットプリント J3",
+                    "pos": {
+                        "x": 24.4,
+                        "y": 6.0
+                    },
+                    "uuid": "aec5c52b-b424-47e6-b362-c86aa6d92a36"
+                }
+            ],
+            "severity": "error",
+            "type": "courtyards_overlap"
+        },
+        {
+            "description": "Courtyards overlap",
+            "items": [
+                {
+                    "description": "フットプリント J3",
+                    "pos": {
+                        "x": 24.4,
+                        "y": 6.0
+                    },
+                    "uuid": "aec5c52b-b424-47e6-b362-c86aa6d92a36"
+                },
+                {
+                    "description": "フットプリント J4",
+                    "pos": {
+                        "x": 32.6,
+                        "y": 6.0
+                    },
+                    "uuid": "bfc019b3-0bf9-45d2-be15-29e8605855bc"
+                }
+            ],
+            "severity": "error",
+            "type": "courtyards_overlap"
+        }
+    ]
+}

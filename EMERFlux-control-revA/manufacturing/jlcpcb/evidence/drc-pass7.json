@@ -1,0 +1,1280 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-11-03T20:32:39",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.8",
+    "schematic_parity": [],
+    "source": "EmerFlux-11ch-driver.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "PTHパッド 2 [+12V_PROTECTED] (J2)",
+                    "pos": {
+                        "x": 18.7,
+                        "y": 6.0
+                    },
+                    "uuid": "2788f79b-c076-4138-98a0-4eb9453e4e58"
+                },
+                {
+                    "description": "PTHパッド 2 [+12V_PROTECTED] (J1)",
+                    "pos": {
+                        "x": 10.5,
+                        "y": 6.0
+                    },
+                    "uuid": "e2dd9184-9372-4ae9-ade5-539421884d32"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "PTHパッド 2 [+12V_PROTECTED] (J3)",
+                    "pos": {
+                        "x": 26.9,
+                        "y": 6.0
+                    },
+                    "uuid": "34622cff-30ba-4b34-b7df-6a5886f09f0f"
+                },
+                {
+                    "description": "PTHパッド 2 [+12V_PROTECTED] (J2)",
+                    "pos": {
+                        "x": 18.7,
+                        "y": 6.0
+                    },
+                    "uuid": "2788f79b-c076-4138-98a0-4eb9453e4e58"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "PTHパッド 2 [+12V_PROTECTED] (J4)",
+                    "pos": {
+                        "x": 35.1,
+                        "y": 6.0
+                    },
+                    "uuid": "87986de3-72fe-42e6-8cb5-f5ae0441b3a9"
+                },
+                {
+                    "description": "PTHパッド 2 [+12V_PROTECTED] (J3)",
+                    "pos": {
+                        "x": 26.9,
+                        "y": 6.0
+                    },
+                    "uuid": "34622cff-30ba-4b34-b7df-6a5886f09f0f"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "PTHパッド 2 [+12V_PROTECTED] (J5)",
+                    "pos": {
+                        "x": 43.3,
+                        "y": 6.0
+                    },
+                    "uuid": "428b2e6c-8a9e-4557-8c7e-7cbdd3e1b6ec"
+                },
+                {
+                    "description": "PTHパッド 2 [+12V_PROTECTED] (J4)",
+                    "pos": {
+                        "x": 35.1,
+                        "y": 6.0
+                    },
+                    "uuid": "87986de3-72fe-42e6-8cb5-f5ae0441b3a9"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "PTHパッド 2 [+12V_PROTECTED] (J6)",
+                    "pos": {
+                        "x": 51.5,
+                        "y": 6.0
+                    },
+                    "uuid": "7ec904dc-90b7-422d-825c-d70f7470a1b2"
+                },
+                {
+                    "description": "PTHパッド 2 [+12V_PROTECTED] (J5)",
+                    "pos": {
+                        "x": 43.3,
+                        "y": 6.0
+                    },
+                    "uuid": "428b2e6c-8a9e-4557-8c7e-7cbdd3e1b6ec"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "PTHパッド 2 [+12V_PROTECTED] (J7)",
+                    "pos": {
+                        "x": 59.7,
+                        "y": 6.0
+                    },
+                    "uuid": "73ebb299-5752-4a04-9ae5-e601e7e6e6e7"
+                },
+                {
+                    "description": "PTHパッド 2 [+12V_PROTECTED] (J6)",
+                    "pos": {
+                        "x": 51.5,
+                        "y": 6.0
+                    },
+                    "uuid": "7ec904dc-90b7-422d-825c-d70f7470a1b2"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "PTHパッド 2 [+12V_PROTECTED] (J8)",
+                    "pos": {
+                        "x": 67.9,
+                        "y": 6.0
+                    },
+                    "uuid": "11c34f55-c1e9-475c-a93c-c14876ac1099"
+                },
+                {
+                    "description": "PTHパッド 2 [+12V_PROTECTED] (J7)",
+                    "pos": {
+                        "x": 59.7,
+                        "y": 6.0
+                    },
+                    "uuid": "73ebb299-5752-4a04-9ae5-e601e7e6e6e7"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "PTHパッド 2 [+12V_PROTECTED] (J9)",
+                    "pos": {
+                        "x": 76.1,
+                        "y": 6.0
+                    },
+                    "uuid": "612a7906-8c93-487c-b88c-56be90d1e65a"
+                },
+                {
+                    "description": "PTHパッド 2 [+12V_PROTECTED] (J8)",
+                    "pos": {
+                        "x": 67.9,
+                        "y": 6.0
+                    },
+                    "uuid": "11c34f55-c1e9-475c-a93c-c14876ac1099"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "PTHパッド 2 [+12V_PROTECTED] (J10)",
+                    "pos": {
+                        "x": 84.3,
+                        "y": 6.0
+                    },
+                    "uuid": "7a7de75a-03a8-4546-9fb1-5a380997c8b1"
+                },
+                {
+                    "description": "PTHパッド 2 [+12V_PROTECTED] (J9)",
+                    "pos": {
+                        "x": 76.1,
+                        "y": 6.0
+                    },
+                    "uuid": "612a7906-8c93-487c-b88c-56be90d1e65a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "PTHパッド 2 [+12V_PROTECTED] (J10)",
+                    "pos": {
+                        "x": 84.3,
+                        "y": 6.0
+                    },
+                    "uuid": "7a7de75a-03a8-4546-9fb1-5a380997c8b1"
+                },
+                {
+                    "description": "配線 [+12V_PROTECTED] ( F.Cu 上、長さ: 2.3800 mm )",
+                    "pos": {
+                        "x": 85.32,
+                        "y": 28.0
+                    },
+                    "uuid": "0c0c042f-92e5-4d60-8902-1318c4d5ee49"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "PTHパッド 2 [+12V_PROTECTED] (J11)",
+                    "pos": {
+                        "x": 92.5,
+                        "y": 6.0
+                    },
+                    "uuid": "6c0ed043-5c02-4198-81fc-2570ee0d7918"
+                },
+                {
+                    "description": "PTHパッド 2 [+12V_PROTECTED] (J10)",
+                    "pos": {
+                        "x": 84.3,
+                        "y": 6.0
+                    },
+                    "uuid": "7a7de75a-03a8-4546-9fb1-5a380997c8b1"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "PTHパッド 1 [+12V_RAW] (J11)",
+                    "pos": {
+                        "x": 90.0,
+                        "y": 6.0
+                    },
+                    "uuid": "a1794e26-5939-4fae-9397-d9b3caf59bb9"
+                },
+                {
+                    "description": "配線 [+12V_RAW] ( F.Cu 上、長さ: 6.5722 mm )",
+                    "pos": {
+                        "x": 85.0,
+                        "y": 37.38
+                    },
+                    "uuid": "bf4d61bd-1c6b-4c65-a8ea-03232e1d6abc"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "PTHパッド 1 [PWM6] (J3)",
+                    "pos": {
+                        "x": 24.4,
+                        "y": 6.0
+                    },
+                    "uuid": "ba462532-1525-4e2e-b915-e14c72018e9b"
+                },
+                {
+                    "description": "配線 [PWM6] ( B.Cu 上、長さ: 14.1339 mm )",
+                    "pos": {
+                        "x": 51.78,
+                        "y": 34.0
+                    },
+                    "uuid": "951a5b43-9b7f-42de-857b-c04395772a2e"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "PTHパッド 1 [PWM7] (J4)",
+                    "pos": {
+                        "x": 32.6,
+                        "y": 6.0
+                    },
+                    "uuid": "3550975a-b5d4-4b52-9892-1be142b7853b"
+                },
+                {
+                    "description": "配線 [PWM7] ( B.Cu 上、長さ: 9.0000 mm )",
+                    "pos": {
+                        "x": 54.32,
+                        "y": 43.0
+                    },
+                    "uuid": "4f09a19f-6b20-4da3-a106-6d574c4eed24"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "PTHパッド 1 [PWM8] (J5)",
+                    "pos": {
+                        "x": 40.8,
+                        "y": 6.0
+                    },
+                    "uuid": "8aa5ee40-1fe1-4bb9-95df-74237ddfd0a4"
+                },
+                {
+                    "description": "配線 [PWM8] ( B.Cu 上、長さ: 14.1339 mm )",
+                    "pos": {
+                        "x": 56.86,
+                        "y": 34.0
+                    },
+                    "uuid": "6f849c4b-2df1-4f76-b5b6-114700eca5e7"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "PTHパッド 1 [PWM9] (J6)",
+                    "pos": {
+                        "x": 49.0,
+                        "y": 6.0
+                    },
+                    "uuid": "fa40b2e4-066a-440e-9764-13f4cf269c4b"
+                },
+                {
+                    "description": "配線 [PWM9] ( B.Cu 上、長さ: 14.1339 mm )",
+                    "pos": {
+                        "x": 59.4,
+                        "y": 34.0
+                    },
+                    "uuid": "2a54a236-0a90-4d2f-aa36-ed11031e9ad5"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "配線 [PWM10] ( B.Cu 上、長さ: 3.3800 mm )",
+                    "pos": {
+                        "x": 75.16,
+                        "y": 29.0
+                    },
+                    "uuid": "42534985-125d-4805-8050-c76899814cb4"
+                },
+                {
+                    "description": "PTHパッド 1 [PWM10] (J7)",
+                    "pos": {
+                        "x": 57.2,
+                        "y": 6.0
+                    },
+                    "uuid": "df6eb1c1-bc58-47b8-80ca-68a81c1ef010"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "配線 [PUMP10_PLUS] ( F.Cu 上、長さ: 17.1019 mm )",
+                    "pos": {
+                        "x": 75.16,
+                        "y": 17.0
+                    },
+                    "uuid": "4417d45a-cc2e-47e8-9b92-2f5735156e52"
+                },
+                {
+                    "description": "PTHパッド 1 [PUMP10_PLUS] (J2)",
+                    "pos": {
+                        "x": 16.2,
+                        "y": 6.0
+                    },
+                    "uuid": "59316bca-f7c2-448f-8aeb-95c30acb26a6"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "配線 [PUMP9_PLUS] ( F.Cu 上、長さ: 12.5109 mm )",
+                    "pos": {
+                        "x": 72.62,
+                        "y": 17.0
+                    },
+                    "uuid": "06c3d880-67a4-4421-ae2b-19cdbec0a5db"
+                },
+                {
+                    "description": "PTHパッド 1 [PUMP9_PLUS] (J1)",
+                    "pos": {
+                        "x": 8.0,
+                        "y": 6.0
+                    },
+                    "uuid": "b58a2987-73a3-4ce1-b983-06f5f6700158"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "配線 [PUMP8_PLUS] ( F.Cu 上、長さ: 2.5000 mm )",
+                    "pos": {
+                        "x": 73.6,
+                        "y": 8.5
+                    },
+                    "uuid": "e9a4c352-7f88-41aa-aa5f-53e8fc30996c"
+                },
+                {
+                    "description": "PTHパッド 1 [PUMP8_PLUS] (J8)",
+                    "pos": {
+                        "x": 65.4,
+                        "y": 6.0
+                    },
+                    "uuid": "ba188e7f-0b4f-4c10-ae2b-5238ecefdc89"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "PTHパッド 1 [PUMP7_PLUS] (J9)",
+                    "pos": {
+                        "x": 73.6,
+                        "y": 6.0
+                    },
+                    "uuid": "90f5dbae-60ba-4ae7-badd-47f96b0ae6f5"
+                },
+                {
+                    "description": "配線 [PUMP7_PLUS] ( F.Cu 上、長さ: 2.5000 mm )",
+                    "pos": {
+                        "x": 65.4,
+                        "y": 8.5
+                    },
+                    "uuid": "f67210be-26d5-4b24-86de-966fe5fdd306"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "PTHパッド 1 [PUMP6_PLUS] (J10)",
+                    "pos": {
+                        "x": 81.8,
+                        "y": 6.0
+                    },
+                    "uuid": "4db40ec4-f1a4-47d3-9fb9-eb36cd63691e"
+                },
+                {
+                    "description": "配線 [PUMP6_PLUS] ( F.Cu 上、長さ: 1.0000 mm )",
+                    "pos": {
+                        "x": 65.0,
+                        "y": 18.0
+                    },
+                    "uuid": "6abd05ad-75e5-47f4-a248-64974562cb93"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "２つのネットを短絡するアイテム (ネット PUMP1_PLUS と PUMP10_PLUS)",
+            "items": [
+                {
+                    "description": "配線 [PUMP1_PLUS] ( F.Cu 上、長さ: 2.5000 mm )",
+                    "pos": {
+                        "x": 16.2,
+                        "y": 8.5
+                    },
+                    "uuid": "0298e7ef-d3ba-4c9f-8468-a9aa722db9a4"
+                },
+                {
+                    "description": "PTHパッド 1 [PUMP10_PLUS] (J2)",
+                    "pos": {
+                        "x": 16.2,
+                        "y": 6.0
+                    },
+                    "uuid": "59316bca-f7c2-448f-8aeb-95c30acb26a6"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット PWM6 と PUMP2_PLUS)",
+            "items": [
+                {
+                    "description": "PTHパッド 1 [PWM6] (J3)",
+                    "pos": {
+                        "x": 24.4,
+                        "y": 6.0
+                    },
+                    "uuid": "ba462532-1525-4e2e-b915-e14c72018e9b"
+                },
+                {
+                    "description": "配線 [PUMP2_PLUS] ( F.Cu 上、長さ: 2.5000 mm )",
+                    "pos": {
+                        "x": 24.4,
+                        "y": 8.5
+                    },
+                    "uuid": "bfe80bdc-ef65-4f96-a609-0074eb6fb413"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット PUMP6_PLUS と PWM10)",
+            "items": [
+                {
+                    "description": "配線 [PUMP6_PLUS] ( F.Cu 上、長さ: 2.5000 mm )",
+                    "pos": {
+                        "x": 57.2,
+                        "y": 8.5
+                    },
+                    "uuid": "b1086929-8c23-41ea-b95c-242a3df4b0cb"
+                },
+                {
+                    "description": "PTHパッド 1 [PWM10] (J7)",
+                    "pos": {
+                        "x": 57.2,
+                        "y": 6.0
+                    },
+                    "uuid": "df6eb1c1-bc58-47b8-80ca-68a81c1ef010"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット PUMP7_PLUS と PUMP8_PLUS)",
+            "items": [
+                {
+                    "description": "PTHパッド 1 [PUMP7_PLUS] (J9)",
+                    "pos": {
+                        "x": 73.6,
+                        "y": 6.0
+                    },
+                    "uuid": "90f5dbae-60ba-4ae7-badd-47f96b0ae6f5"
+                },
+                {
+                    "description": "配線 [PUMP8_PLUS] ( F.Cu 上、長さ: 2.5000 mm )",
+                    "pos": {
+                        "x": 73.6,
+                        "y": 8.5
+                    },
+                    "uuid": "e9a4c352-7f88-41aa-aa5f-53e8fc30996c"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット PUMP8_PLUS と PUMP7_PLUS)",
+            "items": [
+                {
+                    "description": "PTHパッド 1 [PUMP8_PLUS] (J8)",
+                    "pos": {
+                        "x": 65.4,
+                        "y": 6.0
+                    },
+                    "uuid": "ba188e7f-0b4f-4c10-ae2b-5238ecefdc89"
+                },
+                {
+                    "description": "配線 [PUMP7_PLUS] ( F.Cu 上、長さ: 2.5000 mm )",
+                    "pos": {
+                        "x": 65.4,
+                        "y": 8.5
+                    },
+                    "uuid": "f67210be-26d5-4b24-86de-966fe5fdd306"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット PUMP10_PLUS と +12V_RAW)",
+            "items": [
+                {
+                    "description": "配線 [PUMP10_PLUS] ( F.Cu 上、長さ: 2.5000 mm )",
+                    "pos": {
+                        "x": 90.0,
+                        "y": 8.5
+                    },
+                    "uuid": "4a474925-e0b8-4af1-a355-375fd1ca61c2"
+                },
+                {
+                    "description": "PTHパッド 1 [+12V_RAW] (J11)",
+                    "pos": {
+                        "x": 90.0,
+                        "y": 6.0
+                    },
+                    "uuid": "a1794e26-5939-4fae-9397-d9b3caf59bb9"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット PUMP0_PLUS と PUMP9_PLUS)",
+            "items": [
+                {
+                    "description": "配線 [PUMP0_PLUS] ( F.Cu 上、長さ: 2.5000 mm )",
+                    "pos": {
+                        "x": 8.0,
+                        "y": 8.5
+                    },
+                    "uuid": "b2b748b4-4d63-44a3-acca-aa4f0df5bbbe"
+                },
+                {
+                    "description": "PTHパッド 1 [PUMP9_PLUS] (J1)",
+                    "pos": {
+                        "x": 8.0,
+                        "y": 6.0
+                    },
+                    "uuid": "b58a2987-73a3-4ce1-b983-06f5f6700158"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット PUMP6_PLUS と PUMP9_PLUS)",
+            "items": [
+                {
+                    "description": "PTHパッド 1 [PUMP6_PLUS] (J10)",
+                    "pos": {
+                        "x": 81.8,
+                        "y": 6.0
+                    },
+                    "uuid": "4db40ec4-f1a4-47d3-9fb9-eb36cd63691e"
+                },
+                {
+                    "description": "配線 [PUMP9_PLUS] ( F.Cu 上、長さ: 2.5000 mm )",
+                    "pos": {
+                        "x": 81.8,
+                        "y": 8.5
+                    },
+                    "uuid": "b83d0b5e-86a8-4ec1-a779-873031b8d956"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット PWM7 と PUMP3_PLUS)",
+            "items": [
+                {
+                    "description": "PTHパッド 1 [PWM7] (J4)",
+                    "pos": {
+                        "x": 32.6,
+                        "y": 6.0
+                    },
+                    "uuid": "3550975a-b5d4-4b52-9892-1be142b7853b"
+                },
+                {
+                    "description": "配線 [PUMP3_PLUS] ( F.Cu 上、長さ: 2.5000 mm )",
+                    "pos": {
+                        "x": 32.6,
+                        "y": 8.5
+                    },
+                    "uuid": "42fe0be8-e76e-427b-bd66-6256276930b4"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット PWM8 と PUMP4_PLUS)",
+            "items": [
+                {
+                    "description": "PTHパッド 1 [PWM8] (J5)",
+                    "pos": {
+                        "x": 40.8,
+                        "y": 6.0
+                    },
+                    "uuid": "8aa5ee40-1fe1-4bb9-95df-74237ddfd0a4"
+                },
+                {
+                    "description": "配線 [PUMP4_PLUS] ( F.Cu 上、長さ: 2.5000 mm )",
+                    "pos": {
+                        "x": 40.8,
+                        "y": 8.5
+                    },
+                    "uuid": "b78916de-c4fe-4941-b484-9d054756567e"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "２つのネットを短絡するアイテム (ネット PUMP5_PLUS と PWM9)",
+            "items": [
+                {
+                    "description": "配線 [PUMP5_PLUS] ( F.Cu 上、長さ: 2.5000 mm )",
+                    "pos": {
+                        "x": 49.0,
+                        "y": 8.5
+                    },
+                    "uuid": "d1e20363-1a65-494e-8dff-3cf5abaedcd1"
+                },
+                {
+                    "description": "PTHパッド 1 [PWM9] (J6)",
+                    "pos": {
+                        "x": 49.0,
+                        "y": 6.0
+                    },
+                    "uuid": "fa40b2e4-066a-440e-9764-13f4cf269c4b"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Courtyards overlap",
+            "items": [
+                {
+                    "description": "フットプリント J11",
+                    "pos": {
+                        "x": 90.0,
+                        "y": 6.0
+                    },
+                    "uuid": "4217aef9-2a1b-4d02-856a-7e22a0c7ac86"
+                },
+                {
+                    "description": "フットプリント J10",
+                    "pos": {
+                        "x": 81.8,
+                        "y": 6.0
+                    },
+                    "uuid": "5ed68eb3-77f9-4641-b056-0e910d2530ad"
+                }
+            ],
+            "severity": "error",
+            "type": "courtyards_overlap"
+        },
+        {
+            "description": "Courtyards overlap",
+            "items": [
+                {
+                    "description": "フットプリント J1",
+                    "pos": {
+                        "x": 8.0,
+                        "y": 6.0
+                    },
+                    "uuid": "59ba2f4b-17bc-4ac5-85da-41062010c29f"
+                },
+                {
+                    "description": "フットプリント J2",
+                    "pos": {
+                        "x": 16.2,
+                        "y": 6.0
+                    },
+                    "uuid": "95aedfe1-385f-4740-ae1e-84d44e7988ab"
+                }
+            ],
+            "severity": "error",
+            "type": "courtyards_overlap"
+        },
+        {
+            "description": "Courtyards overlap",
+            "items": [
+                {
+                    "description": "フットプリント J10",
+                    "pos": {
+                        "x": 81.8,
+                        "y": 6.0
+                    },
+                    "uuid": "5ed68eb3-77f9-4641-b056-0e910d2530ad"
+                },
+                {
+                    "description": "フットプリント J9",
+                    "pos": {
+                        "x": 73.6,
+                        "y": 6.0
+                    },
+                    "uuid": "9b443d4a-c6df-4d53-ae18-fc730edc3d34"
+                }
+            ],
+            "severity": "error",
+            "type": "courtyards_overlap"
+        },
+        {
+            "description": "Courtyards overlap",
+            "items": [
+                {
+                    "description": "フットプリント J8",
+                    "pos": {
+                        "x": 65.4,
+                        "y": 6.0
+                    },
+                    "uuid": "6d2972dc-718f-4b53-bbb9-54a2c2bc5d31"
+                },
+                {
+                    "description": "フットプリント J9",
+                    "pos": {
+                        "x": 73.6,
+                        "y": 6.0
+                    },
+                    "uuid": "9b443d4a-c6df-4d53-ae18-fc730edc3d34"
+                }
+            ],
+            "severity": "error",
+            "type": "courtyards_overlap"
+        },
+        {
+            "description": "Courtyards overlap",
+            "items": [
+                {
+                    "description": "フットプリント J8",
+                    "pos": {
+                        "x": 65.4,
+                        "y": 6.0
+                    },
+                    "uuid": "6d2972dc-718f-4b53-bbb9-54a2c2bc5d31"
+                },
+                {
+                    "description": "フットプリント J7",
+                    "pos": {
+                        "x": 57.2,
+                        "y": 6.0
+                    },
+                    "uuid": "ceb573a6-92ee-4d5a-9e49-6e4cdbf8b6db"
+                }
+            ],
+            "severity": "error",
+            "type": "courtyards_overlap"
+        },
+        {
+            "description": "Courtyards overlap",
+            "items": [
+                {
+                    "description": "フットプリント J6",
+                    "pos": {
+                        "x": 49.0,
+                        "y": 6.0
+                    },
+                    "uuid": "7f8f133f-27ce-493f-87bb-32c687825da2"
+                },
+                {
+                    "description": "フットプリント J5",
+                    "pos": {
+                        "x": 40.8,
+                        "y": 6.0
+                    },
+                    "uuid": "884ee524-fabc-4b7e-8aff-09ab3b9dc6f8"
+                }
+            ],
+            "severity": "error",
+            "type": "courtyards_overlap"
+        },
+        {
+            "description": "Courtyards overlap",
+            "items": [
+                {
+                    "description": "フットプリント J6",
+                    "pos": {
+                        "x": 49.0,
+                        "y": 6.0
+                    },
+                    "uuid": "7f8f133f-27ce-493f-87bb-32c687825da2"
+                },
+                {
+                    "description": "フットプリント J7",
+                    "pos": {
+                        "x": 57.2,
+                        "y": 6.0
+                    },
+                    "uuid": "ceb573a6-92ee-4d5a-9e49-6e4cdbf8b6db"
+                }
+            ],
+            "severity": "error",
+            "type": "courtyards_overlap"
+        },
+        {
+            "description": "Courtyards overlap",
+            "items": [
+                {
+                    "description": "フットプリント J5",
+                    "pos": {
+                        "x": 40.8,
+                        "y": 6.0
+                    },
+                    "uuid": "884ee524-fabc-4b7e-8aff-09ab3b9dc6f8"
+                },
+                {
+                    "description": "フットプリント J4",
+                    "pos": {
+                        "x": 32.6,
+                        "y": 6.0
+                    },
+                    "uuid": "bfc019b3-0bf9-45d2-be15-29e8605855bc"
+                }
+            ],
+            "severity": "error",
+            "type": "courtyards_overlap"
+        },
+        {
+            "description": "Courtyards overlap",
+            "items": [
+                {
+                    "description": "フットプリント J2",
+                    "pos": {
+                        "x": 16.2,
+                        "y": 6.0
+                    },
+                    "uuid": "95aedfe1-385f-4740-ae1e-84d44e7988ab"
+                },
+                {
+                    "description": "フットプリント J3",
+                    "pos": {
+                        "x": 24.4,
+                        "y": 6.0
+                    },
+                    "uuid": "aec5c52b-b424-47e6-b362-c86aa6d92a36"
+                }
+            ],
+            "severity": "error",
+            "type": "courtyards_overlap"
+        },
+        {
+            "description": "Courtyards overlap",
+            "items": [
+                {
+                    "description": "フットプリント J3",
+                    "pos": {
+                        "x": 24.4,
+                        "y": 6.0
+                    },
+                    "uuid": "aec5c52b-b424-47e6-b362-c86aa6d92a36"
+                },
+                {
+                    "description": "フットプリント J4",
+                    "pos": {
+                        "x": 32.6,
+                        "y": 6.0
+                    },
+                    "uuid": "bfc019b3-0bf9-45d2-be15-29e8605855bc"
+                }
+            ],
+            "severity": "error",
+            "type": "courtyards_overlap"
+        },
+        {
+            "description": "異なるネットのアイテムが表面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "配線 [PUMP8_PLUS] ( F.Cu 上、長さ: 2.5000 mm )",
+                    "pos": {
+                        "x": 73.6,
+                        "y": 8.5
+                    },
+                    "uuid": "e9a4c352-7f88-41aa-aa5f-53e8fc30996c"
+                },
+                {
+                    "description": "PTHパッド 1 [PUMP7_PLUS] (J9)",
+                    "pos": {
+                        "x": 73.6,
+                        "y": 6.0
+                    },
+                    "uuid": "90f5dbae-60ba-4ae7-badd-47f96b0ae6f5"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "異なるネットのアイテムが表面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "配線 [PUMP5_PLUS] ( F.Cu 上、長さ: 2.5000 mm )",
+                    "pos": {
+                        "x": 49.0,
+                        "y": 8.5
+                    },
+                    "uuid": "d1e20363-1a65-494e-8dff-3cf5abaedcd1"
+                },
+                {
+                    "description": "PTHパッド 1 [PWM9] (J6)",
+                    "pos": {
+                        "x": 49.0,
+                        "y": 6.0
+                    },
+                    "uuid": "fa40b2e4-066a-440e-9764-13f4cf269c4b"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "異なるネットのアイテムが表面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "配線 [PUMP4_PLUS] ( F.Cu 上、長さ: 2.5000 mm )",
+                    "pos": {
+                        "x": 40.8,
+                        "y": 8.5
+                    },
+                    "uuid": "b78916de-c4fe-4941-b484-9d054756567e"
+                },
+                {
+                    "description": "PTHパッド 1 [PWM8] (J5)",
+                    "pos": {
+                        "x": 40.8,
+                        "y": 6.0
+                    },
+                    "uuid": "8aa5ee40-1fe1-4bb9-95df-74237ddfd0a4"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "異なるネットのアイテムが表面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "配線 [PUMP3_PLUS] ( F.Cu 上、長さ: 2.5000 mm )",
+                    "pos": {
+                        "x": 32.6,
+                        "y": 8.5
+                    },
+                    "uuid": "42fe0be8-e76e-427b-bd66-6256276930b4"
+                },
+                {
+                    "description": "PTHパッド 1 [PWM7] (J4)",
+                    "pos": {
+                        "x": 32.6,
+                        "y": 6.0
+                    },
+                    "uuid": "3550975a-b5d4-4b52-9892-1be142b7853b"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "異なるネットのアイテムが表面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "配線 [PUMP0_PLUS] ( F.Cu 上、長さ: 2.5000 mm )",
+                    "pos": {
+                        "x": 8.0,
+                        "y": 8.5
+                    },
+                    "uuid": "b2b748b4-4d63-44a3-acca-aa4f0df5bbbe"
+                },
+                {
+                    "description": "PTHパッド 1 [PUMP9_PLUS] (J1)",
+                    "pos": {
+                        "x": 8.0,
+                        "y": 6.0
+                    },
+                    "uuid": "b58a2987-73a3-4ce1-b983-06f5f6700158"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "異なるネットのアイテムが表面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "配線 [PUMP2_PLUS] ( F.Cu 上、長さ: 2.5000 mm )",
+                    "pos": {
+                        "x": 24.4,
+                        "y": 8.5
+                    },
+                    "uuid": "bfe80bdc-ef65-4f96-a609-0074eb6fb413"
+                },
+                {
+                    "description": "PTHパッド 1 [PWM6] (J3)",
+                    "pos": {
+                        "x": 24.4,
+                        "y": 6.0
+                    },
+                    "uuid": "ba462532-1525-4e2e-b915-e14c72018e9b"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "異なるネットのアイテムが表面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "配線 [PUMP7_PLUS] ( F.Cu 上、長さ: 2.5000 mm )",
+                    "pos": {
+                        "x": 65.4,
+                        "y": 8.5
+                    },
+                    "uuid": "f67210be-26d5-4b24-86de-966fe5fdd306"
+                },
+                {
+                    "description": "PTHパッド 1 [PUMP8_PLUS] (J8)",
+                    "pos": {
+                        "x": 65.4,
+                        "y": 6.0
+                    },
+                    "uuid": "ba188e7f-0b4f-4c10-ae2b-5238ecefdc89"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "異なるネットのアイテムが表面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "配線 [PUMP1_PLUS] ( F.Cu 上、長さ: 2.5000 mm )",
+                    "pos": {
+                        "x": 16.2,
+                        "y": 8.5
+                    },
+                    "uuid": "0298e7ef-d3ba-4c9f-8468-a9aa722db9a4"
+                },
+                {
+                    "description": "PTHパッド 1 [PUMP10_PLUS] (J2)",
+                    "pos": {
+                        "x": 16.2,
+                        "y": 6.0
+                    },
+                    "uuid": "59316bca-f7c2-448f-8aeb-95c30acb26a6"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "異なるネットのアイテムが表面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "配線 [PUMP6_PLUS] ( F.Cu 上、長さ: 2.5000 mm )",
+                    "pos": {
+                        "x": 57.2,
+                        "y": 8.5
+                    },
+                    "uuid": "b1086929-8c23-41ea-b95c-242a3df4b0cb"
+                },
+                {
+                    "description": "PTHパッド 1 [PWM10] (J7)",
+                    "pos": {
+                        "x": 57.2,
+                        "y": 6.0
+                    },
+                    "uuid": "df6eb1c1-bc58-47b8-80ca-68a81c1ef010"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "異なるネットのアイテムが表面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "配線 [PUMP9_PLUS] ( F.Cu 上、長さ: 2.5000 mm )",
+                    "pos": {
+                        "x": 81.8,
+                        "y": 8.5
+                    },
+                    "uuid": "b83d0b5e-86a8-4ec1-a779-873031b8d956"
+                },
+                {
+                    "description": "PTHパッド 1 [PUMP6_PLUS] (J10)",
+                    "pos": {
+                        "x": 81.8,
+                        "y": 6.0
+                    },
+                    "uuid": "4db40ec4-f1a4-47d3-9fb9-eb36cd63691e"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "異なるネットのアイテムが表面ハンダマスクの開口部で接続されている",
+            "items": [
+                {
+                    "description": "配線 [PUMP10_PLUS] ( F.Cu 上、長さ: 2.5000 mm )",
+                    "pos": {
+                        "x": 90.0,
+                        "y": 8.5
+                    },
+                    "uuid": "4a474925-e0b8-4af1-a355-375fd1ca61c2"
+                },
+                {
+                    "description": "PTHパッド 1 [+12V_RAW] (J11)",
+                    "pos": {
+                        "x": 90.0,
+                        "y": 6.0
+                    },
+                    "uuid": "a1794e26-5939-4fae-9397-d9b3caf59bb9"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        }
+    ]
+}

@@ -1,0 +1,28 @@
+EmerFlux 11-channel PCA9685-to-pump driver
+Generated board: 100 x 50 mm, 2 layer
+
+GND: 
++12V_RAW: 
++12V_PROTECTED: 
+PWM0: 
+PWM1: 
+PWM2: 
+PWM3: 
+PWM4: 
+PWM5: 
+PWM6: 
+PWM7: 
+PWM8: 
+PWM9: 
+PWM10: 
+PUMP0_PLUS: 
+PUMP1_PLUS: 
+PUMP2_PLUS: 
+PUMP3_PLUS: 
+PUMP4_PLUS: 
+PUMP5_PLUS: 
+PUMP6_PLUS: 
+PUMP7_PLUS: 
+PUMP8_PLUS: 
+PUMP9_PLUS: 
+PUMP10_PLUS: 

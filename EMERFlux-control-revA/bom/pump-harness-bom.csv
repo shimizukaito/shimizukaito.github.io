@@ -1,0 +1,8 @@
+Item,Quantity,Part,Use,Selection note
+Pump housing,121 plus spares,XHP-2,JST XH polarized 2-pin cable housing,Required
+Crimp contact,242 plus 10-20 percent spares,SXH-001T-P0.6,For AWG30-22 / 0.05-0.33 mm2 and insulation OD 0.9-1.9 mm,Confirm actual pump wire before bulk purchase
+Production wire,242 conductors x required length,UL1007 AWG24 stranded copper red and black,Specified final harness wire,Select insulation OD no greater than 1.9 mm from supplier datasheet
+Existing prototype wire,As available,VKLSVAN B08BCBLDR8 20 cm Dupont wire,Prototype reuse only,AWG and insulation OD are not stated; cut off Dupont contact and use only after measurement and crimp pull test
+PCB header,121,B2B-XH-A(LF)(SN),JST XH top-entry 2-pin header,Included as 11 per row-board BOM
+Polarity marker,121 pairs,Red + / black - heat-shrink or labels,Harness inspection,Required
+Strain relief,66 plus spares,Small cable ties,Secure cables through six slots on each of eleven row boards,Required because XH is weak-lock

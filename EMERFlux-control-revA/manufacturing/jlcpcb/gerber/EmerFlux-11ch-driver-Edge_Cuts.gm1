@@ -1,0 +1,23 @@
+%TF.GenerationSoftware,KiCad,Pcbnew,10.0.8*%
+%TF.CreationDate,2026-11-04T11:22:19+09:00*%
+%TF.ProjectId,EmerFlux-11ch-driver,456d6572-466c-4757-982d-313163682d64,rev?*%
+%TF.SameCoordinates,Original*%
+%TF.FileFunction,Profile,NP*%
+%FSLAX46Y46*%
+G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
+G04 Created by KiCad (PCBNEW 10.0.8) date 2026-11-04 11:22:19*
+%MOMM*%
+%LPD*%
+G01*
+G04 APERTURE LIST*
+%TA.AperFunction,Profile*%
+%ADD10C,0.300000*%
+%TD*%
+G04 APERTURE END LIST*
+D10*
+X0Y0D02*
+X100000000Y0D01*
+X100000000Y-50000000D01*
+X0Y-50000000D01*
+X0Y0D01*
+M02*

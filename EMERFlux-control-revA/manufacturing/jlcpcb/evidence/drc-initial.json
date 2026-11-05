@@ -1,0 +1,897 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-11-03T20:29:42",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.8",
+    "schematic_parity": [],
+    "source": "EmerFlux-11ch-driver.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "Clearance violation ( clearance 0.2000 mm; actual 0.1703 mm)",
+            "items": [
+                {
+                    "description": "Track [PWM1] on B.Cu, length 3.3800 mm",
+                    "pos": {
+                        "x": 12.54,
+                        "y": 29.0
+                    },
+                    "uuid": "44b1f7cd-3b84-4938-8b19-f4f8a4e166ef"
+                },
+                {
+                    "description": "Track [PWM0] on B.Cu, length 27.0069 mm",
+                    "pos": {
+                        "x": 36.54,
+                        "y": 34.0
+                    },
+                    "uuid": "599d97b4-7f55-49c0-9319-8f3d67a448fb"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2000 mm; actual 0.1703 mm)",
+            "items": [
+                {
+                    "description": "Track [PWM1] on B.Cu, length 27.0069 mm",
+                    "pos": {
+                        "x": 39.08,
+                        "y": 34.0
+                    },
+                    "uuid": "0a0c0804-c452-4769-a9ec-161a1d8ba5df"
+                },
+                {
+                    "description": "Track [PWM0] on B.Cu, length 27.0069 mm",
+                    "pos": {
+                        "x": 36.54,
+                        "y": 34.0
+                    },
+                    "uuid": "599d97b4-7f55-49c0-9319-8f3d67a448fb"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Items shorting two nets (nets PUMP4_PLUS and PUMP5_PLUS)",
+            "items": [
+                {
+                    "description": "Track [PUMP4_PLUS] on F.Cu, length 21.4944 mm",
+                    "pos": {
+                        "x": 20.16,
+                        "y": 15.0
+                    },
+                    "uuid": "ea893842-2f2d-4bec-8b15-694b360eccc7"
+                },
+                {
+                    "description": "Track [PUMP5_PLUS] on F.Cu, length 3.0000 mm",
+                    "pos": {
+                        "x": 22.7,
+                        "y": 18.0
+                    },
+                    "uuid": "fa0b669f-ca59-47df-b014-d3af2fb202c0"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2000 mm; actual 0.1703 mm)",
+            "items": [
+                {
+                    "description": "Track [PWM2] on B.Cu, length 9.0000 mm",
+                    "pos": {
+                        "x": 41.62,
+                        "y": 43.0
+                    },
+                    "uuid": "6fe3441a-1a3c-4378-b98a-971a8e51e531"
+                },
+                {
+                    "description": "Track [PWM3] on B.Cu, length 27.0069 mm",
+                    "pos": {
+                        "x": 44.16,
+                        "y": 34.0
+                    },
+                    "uuid": "e4b08201-41c6-45c8-91a5-a9c5948f7ef9"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Track [+12V_PROTECTED] on F.Cu, length 3.2810 mm",
+                    "pos": {
+                        "x": 83.0,
+                        "y": 36.0
+                    },
+                    "uuid": "10f319c6-c4d9-4e75-a26c-d10caac96d97"
+                },
+                {
+                    "description": "Track [+12V_RAW] on F.Cu, length 6.5722 mm",
+                    "pos": {
+                        "x": 85.0,
+                        "y": 37.38
+                    },
+                    "uuid": "675e9abe-5830-41ea-a38e-d752b0458ca8"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Items shorting two nets (nets +12V_RAW and +12V_PROTECTED)",
+            "items": [
+                {
+                    "description": "PTH pad 1 [+12V_RAW] of J13",
+                    "pos": {
+                        "x": 85.0,
+                        "y": 37.38
+                    },
+                    "uuid": "25434321-0c9e-40d6-a795-2ae7a52dc2d4"
+                },
+                {
+                    "description": "Track [+12V_PROTECTED] on F.Cu, length 11.0000 mm",
+                    "pos": {
+                        "x": 72.0,
+                        "y": 36.0
+                    },
+                    "uuid": "ada5c420-2786-461d-8e08-bc100fd132ad"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2000 mm; actual 0.1703 mm)",
+            "items": [
+                {
+                    "description": "Track [PWM3] on B.Cu, length 9.0000 mm",
+                    "pos": {
+                        "x": 44.16,
+                        "y": 43.0
+                    },
+                    "uuid": "02fe4b2c-f276-471d-93df-07e0245718c0"
+                },
+                {
+                    "description": "Track [PWM4] on B.Cu, length 27.0069 mm",
+                    "pos": {
+                        "x": 46.7,
+                        "y": 34.0
+                    },
+                    "uuid": "5fb2a1db-c514-403a-9fa0-a099566d393f"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Items shorting two nets (nets +12V_RAW and +12V_PROTECTED)",
+            "items": [
+                {
+                    "description": "Track [+12V_RAW] on F.Cu, length 6.5722 mm",
+                    "pos": {
+                        "x": 85.0,
+                        "y": 37.38
+                    },
+                    "uuid": "675e9abe-5830-41ea-a38e-d752b0458ca8"
+                },
+                {
+                    "description": "Track [+12V_PROTECTED] on F.Cu, length 11.0000 mm",
+                    "pos": {
+                        "x": 72.0,
+                        "y": 36.0
+                    },
+                    "uuid": "ada5c420-2786-461d-8e08-bc100fd132ad"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2000 mm; actual 0.1703 mm)",
+            "items": [
+                {
+                    "description": "Track [PWM2] on B.Cu, length 27.0069 mm",
+                    "pos": {
+                        "x": 41.62,
+                        "y": 34.0
+                    },
+                    "uuid": "b13ec2dc-7e78-46aa-a067-9a3f7d718b76"
+                },
+                {
+                    "description": "Track [PWM3] on B.Cu, length 27.0069 mm",
+                    "pos": {
+                        "x": 44.16,
+                        "y": 34.0
+                    },
+                    "uuid": "e4b08201-41c6-45c8-91a5-a9c5948f7ef9"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2000 mm; actual 0.1703 mm)",
+            "items": [
+                {
+                    "description": "Track [PWM1] on B.Cu, length 9.0000 mm",
+                    "pos": {
+                        "x": 39.08,
+                        "y": 43.0
+                    },
+                    "uuid": "4b1bd1f0-1c22-4a2b-8a2c-f9d3d50c9eaf"
+                },
+                {
+                    "description": "Track [PWM2] on B.Cu, length 27.0069 mm",
+                    "pos": {
+                        "x": 41.62,
+                        "y": 34.0
+                    },
+                    "uuid": "b13ec2dc-7e78-46aa-a067-9a3f7d718b76"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2000 mm; actual 0.1444 mm)",
+            "items": [
+                {
+                    "description": "Track [PUMP3_PLUS] on F.Cu, length 16.1369 mm",
+                    "pos": {
+                        "x": 17.62,
+                        "y": 15.0
+                    },
+                    "uuid": "654b54d5-4a48-408d-a286-037f7dcfa9c2"
+                },
+                {
+                    "description": "Track [PUMP4_PLUS] on F.Cu, length 21.4944 mm",
+                    "pos": {
+                        "x": 20.16,
+                        "y": 15.0
+                    },
+                    "uuid": "ea893842-2f2d-4bec-8b15-694b360eccc7"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Items shorting two nets (nets PUMP5_PLUS and PUMP4_PLUS)",
+            "items": [
+                {
+                    "description": "Track [PUMP5_PLUS] on F.Cu, length 26.9757 mm",
+                    "pos": {
+                        "x": 22.7,
+                        "y": 15.0
+                    },
+                    "uuid": "ce0bf729-6af6-48dd-8b43-edea98d7cb51"
+                },
+                {
+                    "description": "Track [PUMP4_PLUS] on F.Cu, length 21.4944 mm",
+                    "pos": {
+                        "x": 20.16,
+                        "y": 15.0
+                    },
+                    "uuid": "ea893842-2f2d-4bec-8b15-694b360eccc7"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2000 mm; actual 0.1703 mm)",
+            "items": [
+                {
+                    "description": "Track [PWM4] on B.Cu, length 3.3800 mm",
+                    "pos": {
+                        "x": 20.16,
+                        "y": 29.0
+                    },
+                    "uuid": "25bd0de2-fbc2-40fa-82f7-234110faa435"
+                },
+                {
+                    "description": "Track [PWM3] on B.Cu, length 27.0069 mm",
+                    "pos": {
+                        "x": 44.16,
+                        "y": 34.0
+                    },
+                    "uuid": "e4b08201-41c6-45c8-91a5-a9c5948f7ef9"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2000 mm; actual 0.1703 mm)",
+            "items": [
+                {
+                    "description": "Track [PWM4] on B.Cu, length 27.0069 mm",
+                    "pos": {
+                        "x": 46.7,
+                        "y": 34.0
+                    },
+                    "uuid": "5fb2a1db-c514-403a-9fa0-a099566d393f"
+                },
+                {
+                    "description": "Track [PWM5] on B.Cu, length 3.3800 mm",
+                    "pos": {
+                        "x": 22.7,
+                        "y": 29.0
+                    },
+                    "uuid": "c9d572d4-697c-4df1-9987-ed61de29e940"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2000 mm; actual 0.1703 mm)",
+            "items": [
+                {
+                    "description": "Track [PWM4] on B.Cu, length 9.0000 mm",
+                    "pos": {
+                        "x": 46.7,
+                        "y": 43.0
+                    },
+                    "uuid": "206986dd-13de-4361-a6f4-7b4fbd0fb5b4"
+                },
+                {
+                    "description": "Track [PWM5] on B.Cu, length 27.0069 mm",
+                    "pos": {
+                        "x": 49.24,
+                        "y": 34.0
+                    },
+                    "uuid": "dd17c0cd-219a-4a77-bd46-c130145cf48c"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2000 mm; actual 0.1444 mm)",
+            "items": [
+                {
+                    "description": "Track [PUMP4_PLUS] on F.Cu, length 3.0000 mm",
+                    "pos": {
+                        "x": 20.16,
+                        "y": 18.0
+                    },
+                    "uuid": "08a1cd5d-f066-4088-a6ca-583b55111565"
+                },
+                {
+                    "description": "Track [PUMP3_PLUS] on F.Cu, length 16.1369 mm",
+                    "pos": {
+                        "x": 17.62,
+                        "y": 15.0
+                    },
+                    "uuid": "654b54d5-4a48-408d-a286-037f7dcfa9c2"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.2000 mm; actual 0.1703 mm)",
+            "items": [
+                {
+                    "description": "Track [PWM3] on B.Cu, length 3.3800 mm",
+                    "pos": {
+                        "x": 17.62,
+                        "y": 29.0
+                    },
+                    "uuid": "1e2d3e93-1f6d-4852-b59b-741be594f347"
+                },
+                {
+                    "description": "Track [PWM2] on B.Cu, length 27.0069 mm",
+                    "pos": {
+                        "x": 41.62,
+                        "y": 34.0
+                    },
+                    "uuid": "b13ec2dc-7e78-46aa-a067-9a3f7d718b76"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [+12V_PROTECTED] on F.Cu, length 11.0000 mm",
+                    "pos": {
+                        "x": 72.0,
+                        "y": 36.0
+                    },
+                    "uuid": "ada5c420-2786-461d-8e08-bc100fd132ad"
+                },
+                {
+                    "description": "PTH pad 1 [+12V_RAW] of J13",
+                    "pos": {
+                        "x": 85.0,
+                        "y": 37.38
+                    },
+                    "uuid": "25434321-0c9e-40d6-a795-2ae7a52dc2d4"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [+12V_PROTECTED] on F.Cu, length 3.2810 mm",
+                    "pos": {
+                        "x": 83.0,
+                        "y": 36.0
+                    },
+                    "uuid": "10f319c6-c4d9-4e75-a26c-d10caac96d97"
+                },
+                {
+                    "description": "PTH pad 1 [+12V_RAW] of J13",
+                    "pos": {
+                        "x": 85.0,
+                        "y": 37.38
+                    },
+                    "uuid": "25434321-0c9e-40d6-a795-2ae7a52dc2d4"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'EmerFlux'",
+            "items": [
+                {
+                    "description": "Footprint J1",
+                    "pos": {
+                        "x": 8.0,
+                        "y": 6.0
+                    },
+                    "uuid": "5cc86163-fac8-4e4d-9487-2d99d74b5fed"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'EmerFlux'",
+            "items": [
+                {
+                    "description": "Footprint J2",
+                    "pos": {
+                        "x": 16.2,
+                        "y": 6.0
+                    },
+                    "uuid": "3065d8fb-2ca7-47b5-8262-bb7fe404b969"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'EmerFlux'",
+            "items": [
+                {
+                    "description": "Footprint J3",
+                    "pos": {
+                        "x": 24.4,
+                        "y": 6.0
+                    },
+                    "uuid": "4ff812cb-1535-43f2-acf1-8883d1e77ace"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'EmerFlux'",
+            "items": [
+                {
+                    "description": "Footprint J4",
+                    "pos": {
+                        "x": 32.6,
+                        "y": 6.0
+                    },
+                    "uuid": "6f786637-13fa-4ec8-8807-497610ec0208"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'EmerFlux'",
+            "items": [
+                {
+                    "description": "Footprint J5",
+                    "pos": {
+                        "x": 40.8,
+                        "y": 6.0
+                    },
+                    "uuid": "985e6941-80e0-4fdf-90d2-280ecbe9741b"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'EmerFlux'",
+            "items": [
+                {
+                    "description": "Footprint J6",
+                    "pos": {
+                        "x": 49.0,
+                        "y": 6.0
+                    },
+                    "uuid": "d428df3d-6d0b-4779-a498-7d413f5493bf"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'EmerFlux'",
+            "items": [
+                {
+                    "description": "Footprint J7",
+                    "pos": {
+                        "x": 57.2,
+                        "y": 6.0
+                    },
+                    "uuid": "609dbd2a-2b80-486b-97c7-2db4eb3180a0"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'EmerFlux'",
+            "items": [
+                {
+                    "description": "Footprint J8",
+                    "pos": {
+                        "x": 65.4,
+                        "y": 6.0
+                    },
+                    "uuid": "9e378d12-803b-47f3-a3a6-a815502e38dc"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'EmerFlux'",
+            "items": [
+                {
+                    "description": "Footprint J9",
+                    "pos": {
+                        "x": 73.6,
+                        "y": 6.0
+                    },
+                    "uuid": "35c6a6da-55a7-43ba-ba9c-3fed5d8bf7e3"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'EmerFlux'",
+            "items": [
+                {
+                    "description": "Footprint J10",
+                    "pos": {
+                        "x": 81.8,
+                        "y": 6.0
+                    },
+                    "uuid": "ec36ddeb-325d-4c38-aa2f-1ad110523151"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'EmerFlux'",
+            "items": [
+                {
+                    "description": "Footprint J11",
+                    "pos": {
+                        "x": 90.0,
+                        "y": 6.0
+                    },
+                    "uuid": "01102205-32f0-4871-a926-ef94f02dd896"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'EmerFlux'",
+            "items": [
+                {
+                    "description": "Footprint U1",
+                    "pos": {
+                        "x": 10.0,
+                        "y": 25.62
+                    },
+                    "uuid": "3ffa36e0-c918-47df-9245-2efdf06b0c59"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'EmerFlux'",
+            "items": [
+                {
+                    "description": "Footprint U2",
+                    "pos": {
+                        "x": 65.0,
+                        "y": 25.62
+                    },
+                    "uuid": "3f6473f0-e233-4cd4-9b43-a9856c0e476a"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'EmerFlux'",
+            "items": [
+                {
+                    "description": "Footprint J12",
+                    "pos": {
+                        "x": 34.0,
+                        "y": 43.0
+                    },
+                    "uuid": "3fe6dfc4-0072-416b-a3eb-5b28007cfa3b"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'EmerFlux'",
+            "items": [
+                {
+                    "description": "Footprint J13",
+                    "pos": {
+                        "x": 85.0,
+                        "y": 45.0
+                    },
+                    "uuid": "0bebe387-a126-45c8-ac70-f4a3b97022d0"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'EmerFlux'",
+            "items": [
+                {
+                    "description": "Footprint F1",
+                    "pos": {
+                        "x": 75.0,
+                        "y": 33.0
+                    },
+                    "uuid": "b715316e-02a2-46d5-9559-16d2be123b78"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'EmerFlux'",
+            "items": [
+                {
+                    "description": "Footprint C1",
+                    "pos": {
+                        "x": 68.0,
+                        "y": 43.0
+                    },
+                    "uuid": "59e7691b-6d89-4700-a2c0-00204056753b"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'EmerFlux'",
+            "items": [
+                {
+                    "description": "Footprint C2",
+                    "pos": {
+                        "x": 4.0,
+                        "y": 31.0
+                    },
+                    "uuid": "30dbdcaa-7c00-4740-a62d-aab362814775"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "The current configuration does not include the footprint library 'EmerFlux'",
+            "items": [
+                {
+                    "description": "Footprint C3",
+                    "pos": {
+                        "x": 89.0,
+                        "y": 31.0
+                    },
+                    "uuid": "ec086074-5486-46a8-a6f4-92c8d453048f"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Footprint text of C1 (+)",
+                    "pos": {
+                        "x": 65.0,
+                        "y": 40.0
+                    },
+                    "uuid": "6ee2e381-c772-4297-be16-dcadf79bbe96"
+                },
+                {
+                    "description": "Circle of C1 on f.silkscreen",
+                    "pos": {
+                        "x": 68.0,
+                        "y": 43.0
+                    },
+                    "uuid": "aa3f238f-144a-4212-b90b-e09912c36d8c"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Footprint text of J13 (+12V   GND)",
+                    "pos": {
+                        "x": 87.54,
+                        "y": 33.9
+                    },
+                    "uuid": "16b393bd-e570-40f3-9f56-7ab6c3c5f571"
+                },
+                {
+                    "description": "Rectangle of F1 on f.silkscreen",
+                    "pos": {
+                        "x": 71.55,
+                        "y": 31.5
+                    },
+                    "uuid": "a0a27109-ef63-45ec-911b-1a75675f382c"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Rectangle of J13 on f.silkscreen",
+                    "pos": {
+                        "x": 81.21,
+                        "y": 35.69
+                    },
+                    "uuid": "1f9a7870-b533-4302-b3aa-31f345c2b73c"
+                },
+                {
+                    "description": "PTH pad 1 [+12V_RAW] of J13",
+                    "pos": {
+                        "x": 85.0,
+                        "y": 37.38
+                    },
+                    "uuid": "25434321-0c9e-40d6-a795-2ae7a52dc2d4"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Rectangle of J13 on f.silkscreen",
+                    "pos": {
+                        "x": 81.21,
+                        "y": 35.69
+                    },
+                    "uuid": "1f9a7870-b533-4302-b3aa-31f345c2b73c"
+                },
+                {
+                    "description": "PTH pad 2 [GND] of J13",
+                    "pos": {
+                        "x": 90.08,
+                        "y": 37.38
+                    },
+                    "uuid": "36fb35e4-52dc-4c81-a974-e9ebcd5dd246"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Rectangle of F1 on f.silkscreen",
+                    "pos": {
+                        "x": 71.55,
+                        "y": 31.5
+                    },
+                    "uuid": "a0a27109-ef63-45ec-911b-1a75675f382c"
+                },
+                {
+                    "description": "PTH pad 2 [+12V_RAW] of F1",
+                    "pos": {
+                        "x": 80.1,
+                        "y": 33.0
+                    },
+                    "uuid": "00000000-0000-4000-8000-000000000074"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Rectangle of F1 on f.silkscreen",
+                    "pos": {
+                        "x": 71.55,
+                        "y": 31.5
+                    },
+                    "uuid": "a0a27109-ef63-45ec-911b-1a75675f382c"
+                },
+                {
+                    "description": "PTH pad 1 [+12V_PROTECTED] of F1",
+                    "pos": {
+                        "x": 75.0,
+                        "y": 33.0
+                    },
+                    "uuid": "00000000-0000-4000-8000-000000000073"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        }
+    ]
+}
