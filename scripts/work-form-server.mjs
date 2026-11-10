@@ -102,16 +102,16 @@ ${youtubePreconnect}
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href="../index.html#top"><span class="brand-mark"><img src="../assets/astronaut.ico" alt="" /></span><span>Shimizu Kaito</span></a>
+      <a class="brand" href="../#top"><span class="brand-mark"><img src="../assets/astronaut.ico" alt="" /></span><span>Shimizu Kaito</span></a>
       <nav class="nav" aria-label="主要ナビゲーション">
-        <a href="../index.html#works">Works</a>
+        <a href="../#works">Works</a>
         <a href="../about.html#about">About</a>
         <a href="../about.html#achievements">Achievements</a>
-        <a href="../index.html#contact">Contact</a>
+        <a href="../#contact">Contact</a>
       </nav>
     </header>
     <main class="work-detail">
-      <a class="back-link" href="../index.html#works">← Worksへ戻る</a>
+      <a class="back-link" href="../#works">← Worksへ戻る</a>
       <section class="detail-hero">
         <div class="detail-title">
           <h1>${escapeHtml(work.title)}</h1>
@@ -267,7 +267,7 @@ async function handleCreate(request, response) {
 
   sendHtml(
     response,
-    `<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>追加しました</title>${adminStyles()}</head><body><main><h1>追加しました</h1><p>${escapeHtml(title)} をWORKSに追加しました。</p><div class="actions"><a href="/works/${slug}.html">作品ページを見る</a><a href="/index.html#works">WORKSを見る</a><a href="/">続けて追加する</a></div></main></body></html>`
+    `<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>追加しました</title>${adminStyles()}</head><body><main><h1>追加しました</h1><p>${escapeHtml(title)} をWORKSに追加しました。</p><div class="actions"><a href="/works/${slug}.html">作品ページを見る</a><a href="/#works">WORKSを見る</a><a href="/">続けて追加する</a></div></main></body></html>`
   );
 }
 
